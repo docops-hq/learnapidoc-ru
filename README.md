@@ -11,7 +11,7 @@
 
 Курс состоит из разделов:
 
-- 1. [Введение в REST API (Introduction to REST APIs)]()
+- 1. [Введение в REST API (Introduction to REST APIs)](https://github.com/Starkovden/Documenting_APIs/tree/master/1.%20Introduction%20to%20REST%20APIs)
 - 2. [Использование API в роли разработчика (Using an API like a developer)]()
 - 3. [Точки доступа (Documenting API endpoints)]()
 - 4. [Спецификация OpenAPI и Swagger (OpenAPI specification and Swagger)]()
