@@ -22,7 +22,7 @@ Docs-as-code включает в себя использование облег�
 
 [**7.8. Практическое занятие: Используем клиент GitHub для десктопа** (7.8. Activity: Use the GitHub Desktop client)](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.8.%20Activity%20Use%20the%20GitHub%20Desktop%20client.md)
 
-[**7.9. Практическое занятие: процесс Pull request на GitHub ** (7.9. Activity: Pull request workflows through GitHub)](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.9.%20Activity%20Pull%20request%20workflows%20through%20GitHub.md)
+[**7.9. Практическое занятие: процесс Pull request на GitHub** (7.9. Activity: Pull request workflows through GitHub)](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.9.%20Activity%20Pull%20request%20workflows%20through%20GitHub.md)
 
 [**7.10. Генераторы статичных сайтов** (7.10. Static site generators)](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.10.%20Static%20site%20generators.md)
 
