@@ -1,10 +1,12 @@
 # Курс по созданию API документации
 
-Материалы, размещенные в данном репозитории являются вольным переводом курса [**Documenting APIs: A guide for technical writers**](https://idratherbewriting.com/learnapidoc/)  составленного Томом Джонсоном, техническим писателем Amazon. 
+Материалы, размещенные в данном репозитории являются вольным переводом курса [**Documenting APIs: A guide for technical writers**](https://idratherbewriting.com/learnapidoc/)  составленного Томом Джонсоном, техническим писателем Amazon.
 
 Перевод курса пополняю по мере возможностей.
 
-Цель перевода курса: 
+**Pull requests приветствуются переводчиком курса**
+
+Цель перевода курса:
 
 - пройти курс, научиться документировать API, повысить свои soft skills техписателя;
 - освежить знания английского языка;
@@ -21,4 +23,3 @@
 8. [**Работа технического писателя** (Getting a job in API documentation)](https://github.com/Starkovden/Documenting_APIs/tree/master/8.%20Getting%20a%20job%20in%20API%20documentation)
 9. [**Исходные библиотеки API** (Native library APIs)](https://github.com/Starkovden/Documenting_APIs/tree/master/9.%20Native%20library%20APIs)
 10. [**Глоссарий API и источники** (API glossary and resources)](https://github.com/Starkovden/Documenting_APIs/tree/master/10.%20API%20glossary%20and%20Resourses)
-
