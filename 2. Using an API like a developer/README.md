@@ -1,8 +1,8 @@
 # Использование API в роли разработчика
 
-Роль разработчика поможет лучше понять потребности разработчиков, а также то, что разработчики обычно ищут в документации API. 
+Роль разработчика поможет лучше понять потребности разработчиков, а также то, что разработчики обычно ищут в документации API.
 
-Разработчики часто используют такие инструменты, как Postman или curl, для совершения запросов. 
+Разработчики часто используют такие инструменты, как Postman или curl, для совершения запросов.
 
 Они смотрят на структуру ответа и динамически интегрируют необходимую информацию в веб-страницы и другие приложения.
 
@@ -24,7 +24,7 @@
 
 [**2.8. Анализ JSON ответов** (2.8. Analyze the JSON response)](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/2.8.%20Analyze%20the%20JSON%20response.md)
 
-[**2.9. Проверка JSON из ответов нагрузки** (2.9. Inspect the JSON from the respons payload)](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/2.9.%20Inspect%20the%20JSON%20from%20the%20responsw%20payload.md)
+[**2.9. Изучение JSON из полезной нагрузки ответа** (2.9. Inspect the JSON from the response payload)](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/2.9.%20Inspect%20the%20JSON%20from%20the%20responsw%20payload.md)
 
 [**2.10. Доступ и печать определенного значения JSON** (2.10. Access and print a specific JSON value)](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/2.10.%20Access%20and%20print%20a%20specific%20JSON%20value.md)
 
