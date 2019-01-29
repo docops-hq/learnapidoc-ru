@@ -24,7 +24,7 @@
 
 [**2.8. Анализ JSON ответов** (2.8. Analyze the JSON response)](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/2.8.%20Analyze%20the%20JSON%20response.md)
 
-[**2.9. Изучение полезных данных в ответе JSON** (2.9. Inspect the JSON from the response payload)](https://github.com/Starkovden/Documenting_APIs/blob/831a3960ad61d9ef6ef469ea53054885b71c2361/2.%20Using%20an%20API%20like%20a%20developer/2.9.%20Inspect%20the%20JSON%20from%20the%20response%20payload.md)
+[**2.9. Изучение полезных данных JSON ответа** (2.9. Inspect the JSON from the response payload)](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/2.9.%20Inspect%20the%20JSON%20from%20the%20response%20payload.md)
 
 [**2.10. Доступ и печать определенного значения JSON** (2.10. Access and print a specific JSON value)](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/2.10.%20Access%20and%20print%20a%20specific%20JSON%20value.md)
 
