@@ -1,4 +1,4 @@
-# Документирование точек доступа
+# Документирование конечных точек
 
 Справочная документация для конечных точек API состоит из пяти основных разделов:
 
@@ -10,15 +10,15 @@
 
  Чтобы задокументировать идеальные конечные точки API, старайтесь предоставлять подробную информацию для каждого из этих разделов.
 
-# Содержание раздела "Документирование точек доступа"
+# Содержание раздела "Документирование конечных точек"
 
-[**3.1. Документирование новой точки доступа** (3.1. A new endpoint to document)](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.1.%20A%20new%20endpoint%20to%20document.md)
+[**3.1. Документирование новой конечной точки** (3.1. A new endpoint to document)](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.1.%20A%20new%20endpoint%20to%20document.md)
 
 [**3.2. Обзор руководства описания API** (3.2. API reference tutorial overview)](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.2.%20API%20reference%20tutorial%20overview.md)
 
-[**3.3. Шаг 1: Описание источника** (3.3. Step 1: Resourse description)](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.3.%20Step%201%20Resourse%20description.md)
+[**3.3. Шаг 1: Описание источника** (3.3. Step 1: Resource description)](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.3.%20Step%201%20Resourse%20description.md)
 
-[**3.4. Шаг 2: Точки доступа и методы** (3.4. Step 2: Endpoints and methods)](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.4.%20Step%202%20Endpoints%20and%20methods.md)
+[**3.4. Шаг 2: Конечные точки и методы** (3.4. Step 2: Endpoints and methods)](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.4.%20Step%202%20Endpoints%20and%20methods.md)
 
 [**3.5. Шаг 3: Параметры** (3.5. Step 3: Parameters)](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.5.%20Step%203%20Parameters.md)
 
@@ -28,6 +28,6 @@
 
 [**3.8. Собираем все вместе** (3.8. Putting it all together)](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.8.%20Putting%20it%20all%20together.md)
 
-[**3.9. Практическое занятие: Поиск open-sourse проекта** (3.9. Activity Find an open source project)](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.9.%20Activity%20Find%20an%20open%20source%20project.md)
+[**3.9. Практическое занятие: Поиск open-source проекта** (3.9. Activity Find an open source project)](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.9.%20Activity%20Find%20an%20open%20source%20project.md)
 
-[**3.10. Практическое занятие: Оценка API документации для ключевых элементов** (3.10. Activity Evaluate API referense docs for core elements)](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.10.%20Activity%20Evaluate%20API%20referense%20docs%20for%20core%20elements.md)
+[**3.10. Практическое занятие: Оценка ключевых элементов API документации** (3.10. Activity Evaluate API referense docs for core elements)](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.10.%20Activity%20Evaluate%20API%20referense%20docs%20for%20core%20elements.md)
