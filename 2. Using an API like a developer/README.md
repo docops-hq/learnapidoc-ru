@@ -26,6 +26,6 @@
 
 [**2.9. Изучение полезных данных JSON ответа** (2.9. Inspect the JSON from the response payload)](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/2.9.%20Inspect%20the%20JSON%20from%20the%20response%20payload.md)
 
-[**2.10. Доступ и печать определенного значения JSON** (2.10. Access and print a specific JSON value)](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/2.10.%20Access%20and%20print%20a%20specific%20JSON%20value.md)
+[**2.10. Доступ и вывод на страницу определенного значения JSON** (2.10. Access and print a specific JSON value)](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/2.10.%20Access%20and%20print%20a%20specific%20JSON%20value.md)
 
 [**2.11. Погружение в точечную нотацию** (2.11. Dive into dot notation)](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/2.11.%20Dive%20into%20dot%20notation.md)
