@@ -14,7 +14,7 @@
 
 [**3.1. Документирование новой конечной точки** (3.1. A new endpoint to document)](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.1.%20A%20new%20endpoint%20to%20document.md)
 
-[**3.2. Обзор руководства описания API** (3.2. API reference tutorial overview)](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.2.%20API%20reference%20tutorial%20overview.md)
+[**3.2. Обзор пошагового описания API** (3.2. API reference tutorial overview)](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.2.%20API%20reference%20tutorial%20overview.md)
 
 [**3.3. Шаг 1: Описание источника** (3.3. Step 1: Resource description)](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.3.%20Step%201%20Resourse%20description.md)
 
