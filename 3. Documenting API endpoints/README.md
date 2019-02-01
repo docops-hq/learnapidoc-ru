@@ -16,7 +16,7 @@
 
 [**3.2. Обзор пошагового описания API** (3.2. API reference tutorial overview)](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.2.%20API%20reference%20tutorial%20overview.md)
 
-[**3.3. Шаг 1: Описание источника** (3.3. Step 1: Resource description)](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.3.%20Step%201%20Resourse%20description.md)
+[**3.3. Шаг 1: Описание ресурса** (3.3. Step 1: Resource description)](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.3.%20Step%201%20Resourse%20description.md)
 
 [**3.4. Шаг 2: Конечные точки и методы** (3.4. Step 2: Endpoints and methods)](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.4.%20Step%202%20Endpoints%20and%20methods.md)
 
