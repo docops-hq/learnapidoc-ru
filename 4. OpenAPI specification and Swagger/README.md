@@ -1,8 +1,8 @@
 # Спецификация OpenAPI и Swagger
 
-Спецификация OpenAPI предоставляет один из способов описания REST API и включает все справочные разделы, упомянутые в предыдущем разделе [**Документирование конечных точек API.**](https://github.com/Starkovden/Documenting_APIs/tree/master/3.%20Documenting%20API%20endpoints) Фреймворки, такие как Swagger UI, могут анализировать спецификацию OpenAPI и генерировать интерактивную документацию, которая позволяет пользователям опробовать точки доступа при изучении API.
+Спецификация OpenAPI предоставляет один из способов описания REST API и включает все разделы, упомянутые в предыдущем разделе [**Документирование конечных точек API.**](https://github.com/Starkovden/Documenting_APIs/tree/master/3.%20Documenting%20API%20endpoints) Фреймворки, такие как Swagger UI, могут анализировать спецификацию OpenAPI и генерировать интерактивную документацию, которая позволяет пользователям опробовать точки доступа при изучении API.
 
-# Содержание раздела "Спецификация OpenAPI и Swagger"
+# Содержание модуля "Спецификация OpenAPI и Swagger"
 
 [**4.1. Обзор спецификаций API** (4.1. Overview of REST API specification formats)](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.1.%20Overview%20of%20REST%20API%20specification%20formats.md)
 
