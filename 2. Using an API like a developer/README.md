@@ -6,7 +6,7 @@
 
 Они смотрят на структуру ответа и динамически интегрируют необходимую информацию в веб-страницы и другие приложения.
 
-# Содержание раздела "Использование API в роли разработчика"
+# Содержание модуля "Использование API в роли разработчика"
 
 [**2.1. Сценарий использоавания API погоды** (2.1. Scenario for using a weather API)](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/2.1.%20Scenario%20for%20using%20a%20weather%20API.md)
 
