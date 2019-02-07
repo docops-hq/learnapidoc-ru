@@ -2,16 +2,14 @@
 
 Материалы, размещенные в данном репозитории являются вольным переводом курса [**Documenting APIs: A guide for technical writers**](https://idratherbewriting.com/learnapidoc/)  составленного Томом Джонсоном, техническим писателем Amazon.
 
-Перевод курса пополняю по мере возможностей.
-
-**Pull requests приветствуются переводчиком курса**
+Перевод курса по мере возможностей.
 
 Цель перевода курса:
 
 - пройти курс, научиться документировать API, повысить свои soft skills техписателя;
 - освежить знания английского языка;
 
-Курс состоит из разделов:
+Курс состоит из модулей:
 
 1. [**Введение в REST API** (Introduction to REST APIs)](https://github.com/Starkovden/Documenting_APIs/tree/master/1.%20Introduction%20to%20REST%20APIs)
 2. [**Использование API в роли разработчика** (Using an API like a developer)](https://github.com/Starkovden/Documenting_APIs/tree/master/2.%20Using%20an%20API%20like%20a%20developer)
