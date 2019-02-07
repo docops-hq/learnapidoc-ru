@@ -4,7 +4,7 @@
 
 # Содержание модуля "Спецификация OpenAPI и Swagger"
 
-[**4.1. Обзор спецификаций API** (4.1. Overview of REST API specification formats)](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.1.%20Overview%20of%20REST%20API%20specification%20formats.md)
+[**4.1. Обзор форматов спецификаций REST API** (4.1. Overview of REST API specification formats)](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.1.%20Overview%20of%20REST%20API%20specification%20formats.md)
 
 [**4.2. Знакомство со спецификациями OpenAPI и Swagger** (4.2. Introduction to the OpenAPI spec and Swagger)](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.2.%20Introduction%20to%20the%20OpenAPI%20spec%20and%20Swagger.md)
 
