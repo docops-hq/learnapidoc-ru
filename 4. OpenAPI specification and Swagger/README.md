@@ -8,7 +8,7 @@
 
 [**4.2. Знакомство со спецификациями OpenAPI и Swagger** (4.2. Introduction to the OpenAPI spec and Swagger)](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.2.%20Introduction%20to%20the%20OpenAPI%20spec%20and%20Swagger.md)
 
-[**4.3. Работа с YAML** (4.3. Working in YAML)](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.3.%20Working%20in%20YAML.md)
+[**4.3. Работа в YAML** (4.3. Working in YAML)](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.3.%20Working%20in%20YAML.md)
 
 [**4.4. Обзор руководства OpenAPI** (4.4. OpenAPI tutorial overview)](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.4.%20OpenAPI%20tutorial%20overview.md)
 
