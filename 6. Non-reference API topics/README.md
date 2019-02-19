@@ -16,7 +16,7 @@
 
 [**6.4. Требования аутентификации и авторизации** (6.4. Authentification and authorization)](https://github.com/Starkovden/Documenting_APIs/blob/master/6.%20Non-reference%20API%20topics/6.4.%20Authentification%20and%20authorization.md)
 
-[**6.5. Статусы и коды ошибок** (6.5. Status and error codes)](https://github.com/Starkovden/Documenting_APIs/blob/master/6.%20Non-reference%20API%20topics/6.5.%20Status%20and%20error%20codes.md)
+[**6.5. Коды статусов и ошибок** (6.5. Status and error codes)](https://github.com/Starkovden/Documenting_APIs/blob/master/6.%20Non-reference%20API%20topics/6.5.%20Status%20and%20error%20codes.md)
 
 [**6.6. Пределы и ограничения скорости** (6.6. Rate limiting and thresholds)](https://github.com/Starkovden/Documenting_APIs/blob/master/6.%20Non-reference%20API%20topics/6.6.%20Rate%20limiting%20and%20thresholds.md)
 
