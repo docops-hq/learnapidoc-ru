@@ -2,6 +2,10 @@
 
 ![GitHub repo size in bytes](https://img.shields.io/github/repo-size/Starkovden/Documenting_APIs.svg?style=plastic)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Starkovden/Documenting_APIs.svg?logo=%20)
+![GitHub watchers](https://img.shields.io/github/watchers/Starkovden/Documenting_APIs.svg?style=social)
+![GitHub stars](https://img.shields.io/github/stars/Starkovden/Documenting_APIs.svg?style=social)
+
+
 
 Материалы, размещенные в данном репозитории являются вольным переводом курса [**Documenting APIs: A guide for technical writers**](https://idratherbewriting.com/learnapidoc/)  составленного Томом Джонсоном, техническим писателем Amazon.
 
