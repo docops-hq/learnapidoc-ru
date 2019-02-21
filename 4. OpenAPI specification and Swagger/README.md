@@ -38,4 +38,4 @@
 
 [**4.17. Stoplight - инструменты визуального моделирования для создания спецификаций** (4.17. Stoplight visual modeling tool for creating your spec)](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.17.%20Stoplight%20visual%20modeling%20tool%20for%20creating%20your%20spec.md)
 
-[**4.18. Интеграция Swagger с собственной документацией** (4.18. Integrating Swagger UI with the rest of your docs)](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.18.%20Integrating%20Swagger%20UI%20with%20the%20rest%20of%20your%20docs.md)
+[**4.18. Интеграция Swagger с документацией** (4.18. Integrating Swagger UI with the rest of your docs)](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.18.%20Integrating%20Swagger%20UI%20with%20the%20rest%20of%20your%20docs.md)
