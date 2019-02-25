@@ -1,18 +1,18 @@
 # Безадресные разделы
 
-В то время как ссылочные темы в API, как правило, получают наибольшее внимание, бессылочные разделы, такие как разделы о начале работы, информация об авторизации, ограничении скорости, кодах состояния и ошибок, кратких справочных руководствах и других темах, составляют около половины документации.
+В то время как адресные темы в API, как правило, заслуживают наибольшее внимание, безадресным разделам, таким как разделы о начале работы, информация об авторизации, ограничении скорости, кодах состояния и ошибок, кратких справочных руководствах и других темах, уделяется около половины документации.
 
-Этими вопросами обычно занимаются технические писатели, а не разработчики.
+Такими разделами обычно занимаются технические писатели, а не разработчики.
 
-Вы можете оценить качество документации API, посмотрев, включает ли она эти не справочные темы.
+Оценить качество документации API можно, посмотрев включает ли она такие безадресные темы.
 
-# Содержание раздела "Безадресные разделы"
+# Содержание модуля "Безадресные разделы"
 
 [**6.1. Разделы руководства пользователя** (6.1. User guide topics)](https://github.com/Starkovden/Documenting_APIs/blob/master/6.%20Non-reference%20API%20topics/6.1.%20User%20guide%20topics.md)
 
 [**6.2. Обзор API** (6.2. API overview)](https://github.com/Starkovden/Documenting_APIs/blob/master/6.%20Non-reference%20API%20topics/6.2.%20API%20overview.md)
 
-[**6.3. Руководство по началу работы** (6.3. Getting started tutorial)](https://github.com/Starkovden/Documenting_APIs/blob/master/6.%20Non-reference%20API%20topics/6.3.%20Getting%20started%20tutorial.md)
+[**6.3. Начало работы** (6.3. Getting started tutorial)](https://github.com/Starkovden/Documenting_APIs/blob/master/6.%20Non-reference%20API%20topics/6.3.%20Getting%20started%20tutorial.md)
 
 [**6.4. Требования аутентификации и авторизации** (6.4. Authentification and authorization)](https://github.com/Starkovden/Documenting_APIs/blob/master/6.%20Non-reference%20API%20topics/6.4.%20Authentification%20and%20authorization.md)
 
