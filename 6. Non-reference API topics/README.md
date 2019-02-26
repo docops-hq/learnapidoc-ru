@@ -18,7 +18,7 @@
 
 [**Коды статусов и ошибок**](https://github.com/Starkovden/Documenting_APIs/blob/master/6.%20Non-reference%20API%20topics/6.5.%20Status%20and%20error%20codes.md)
 
-[**Пороговые значения**](https://github.com/Starkovden/Documenting_APIs/blob/master/6.%20Non-reference%20API%20topics/6.6.%20Rate%20limiting%20and%20thresholds.md)
+[**Ограничения скорости и пределы**](https://github.com/Starkovden/Documenting_APIs/blob/master/6.%20Non-reference%20API%20topics/6.6.%20Rate%20limiting%20and%20thresholds.md)
 
 [**Примеры кода и руководства**](https://github.com/Starkovden/Documenting_APIs/blob/master/6.%20Non-reference%20API%20topics/6.7.%20Code%20samples%20and%20tutorials.md)
 
