@@ -26,7 +26,7 @@
 
 [**Шаг 7: Объект `tags`**](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.11.%20Step%207%20The%20tags%20object.md)
 
-[**Объект `externalDocs`**](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.12.%20Step%208%20The%20externalDocs%20object.md)
+[**Шаг 8: Объект `externalDocs`**](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.12.%20Step%208%20The%20externalDocs%20object.md)
 
 [**Практическое занятие: Создание спецификации OpenAPI**](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.13.%20Activity%20Create%20an%20OpenAPI%20specification%20document.md)
 
