@@ -30,4 +30,4 @@
 
 [**Лучшие практики API**](https://github.com/Starkovden/Documenting_APIs/blob/master/6.%20Non-reference%20API%20topics/6.11.%20API%20best%20practices.md)
 
-[**Практическое занятие: Оценка бессылочного контента в проекте**](https://github.com/Starkovden/Documenting_APIs/blob/master/6.%20Non-reference%20API%20topics/6.12.%20Activity%20Assess%20the%20non_reference%20content%20in%20your%20project.md)
+[**Практическое занятие: Оценка безадресного контента в проекте**](https://github.com/Starkovden/Documenting_APIs/blob/master/6.%20Non-reference%20API%20topics/6.12.%20Activity%20Assess%20the%20non_reference%20content%20in%20your%20project.md)
