@@ -20,7 +20,7 @@
 
 [**Ограничения скорости и пределы**](https://github.com/Starkovden/Documenting_APIs/blob/master/6.%20Non-reference%20API%20topics/6.6.%20Rate%20limiting%20and%20thresholds.md)
 
-[**Примеры кода и руководства**](https://github.com/Starkovden/Documenting_APIs/blob/master/6.%20Non-reference%20API%20topics/6.7.%20Code%20samples%20and%20tutorials.md)
+[**Руководства кода и образцы**](https://github.com/Starkovden/Documenting_APIs/blob/master/6.%20Non-reference%20API%20topics/6.7.%20Code%20samples%20and%20tutorials.md)
 
 [**SDK и пример приложений**](https://github.com/Starkovden/Documenting_APIs/blob/master/6.%20Non-reference%20API%20topics/6.8.%20SDKs%20and%20sample%20apps.md)
 
