@@ -32,6 +32,6 @@ Docs-as-code включает в себя использование облег�
 
 [**Рекомендации - какой инструмент документирования выбирать**](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.13.%20Which%20tool%20to%20choose%20for%20API%20docs%20-%20my%20recommendations.md)
 
-[**Справочник по постоянному развертыванию Jekyll и CloudCannon**](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.14.%20Jekyll%20and%20CloudCannon%20continous%20deployment%20tutorial.md)
+[**Непрерывное развертывание Jekyll и CloudCannon**](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.14.%20Jekyll%20and%20CloudCannon%20continous%20deployment%20tutorial.md)
 
 [**Кейс для изучения: Переход на Docs-as-code**](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.15.%20Case%20Study%20Switching%20tools%20to%20docs_as_code.md)
