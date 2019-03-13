@@ -10,7 +10,7 @@ Docs-as-code включает в себя использование облег�
 
 [**Список из 100 сайтов с API документацией**](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.2.%20List%20of%20100%20API%20doc%20sites.md)
 
-[**Шаблоны проектирования и сайты API документации**](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.3.%20Design%20patterns%20with%20API%20doc%20sites.md)
+[**Шаблоны проектирования сайтов API документации**](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.3.%20Design%20patterns%20with%20API%20doc%20sites.md)
 
 [**Инструменты Docs-as-code**](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.4.%20Doc_as_code%20tools.md)
 
