@@ -6,7 +6,7 @@ Docs-as-code включает в себя использование облег�
 
 # Содержание раздела "Публикация документации"
 
-[**Обзор раздела "Публикация документации"**](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.1.%20Overview%20for%20publishing%20API%20docs.md)
+[**Обзор вариантов публикации документации**](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.1.%20Overview%20for%20publishing%20API%20docs.md)
 
 [**Список из 100 сайтов с API документацией**](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.2.%20List%20of%20100%20API%20doc%20sites.md)
 
