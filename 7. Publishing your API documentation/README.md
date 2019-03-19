@@ -16,7 +16,7 @@ Docs-as-code включает в себя использование облег�
 
 [**Подробнее о Markdown**](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.5.%20More%20about%20Markdown.md)
 
-[**Система контроля версий (пример Git)**](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.6.%20Version%20control%20system%20(such%20as%20Git).md)
+[**Система контроля версий (пример Git)**](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.6.%20Version%20control%20system%20such%20as%20Git.md)
 
 [**Практическое занятие: Управляем контентом в Wiki Github**](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.7.%20Activity%20Manage%20content%20in%20a%20GitHub%20wiki.md)
 
