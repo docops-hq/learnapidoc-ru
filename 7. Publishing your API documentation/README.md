@@ -28,7 +28,7 @@ Docs-as-code включает в себя использование облег�
 
 [**Варианты хостинга и развертывания**](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.11.%20Hosting%20and%20deployment%20options.md)
 
-[**Опции Headless CMS**](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.12.%20Headless%20CMS%20options.md)
+[**Возможности автономных CMS**](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.12.%20Headless%20CMS%20options.md)
 
 [**Рекомендации - какой инструмент документирования выбирать**](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.13.%20Which%20tool%20to%20choose%20for%20API%20docs%20-%20my%20recommendations.md)
 
