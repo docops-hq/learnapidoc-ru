@@ -14,4 +14,4 @@
 
 [**Необходимое количество кода, которое нужно знать**](how-much-code-to-know.md)
 
-[**Лучшие локации для работы**](best-MainScreenServicesPopularСommunicationTypesGetData.md)
+[**Лучшие локации для работы**](best-locations.md)
