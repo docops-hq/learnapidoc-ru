@@ -34,5 +34,5 @@
 6. [**Безадресные разделы**](https://github.com/Starkovden/Documenting_APIs/tree/master/6.%20Non-reference%20API%20topics)
 7. [**Публикация документации**](https://github.com/Starkovden/Documenting_APIs/tree/master/7.%20Publishing%20your%20API%20documentation)
 8. [**Работа технического писателя**](/Getting-job)
-9. [**Исходные библиотеки API**](https://github.com/Starkovden/Documenting_APIs/tree/master/9.%20Native%20library%20APIs)
-10. [**Глоссарий API и источники**](https://github.com/Starkovden/Documenting_APIs/tree/master/10.%20API%20glossary%20and%20Resourses)
+9. [**Исходные библиотеки API**](/Native-library)
+10. [**Глоссарий API и источники**](/glossary-and-resourses)
