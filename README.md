@@ -30,7 +30,7 @@
 2. [**Использование API в роли разработчика**](https://github.com/Starkovden/Documenting_APIs/tree/master/2.%20Using%20an%20API%20like%20a%20developer)
 3. [**Документирование конечных точек**](https://github.com/Starkovden/Documenting_APIs/tree/master/3.%20Documenting%20API%20endpoints)
 4. [**Спецификация OpenAPI и Swagger**](https://github.com/Starkovden/Documenting_APIs/tree/master/4.%20OpenAPI%20specification%20and%20Swagger)
-5. [**Тестирование документации**](https://github.com/Starkovden/Documenting_APIs/tree/master/5.%20Testing%20API%20documentaion)
+5. [**Тестирование документации**](testing-api-doc)
 6. [**Концептуальные разделы**](conceptual-topics)
 7. [**Публикация документации**](Publishing-doc)
 8. [**Работа технического писателя**](/Getting-job)
