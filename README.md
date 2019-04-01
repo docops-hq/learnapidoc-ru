@@ -28,7 +28,7 @@
 
 1. [**Введение в REST API**](introduction-rest-apis)
 2. [**Использование API в роли разработчика**](like-developer)
-3. [**Документирование конечных точек**](https://github.com/Starkovden/Documenting_APIs/tree/master/3.%20Documenting%20API%20endpoints)
+3. [**Документирование конечных точек**](documenting-api-endpoints)
 4. [**Спецификация OpenAPI и Swagger**](https://github.com/Starkovden/Documenting_APIs/tree/master/4.%20OpenAPI%20specification%20and%20Swagger)
 5. [**Тестирование документации**](testing-api-doc)
 6. [**Концептуальные разделы**](conceptual-topics)
