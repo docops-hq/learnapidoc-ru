@@ -12,22 +12,22 @@
 
 # Содержание модуля "Документирование конечных точек"
 
-[**Документирование новой конечной точки**](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.1.%20A%20new%20endpoint%20to%20document.md)
+[**Документирование новой конечной точки**](new-endpoint.md)
 
-[**Обзор пошагового описания API ссылки**](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.2.%20API%20reference%20tutorial%20overview.md)
+[**Обзор пошагового описания API ссылки**](api-reference-tutorial-overview.md)
 
-[**Шаг 1: Описание ресурса**](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.3.%20Step%201%20Resourse%20description.md)
+[**Шаг 1: Описание ресурса**](step1-resourse-description.md)
 
-[**Шаг 2: Конечные точки и методы**](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.4.%20Step%202%20Endpoints%20and%20methods.md)
+[**Шаг 2: Конечные точки и методы**](step2-endpoints-and-methods.md)
 
-[**Шаг 3: Параметры**](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.5.%20Step%203%20Parameters.md)
+[**Шаг 3: Параметры**](step3-parameters.md)
 
-[**Шаг 4: Пример запроса**](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.6.%20Step%204%20Request%20example.md)
+[**Шаг 4: Пример запроса**](step4-request-example.md)
 
-[**Шаг 5: Пример и схема ответа**](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.7.%20Step%205%20Response%20example%20and%20schema.md)
+[**Шаг 5: Пример и схема ответа**](step5-response-example-and-schema.md)
 
-[**Собираем все вместе**](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.8.%20Putting%20it%20all%20together.md)
+[**Собираем все вместе**](putt-all-together.md)
 
-[**Практическое занятие: Поиск open-source проекта**](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.9.%20Activity%20Find%20an%20open%20source%20project.md)
+[**Практическое занятие: Поиск open-source проекта**](find-open-source-project.md)
 
-[**Практическое занятие: Оценка ключевых элементов API документации**](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.10.%20Activity%20Evaluate%20API%20referense%20docs%20for%20core%20elements.md)
+[**Практическое занятие: Оценка ключевых элементов API документации**](evaluate-api-referense-docs.md)
