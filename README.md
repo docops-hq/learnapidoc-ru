@@ -32,7 +32,7 @@
 4. [**Спецификация OpenAPI и Swagger**](https://github.com/Starkovden/Documenting_APIs/tree/master/4.%20OpenAPI%20specification%20and%20Swagger)
 5. [**Тестирование документации**](https://github.com/Starkovden/Documenting_APIs/tree/master/5.%20Testing%20API%20documentaion)
 6. [**Безадресные разделы**](https://github.com/Starkovden/Documenting_APIs/tree/master/6.%20Non-reference%20API%20topics)
-7. [**Публикация документации**](https://github.com/Starkovden/Documenting_APIs/tree/master/7.%20Publishing%20your%20API%20documentation)
+7. [**Публикация документации**](Publishing-doc)
 8. [**Работа технического писателя**](/Getting-job)
 9. [**Исходные библиотеки API**](/Native-library)
 10. [**Глоссарий API и источники**](/glossary-and-resourses)
