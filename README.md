@@ -31,7 +31,7 @@
 3. [**Документирование конечных точек**](https://github.com/Starkovden/Documenting_APIs/tree/master/3.%20Documenting%20API%20endpoints)
 4. [**Спецификация OpenAPI и Swagger**](https://github.com/Starkovden/Documenting_APIs/tree/master/4.%20OpenAPI%20specification%20and%20Swagger)
 5. [**Тестирование документации**](https://github.com/Starkovden/Documenting_APIs/tree/master/5.%20Testing%20API%20documentaion)
-6. [**Безадресные разделы**](conceptual-topics)
+6. [**Концептуальные разделы**](conceptual-topics)
 7. [**Публикация документации**](Publishing-doc)
 8. [**Работа технического писателя**](/Getting-job)
 9. [**Исходные библиотеки API**](/Native-library)
