@@ -1,7 +1,6 @@
 # Получаем ключ авторизации
 
-Почти каждый сайт API имеет метод для аутентификации запросов. Обычно мы предоставляем ключ API в своих запросах для получения ответа
-. Хотя позже мы углубимся в [аутентификацию и авторизацию](https://github.com/Starkovden/Documenting_APIs/blob/master/6.%20Non-reference%20API%20topics/6.4.%20Authentification%20and%20authorization.md), нам нужно получить ключи API, чтобы отправлять запросы нашему API погоды.
+Почти каждый сайт API имеет метод для аутентификации запросов. Обычно мы предоставляем ключ API в своих запросах для получения ответа. Хотя позже мы углубимся в [аутентификацию и авторизацию](../conceptual-topics/authentication-and-authorization.md), нам нужно получить ключи API, чтобы отправлять запросы нашему API погоды.
 
 [Зачем запросу нужна авторизация](#auth)
 
@@ -44,7 +43,7 @@
 4. После входа в аккаунт нажимаем `Account` в правом верхнем углу.
 5. Нажимаем `Apps`(во втором навигационном ряду справа от `Usage`) и там выбираем `New Application`
 
-![aeris](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/pics/5.png?raw=true)
+![aeris](pics/5.png)
 
 6. В диалоговом окне **Add a New Application** вводим следующее:
  - **Application Name**: My biking app (or something)
