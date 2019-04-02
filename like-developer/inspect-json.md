@@ -31,28 +31,30 @@
 
 2. сохраняем файл с именем **weather.html**
 
-3. Открываем Postman и переходим к конечной точке "Текущие данные погоды", которую мы сконфигурировали ранее в [Отправке запросов в Postman](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/2.3.%20Submit%20requests%20through%20Postman.md)
+3. Открываем Postman и переходим к конечной точке "Текущие данные погоды", которую мы сконфигурировали ранее в [Отправке запросов в Postman](submit-requests-postman.md)
 
 4. Нажимаем на ссылку `Code` (под кнопкой `Save`) и выбираем **JavaScript > jQuery AJAX**
 
-![ajax](https://github.com/Starkovden/Documenting_APIs/blob/master/1.%20Introduction%20to%20REST%20APIs/pics/7.png?raw=true)
+![ajax](pics/7.png)
 
 Код AJAX должен выглядеть так:
 
-    var settings = {
-        "async": true,
-        "crossDomain": true,
-        "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
-        "method": "GET",
-        "headers": {
-            "cache-control": "no-cache",
-            "postman-token": "e9be9756-b922-89b3-7109-66bc4cf06b17"
-        }
-    }
+```
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+  "method": "GET",
+  "headers": {
+    "cache-control": "no-cache",
+    "postman-token": "e9be9756-b922-89b3-7109-66bc4cf06b17"
+  }
+}
 
-    $.ajax(settings).done(function (response) {
-        console.log(response);
-    });
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
 
 5. Нажимаем на `Copy to clipboard` чтобы скопировать пример кода.
 
@@ -69,29 +71,32 @@
 
 Финальный код должен выглядеть так:
 
-    <html>
-        <meta charset="UTF-8">
-        <head>
-            <title>Sample page</title>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-            <script>
-                var settings = {
-                    "async": true,
-                    "crossDomain": true,
-                    "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050,us&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
-                    "method": "GET"
-                }
+```
+<!DOCTYPE html>
+<html>
+   <meta charset="UTF-8">
+   <head>
+      <meta charset="UTF-8">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <title>Sample Page</title>
+      <script>
+         var settings = {
+           "async": true,
+           "crossDomain": true,
+           "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+           "method": "GET"
+         }
 
-                $.ajax(settings).done(function (response) {
-                    console.log(response);                 
-                });
-            </script>
-        </head>
-        <body>
-            <h2>Sample page</h2>
-
-        </body>
-    </html>
+         $.ajax(settings).done(function (response) {
+           console.log(response);
+         });
+      </script>
+   </head>
+   <body>
+      <h1>Sample Page</h1>
+   </body>
+</html>
+```
 
 > Файл можно посмотреть по адресу [ idratherbewriting.com/learnapidoc/assets/files/weather-plain.html](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html) Там же добавлены инструкции, как открыть консоль разработчика, потому что в противном случае отображение страницы на этом этапе в учебнике будет полностью пустым.
 
@@ -101,7 +106,7 @@
 
 Тело страницы будет пустым, но ответ о погоде должен быть записан в консоли JavaScript (из-за кода console.log (response) в запросе). Если развернуть объект, возвращенный в консоль, он будет выглядеть следующим образом:
 
-![Console](https://github.com/Starkovden/Documenting_APIs/blob/master/1.%20Introduction%20to%20REST%20APIs/pics/8.png?raw=true)
+![Console](pics/8.png)
 
 Теперь эта информация доступна для интеграции на вашей странице.
 
@@ -110,22 +115,26 @@
 
 В этом разделе узнаем больше о функции `ajax`, которую мы использовали ранее. Возможно, эта информация не важна для документирования API, но ее хорошо понимать. Скрипт `ajax`в коде выглядит так:
 
-    <script>
-        var settings = {
-            "async": true,
-            "crossDomain": true,
-            "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
-            "method": "GET"
-        }
+```
+<script>
+   var settings = {
+     "async": true,
+     "crossDomain": true,
+     "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+     "method": "GET"
+   }
 
-        $.ajax(settings).done(function (response) {
-            console.log(response);
-        });
-    </script>
+   $.ajax(settings).done(function (response) {
+     console.log(response);
+   });
+</script>
+```
 
 Если вы работаете с JavaScript и API, [метод `ajax` из jQuery](http://api.jquery.com/jquery.ajax/) может помочь с примерами кода. Метод `ajax` ниже принимает один аргумент: `settings`
 
-    $.ajax(settings)
+```
+$.ajax(settings)
+```
 
 Аргумент `settings` - это объект, который содержит множество пар ключ-значение.
 
@@ -140,8 +149,10 @@
 
 Получаем ответ, вызвав метод `done`.
 
-    $.ajax(settings).done(function (response) {
-    })
+```
+$.ajax(settings).done(function (response) {
+})
+```
 
 В предыдущем примере кода `done` содержит анонимную функцию (функцию без имени), которая выполняется при вызове `done`. Объект ответа от вызова `ajax` назначается аргументу метода `done`, который в данном случае является `response`. (Можно назвать аргумент как угодно.)
 
@@ -149,7 +160,7 @@
 
 Новичку в JavaScript, возможно, будет немного непонятно сейчас. Если это так, не беспокойтесь - чем больше вы его используете, тем яснее становится код.
 
-> Заметили, как сложно объяснить код? Это одна из задач документации. К счастью, нам не нужно много объяснять о стандартных языках программирования, таких как JavaScript. Но, возможно, понадобиться объяснить, как работать с API на разных языках. Рассмотрим эту тему более подробно в [Примеры кода и руководства](https://github.com/Starkovden/Documenting_APIs/blob/master/6.%20Non-reference%20API%20topics/6.7.%20Code%20samples%20and%20tutorials.md).
+> Заметили, как сложно объяснить код? Это одна из задач документации. К счастью, нам не нужно много объяснять о стандартных языках программирования, таких как JavaScript. Но, возможно, понадобиться объяснить, как работать с API на разных языках. Рассмотрим эту тему более подробно в [Примеры кода и руководства](../conceptual-topics/code-samples.md).
 
 <a name="logging"></a>
 ## Логгирование ответов в консоли
