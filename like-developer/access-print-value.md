@@ -1,6 +1,6 @@
 # Доступ и вывод на страницу определенного значения JSON
 
-Этот раздел продолжает предыдущую тему: [Изучение полезных данных в JSON ответе](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/2.9.%20Inspect%20the%20JSON%20from%20the%20response%20payload.md). На [странице](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html), где мы залоггировали ответ от сервиса погоды на консоль JS, информация ответа REST не появилась на странице. Она появилась только в консоли JS. Нам нужно использовать точечную нотацию и JavaScript для доступа к нужным значениям JSON. В этом разделе мы используем JavaScript, чтобы отобразить часть ответа на странице.
+Этот раздел продолжает предыдущую тему: [Изучение полезных данных в JSON ответе](inspect-json.md). На [странице](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html), где мы залоггировали ответ от сервиса погоды на консоль JS, информация ответа REST не появилась на странице. Она появилась только в консоли JS. Нам нужно использовать точечную нотацию и JavaScript для доступа к нужным значениям JSON. В этом разделе мы используем JavaScript, чтобы отобразить часть ответа на странице.
 
 Обратите внимание, что в этом разделе будет использовать JavaScript. Может быть, в будущем этот код не пригодится при документировании, но знать его будет не лишним.
 
@@ -19,65 +19,74 @@ JSON был бы не очень полезен, если бы всегда пр
 
 Допустим, мы хотим извлечь часть о скорости ветра в ответе JSON. Так выглядит точечная нотация, которую нужно использовать:
 
-    response.wind.speed
+```
+response.wind.speed
+```
 
-Чтобы извлечь элемент скорости ветра из ответа JSON и распечатать его в консоли JavaScript, добавьте его в пример кода (который вы создали в [предыдущем разделе](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/2.9.%20Inspect%20the%20JSON%20from%20the%20response%20payload.md)) прямо под строкой `console.log (response)`:
+Чтобы извлечь элемент скорости ветра из ответа JSON и распечатать его в консоли JavaScript, добавьте его в пример кода (который вы создали в [предыдущем разделе](inspect-json.md)) прямо под строкой `console.log (response)`:
 
     console.log("wind speed: " + response.wind.speed);
 
 Код будет выглядеть так:
 
-    $.ajax(settings).done(function (response) {
-        console.log(response);
-        console.log("wind speed: " + response.wind.speed);
-    });
-
+```
+$.ajax(settings).done(function (response) {
+    console.log(response);
+    console.log("wind speed: " + response.wind.speed);
+});
+```
 После этого обновляем браузер и видим информацию, появившуюся в консоли.
 
-    wind speed: 13.87
+```
+wind speed: 13.87
+```
 
 <a name="printValue"></a>
 ## Вывод JSON значения на страницу
 
 Допустим, вы хотели вывести часть JSON (данные о скорости ветра) на страницу, а не только в консоли. (Под словом вывести"  подразумевается отображение значения странице, а не отправка на принтер.) Для вывода значения требуется немного JavaScript (или jQuery для упрощения).
 
-Работать будем с [тем же кодом](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html) из [предыдущего раздел](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/2.9.%20Inspect%20the%20JSON%20from%20the%20response%20payload.md)а. Этот код выглядит так:
+Работать будем с [тем же кодом](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html) из [предыдущего раздел](inspect-json.md)а. Этот код выглядит так:
 
-    <html>
-        <meta charset="UTF-8">
-            <head>
-            <title>Sample page</title>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-            <script>
-                var settings = {
-                    "async": true,
-                    "crossDomain": true,
-                    "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050,us&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
-                    "method": "GET"
-                }
+```
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <title>Sample Page</title>
+      <script>
+         var settings = {
+           "async": true,
+           "crossDomain": true,
+           "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+           "method": "GET"
+         }
 
-                $.ajax(settings).done(function (response) {
-                    console.log(response);                 
-                });
-            </script>
-        </head>
-        <body>
-            <h2>Sample page</h2>
-
-        </body>
-    </html>
+         $.ajax(settings).done(function (response) {
+           console.log(response);
+         });
+      </script>
+   </head>
+   <body>
+      <h1>Sample Page</h1>
+   </body>
+</html>
+```
 
 Для вывода определенного значения ответа на страницу:
 
 1. Добавим следующие строки внутрь функции `ajax`
 
-        $.ajax(settings).done(function (response) {
-        console.log(response);
+```
+$.ajax(settings).done(function (response) {
+console.log(response);
 
-        var content = response.wind.speed;
-        $("#windSpeed").append(content);
+var content = response.wind.speed;
+$("#windSpeed").append(content);
 
-        });
+});
+```
 
 2. В теле страницы (внутри тега `body`) добавим следующий тэг `div`:
 
@@ -88,33 +97,36 @@ JSON был бы не очень полезен, если бы всегда пр
 
 Код должен получиться таким:
 
-    <html>
-        <meta charset="UTF-8">
-            <head>
-            <title>Sample page</title>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-            <script>
-                var settings = {
-                    "async": true,
-                    "crossDomain": true,
-                    "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050,us&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
-                    "method": "GET"
-                }
+```
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <title>Sample Page</title>
+      <script>
+         var settings = {
+           "async": true,
+           "crossDomain": true,
+           "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+           "method": "GET"
+         }
 
-                $.ajax(settings).done(function (response) {
-                    console.log(response);                 
+         $.ajax(settings).done(function (response) {
+           console.log(response);
 
-                    var content = response.wind.speed;
-                    $("#windSpeed").append(content);
+           var content = response.wind.speed;
+           $("#windSpeed").append(content);
 
-                });
-            </script>
-        </head>
-        <body>
-            <h2>Sample page</h2>
-            <div id="windSpeed">Wind speed: </div>
-        </body>
-    </html>
+         });
+      </script>
+   </head>
+   <body>
+      <h1>Sample Page</h1>
+      <div id="windSpeed">Wind speed: </div>
+   </body>
+</html>
+```
 
 3. Обновляем страницу и видим отображение скорости ветра на странице Пример [здесь](https://idratherbewriting.com/learnapidoc/assets/files/weather-windspeed.html) с выведенными со скоростью ветра и погодными условиями.
 
@@ -122,15 +134,21 @@ JSON был бы не очень полезен, если бы всегда пр
 
 В теге метода `done` AJAX'а извлекли желаемое значение в переменную:
 
-        var content = response.wind.speed;
+```
+var content = response.wind.speed;
+```
 
 И добавили названный элемент в тело страницы
 
-        <div id="windSpeed">Wind speed: </div>
+```
+<div id="windSpeed">Wind speed: </div>
+```
 
 Мы использовали [метод `append` jQuery](Мы использовали метод append jQuery для добавления переменной содержимого к элементу с идентификатором windSpeed ​​на странице:) для добавления переменной `content` к элементу с ID `windSpeed` ​​на странице:
 
-        $("#windSpeed").append(content);
+```
+$("#windSpeed").append(content);
+```
 
 Этот код говорит: найди элемент с ID `windSpeed` и добавь переменную `content` после него.
 
@@ -139,55 +157,67 @@ JSON был бы не очень полезен, если бы всегда пр
 
 В предыдущей части мы получили значение из объекта JSON. Теперь получим значение из массива. Давайте получим свойство `main` из массива `weather` в ответе. Вот как выглядит массив JSON:
 
+```
+{
+  "weather": [
     {
-        "weather": [
-            {
-                "id": 801,
-                "main": "Clouds",
-                "description": "few clouds",
-                "icon": "02d"
-            }
-        ]
+      "id": 801,
+      "main": "Clouds",
+      "description": "few clouds",
+      "icon": "02d"
     }
+  ]
+]
+}
+```
 
 Помните, что квадратные скобки означают массив. Внутри массива погоды находится неназванный объект. Чтобы получить основной элемент из этого массива, нужно использовать следующую точечную нотацию:
 
-    response.weather[0].main
+```
+response.weather[0].main
+```
 
 В то время как объекты позволяют вам получить определенное свойство, массивы требуют, чтобы вы выбрали нужную позицию в списке.
 
 Теперь код будет выглядеть так:
 
-    <html>
-        <meta charset="UTF-8">
-            <head>
-            <title>Sample page</title>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-            <script>
-                var settings = {
-                    "async": true,
-                    "crossDomain": true,
-                    "url": "http://api.openweathermap.org/data/2.5/weather?zip=95050,us&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
-                    "method": "GET"
-                }
+```
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<title>Sample Page</title>
 
-                $.ajax(settings).done(function (response) {
-                    console.log(response);                 
+<script>
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+  "method": "GET"
+}
 
-                    var content = response.wind.speed;
-                    $("#windSpeed").append(content);
+$.ajax(settings).done(function (response) {
+  console.log(response);
 
-                    var currentWeather = response.weather[0].main;
-                    $("#currentWeather").append(currentWeather);
-                });
-            </script>
-        </head>
-        <body>
-            <h2>Sample page</h2>
-            <div id="windSpeed">Wind speed: </div>
-            <div id="currentWeather">Current weather conditions: </div>
-        </body>
-    </html>
+  var content = response.wind.speed;
+  $("#windSpeed").append(content);
+
+  var currentWeather = response.weather[0].main;
+  $("#currentWeather").append(currentWeather);
+
+});
+</script>
+</head>
+<body>
+<h1>Sample Page</h1>
+
+<div id="windSpeed">Wind speed: </div>
+<div id="currentWeather">Current weather conditions: </div>
+
+</body>
+</html>
+```    
 
 <a name="more"></a>
 ## Дополнительные упражнения
