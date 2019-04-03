@@ -107,4 +107,4 @@
 <a name="nextStep"></a>
 ## Следующие шаги
 
-Давайте перейдем к [Обзору пошагового описания API](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.2.%20API%20reference%20tutorial%20overview.md)  для обзора пяти шагов, которые мы рассмотрим при создании раздела адресного API для этой новой конечной точки.
+Давайте перейдем к [Обзору пошагового описания API](api-reference-tutorial-overview.md)  для обзора пяти шагов, которые мы рассмотрим при создании раздела адресного API для этой новой конечной точки.
