@@ -159,19 +159,26 @@
 
 Получаем прогноз погоды для  своего района, используя конечную точку [Observations](https://www.aerisweather.com/support/docs/api/reference/endpoints/observations/):
 
-        http://api.aerisapi.com/observations/Santa+Clara,CA?client_id=CLIENTID&client_secret=CLIENTSECRET&limit=1
+```
+http://api.aerisapi.com/observations/Santa+Clara,CA?client_id=CLIENTID&client_secret=CLIENTSECRET&limit=1
+```
 
 Получите погоду из города на экваторе - Чимборасо, Эквадор, используя ту же точку [Observations](https://www.aerisweather.com/support/docs/api/reference/endpoints/observations/):
 
-        http://api.aerisapi.com/observations/Chimborazo,Ecuador?client_id=CLIENTID&client_secret=CLIENTSECRET&limit=1
+```
+http://api.aerisapi.com/observations/Chimborazo,Ecuador?client_id=CLIENTID&client_secret=CLIENTSECRET&limit=1
+```
 
 Узнайте, вся ли музыка кантри в Ноксвилле, штат Теннесси, дает людям мигрени, используя конечную конечную точку [Indices](https://www.aerisweather.com/support/docs/api/reference/endpoints/indices/):
 
-        http://api.aerisapi.com/indices/migraine/Knoxville,TN?client_id=CLIENTID&client_secret=CLIENTSECRET
+```http://api.aerisapi.com/indices/migraine/Knoxville,TN?client_id=CLIENTID&client_secret=CLIENTSECRET
+```
 
 Подумываете о переезде в Аризону, но вы хотите найти получше место? Используйте конечную точку [normals](https://www.aerisweather.com/support/docs/api/reference/endpoints/normals/)
 
-        http://api.aerisapi.com/normals/flagstaff,az?client_id=CLIENTID&client_secret=CLIENTSECRET&limit=5&filter=hassnow
+```
+http://api.aerisapi.com/normals/flagstaff,az?client_id=CLIENTID&client_secret=CLIENTSECRET&limit=5&filter=hassnow
+```
 
 > И с OpenWeatherMap, и с Aeris Weather API можно сделать эти запросы, просто перейдя по URL-адресу в адресной строке (поскольку API передаются в строке запроса, а не в заголовке). Используйте [расширение JSON Formatter для Chrome](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en), чтобы автоматически форматировать ответ JSON в представлении браузера.
 
@@ -194,4 +201,4 @@ Postman имеет отличную функцию импорта, котора�
 
 Для импорта: нужно скопировать адрес ссылки, в Postman нажать `Import` в верхнем левом углу. Затем перейдите на вкладку `Import from link`, вставить адрес и нажать `Import`.
 
-> Если вы хотите узнать больше о Postman, послушайте это [интервью с основателем Postman](https://idratherbewriting.com/2018/01/22/postman-for-docs-podcast/). Интервью записано как часть подкаста [Write the Docs](https://podcast.writethedocs.org/). Дополнительные сведения о создании кнопок «Выполнить в Postman» см. в разделе [Run in Postman button](https://idratherbewriting.com/learnapidoc/docapis_doc_getting_started_section.html#runinpostmanbutton) .
+> Если вы хотите узнать больше о Postman, послушайте это [интервью с основателем Postman](https://idratherbewriting.com/2018/01/22/postman-for-docs-podcast/). Интервью записано как часть подкаста [Write the Docs](https://podcast.writethedocs.org/). Дополнительные сведения о создании кнопок «Выполнить в Postman» см. в разделе [Run in Postman button](../conceptual-topics/getting-started.md#button) .
