@@ -15,7 +15,7 @@
 2. В любом запросе кликаем на кнопку `Code` под кнопкой `Save`
 3. В диалоговом окне "Generate Code Snippets" выбираем cURL из выпадающего списка и нажимаем на кнопку `Copy to Clipboard`
 
-![Generate_code_snippets](https://github.com/Starkovden/Documenting_APIs/blob/master/1.%20Introduction%20to%20REST%20APIs/pics/6.png?raw=true)
+![Generate_code_snippets](pics/6.png)
 
 Код Postman для запроса прогноза погоды OpenWeatherMap выглядит в формате cURL следующим образом:
 
