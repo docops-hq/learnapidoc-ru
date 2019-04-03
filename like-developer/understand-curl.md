@@ -32,12 +32,13 @@ curl предоставляет общий, независимый от язык
 <a name="getPage"></a>
 ## Используем curl для получения веб-страницы
 
-Как упоминалось ранее, одна из причин, по которой API REST настолько знакомы, заключается в том, что REST следует той же модели, что и веб (см. [Что такое REST API?](https://github.com/Starkovden/Documenting_APIs/blob/master/1.%20Introduction%20to%20REST%20APIs/1.8.What%20is%20REST%20API.md)).При вводе http-адреса в адресную строку браузера, мы говорим браузеру сделать HTTP-запрос к ресурсу на сервере. Сервер возвращает ответ, а наш браузер преобразует ответ в более визуальное отображение. Но мы также можем увидеть и сырой код.
+Как упоминалось ранее, одна из причин, по которой API REST настолько знакомы, заключается в том, что REST следует той же модели, что и веб (см. [Что такое REST API?](../introduction-rest-api/what-is-rest-api.md)).При вводе http-адреса в адресную строку браузера, мы говорим браузеру сделать HTTP-запрос к ресурсу на сервере. Сервер возвращает ответ, а наш браузер преобразует ответ в более визуальное отображение. Но мы также можем увидеть и сырой код.
 
 Чтобы увидеть пример того, как curl извлекает веб-ресурс, откройте терминал и введите следующее:
 
-        curl http://example.com
-
+```
+curl http://example.com
+```
 
 Curl извлечет HTML-код для сайта [example.com](http://example.com/). Задача браузера - сделать этот код визуально читаемым. curl показывает, что мы на самом деле получаем.
 
@@ -48,35 +49,41 @@ Curl извлечет HTML-код для сайта [example.com](http://example
 
 1. Для того чтобы увидеть заголовок ответа в запрос curl добавим ключ `-i`:
 
-        curl http://example.com -i
+```
+curl http://example.com -i
+```
 
 Заголовок будет включен над телом ответа:
 
-        ~/projects $ curl http://example.com -I
-        HTTP/1.1 200 OK
-        Content-Encoding: gzip
-        Accept-Ranges: bytes
-        Cache-Control: max-age=604800
-        Content-Type: text/html; charset=UTF-8
-        Date: Tue, 04 Dec 2018 04:35:43 GMT
-        Etag: "1541025663+gzip"
-        Expires: Tue, 11 Dec 2018 04:35:43 GMT
-        Last-Modified: Fri, 09 Aug 2013 23:54:35 GMT
-        Server: ECS (sjc/4F91)
-        X-Cache: HIT
-        Content-Length: 606
+```
+~/projects $ curl http://example.com -I
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Accept-Ranges: bytes
+Cache-Control: max-age=604800
+Content-Type: text/html; charset=UTF-8
+Date: Tue, 04 Dec 2018 04:35:43 GMT
+Etag: "1541025663+gzip"
+Expires: Tue, 11 Dec 2018 04:35:43 GMT
+Last-Modified: Fri, 09 Aug 2013 23:54:35 GMT
+Server: ECS (sjc/4F91)
+X-Cache: HIT
+Content-Length: 606
+```
 
 2. Чтобы в ответе получить только заголовок используем ключ `-I`
 
-        curl http://example.com -I
+```
+curl http://example.com -I
+```
 
 Заголовок содержит метаданные ответа. Вся эта информация передается в браузер при запросе URL в нашем браузере (например, при просмотре веб-страницы в Интернете), но браузер не отображает эту информацию. Можно просмотреть информацию заголовка с помощью [консоли Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools/console/), перейдя на вкладку `Сеть`.
 
-
 3. Теперь давайте уточним метод. Метод GET (чтение) подразумевается по умолчанию, когда не указан другой метод, но мы сделаем это здесь явно с параметром -X:
 
-        curl -X GET http://example.com -I
-
+```
+curl -X GET http://example.com -I
+```
 
 При посещении веб-сайта, мы отправляем запрос, используя метод GET. Существуют и другие методы HTTP, которые можно использовать при взаимодействии с REST API. Вот общие методы, используемые при работе с конечными точками REST:
 
@@ -92,9 +99,11 @@ Curl извлечет HTML-код для сайта [example.com](http://example
 <a name="Unpacking"></a>
 ## Распаковка curl запроса API сервиса прогноза погоды
 
-Рассмотрим поближе запрос, который сделали в API сервиса прогноза погоды в предыдущем разделе [Создание curl запроса](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/2.5.%20Make%20a%20curl%20call.md):
+Рассмотрим поближе запрос, который сделали в API сервиса прогноза погоды в предыдущем разделе [Создание curl запроса](make-curl-call.md):
 
-        curl -X GET -H "Cache-Control: no-cache" -H "Postman-Token: 930d08d6-7b2a-6ea2-0725-27324755c684" "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
+```
+curl -X GET -H "Cache-Control: no-cache" -H "Postman-Token: 930d08d6-7b2a-6ea2-0725-27324755c684" "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
+```
 
 У curl есть сокращенные имена для различных опций, которые вы включаете в свой запрос.
 
@@ -108,7 +117,9 @@ Curl извлечет HTML-код для сайта [example.com](http://example
 
 Параметры почтового индекса (`zip`), идентификатора приложения (`appid`) и единиц (`units`) были переданы в конечную точку с помощью «строк запроса». Знак `?` добавленный к URL указывает начало строки запроса. Параметры строки запроса - это параметры, которые появляются после знака `?`:
 
-        ?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial
+```
+?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial
+```
 
 После строки запроса каждый параметр объединяется с другими параметрами через символ амперсанда `&`. Порядок параметров в строке запроса не имеет значения. Порядок имеет значение только в том случае, если параметры находятся *слева от строки запроса* (и, следовательно, являются частью самого URL-адреса). Любые настраиваемые части конечной точки, которые появляются перед строкой запроса, называются [параметрами пути](**INSERT LINK**) (разберем их позже).
 
