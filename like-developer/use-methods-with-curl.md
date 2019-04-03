@@ -1,7 +1,6 @@
 # Практическое занятие: Используем методы при помощи curl
 
-
-Наш [пример API прогноза погоды](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/2.1.%20Scenario%20for%20using%20a%20weather%20API.md) не позволяет использовать что-либо, кроме метода GET, поэтому для этого упражнения, чтобы использовать другие методы с curl, мы будем использовать [API-интерфейс petstore](http://petstore.swagger.io/). На самом деле мы не будем использовать интерфейс Swagger ([о чем мы поговорим позже](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.2.%20Introduction%20to%20the%20OpenAPI%20spec%20and%20Swagger.md)), на данный момент нам просто нужен API, с помощью которого мы можем создавать, обновлять и удалять контент.
+Наш [пример API прогноза погоды](using-api-scenario.md) не позволяет использовать что-либо, кроме метода GET, поэтому для этого упражнения, чтобы использовать другие методы с curl, мы будем использовать [API-интерфейс petstore](http://petstore.swagger.io/). На самом деле мы не будем использовать интерфейс Swagger ([о чем мы поговорим позже](../openAPI-specification/introduction-openapi-and-swagger.md)), на данный момент нам просто нужен API, с помощью которого мы можем создавать, обновлять и удалять контент.
 
 
 В этом примере с помощью Petstore API мы создадим нового питомца, обновим его, получим id питомца, удалим его, а затем попытаемся получить удаленного питомца.
@@ -161,7 +160,7 @@
 
 Указываем свой Id питомца и проверяем, что нет лишних пробелов.
 
-![import](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/pics/7.png?raw=true)
+![import](pics/7.png)
 
 3. Нажимаем на кнопку `Import`
 
