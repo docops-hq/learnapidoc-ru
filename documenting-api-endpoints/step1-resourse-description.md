@@ -1,6 +1,6 @@
 # Шаг 1. Описание ресурса (Описание API)
 
-| [**Шаг 1. Описание ресурса**](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.3.%20Step%201%20Resourse%20description.md) |-->| [*Шаг 2. Конечные точки и методы*](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.4.%20Step%202%20Endpoints%20and%20methods.md) |-->| [*Шаг 3. Параметры*](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.5.%20Step%203%20Parameters.md) |-->| [*Шаг 4. Пример запроса*](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.6.%20Step%204%20Request%20example.md)|-->| [*Шаг 5. Пример и схема ответа*](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.7.%20Step%205%20Response%20example%20and%20schema.md) |
+| [**Шаг 1. Описание ресурса**](step1-resourse-description.md) |-->| [*Шаг 2. Конечные точки и методы*](step2-endpoints-and-methods.md) |-->| [*Шаг 3. Параметры*](step3-parameters.md) |-->| [*Шаг 4. Пример запроса*](step4-request-example.md)|-->| [*Шаг 5. Пример и схема ответа*](step5-response-example-and-schema.md) |
 
 «Ресурсы» относятся к информации, возвращаемой API. Большинство API могут иметь различные категории информации или ресурсы, которые могут быть возвращены.
 
@@ -22,7 +22,7 @@
 
 Вот пример описания [API ресурса Campaigns](https://developer.mailchimp.com/documentation/mailchimp/reference/campaigns/#) проекта Mailchimp:
 
-![Campaigns](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/pics/1.png?raw=true)
+![Campaigns](pics/1.png)
 
 Как правило, API имеет несколько конечных точек, сгруппированных в одном ресурсе. В этом случае вы описываете как общий ресурс, так и отдельные конечные точки. Например, ресурс Campaigns имеет различные конечные точки, которые также описаны:
 
@@ -42,13 +42,13 @@
 
 А вот описание API ресурса Membership Object в проекте [Box](https://developer.box.com/reference#membership-object)
 
-![Box](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/pics/2.png?raw=true)
+![Box](pics/2.png)
 
 Для ресурса "Membership" (или "Object", как они его называют) существует 7 различных конечных точек или методов, которые вы можете вызвать. API Box описывает ресурс Membership и каждую из конечных точек, которые позволяют получить доступ к ресурсу.
 
 Иногда общий ресурс не описан; вместо этого в нем просто сгруппированы конечные точки. Основная часть описания появляется в каждой конечной точке. Например, в API Eventbrite есть ресурс Events:
 
-![events](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/pics/3.png?raw=true)
+![events](pics/3.png)
 
 Хотя ресурс "Events" здесь не описан, описания добавлены для каждой конечной точки. Ресурс Events содержит все эти конечные точки:
 
@@ -74,7 +74,7 @@
 
 В качестве еще одного примера вот пример ресурса Relationship API Instagram
 
-![Relationship](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/pics/4.png?raw=true)
+![Relationship](pics/4.png)
 
 Ресурс `Relationship` не описан, но является контейнером для конечных точек этого ресурса. Описания добавлены для каждого из ресурсов, сгруппированных в ресурсе Relationships:
 
@@ -101,14 +101,14 @@
 Описания ресурсов (а также описания конечных точек) обычно делают короткие, в 1-3 предложения. Что делать, если вы хотите добавить больше деталей? В этих ситуациях имейте в виду разницу между документацией ресурса и руководствами пользователя / пошаговыми инструкциями:
 
 - документация ресурса: краткая информация, на которую разработчики могут быстро ссылаться;
-- руководства пользователя / пошаговые инструкции: более подробные сведения о том, как использовать API, включая пошаговые инструкции, примеры кода, концепции и процедуры. Более подробно узнаем об этом в главе [Безадресные разделы](https://github.com/Starkovden/Documenting_APIs/tree/master/6.%20Non-reference%20API%20topics).
+- руководства пользователя / пошаговые инструкции: более подробные сведения о том, как использовать API, включая пошаговые инструкции, примеры кода, концепции и процедуры. Более подробно узнаем об этом в главе [Концептуальные разделы](../conceptual-topics/README.md).
 
 Хотя описание ресурса API содержит сводную информацию, содержащуюся в ресурсе, в 1-3 предложениях, можно дать более развернутую информацию в руководстве пользователя. (Можете дать ссылку на места в руководстве, где предоставлена более подробная информация.)
 
 <a name="surfReport"></a>
 ## Описание ресурса конечной точки Surfreport
 
-Давайте посмотрим на пример [wiki-страницы Surfreport](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.1.%20A%20new%20endpoint%20to%20document.md#wiki-%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0-surf-report-api) и попробуем сделать описание ресурса в 1-3 предложения.
+Давайте посмотрим на пример [wiki-страницы Surfreport](new-endpoint.md#wikiSerf) и попробуем сделать описание ресурса в 1-3 предложения.
 
 Вот пример автора:
 
@@ -119,4 +119,4 @@
 <a name="nextSteps"></a>
 ## Следующие шаги
 
-Теперь пришло время перечислить [конечные точки и методы](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.4.%20Step%202%20Endpoints%20and%20methods.md)
+Теперь пришло время перечислить [конечные точки и методы](step2-endpoints-and-methods.md)
