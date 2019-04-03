@@ -26,7 +26,7 @@
 
 ## Модули курса
 
-1. [**Введение в REST API**](../Documenting_APIs/introduction-rest-apis/README.md)
+1. [**Введение в REST API**](introduction-rest-apis/README.md)
 2. [**Использование API в роли разработчика**](like-developer/README.md)
 3. [**Документирование конечных точек**](documenting-api-endpoints/README.md)
 4. [**Спецификация OpenAPI и Swagger**](openAPI-specification/README.md)
