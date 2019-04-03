@@ -155,7 +155,7 @@
 
 Как и в случае OpenWeatherMap API, Aeris API не использует поле заголовка для передачи ключей API - ключ и секрет передаются непосредственно в URL-адресе запроса, как часть строки запроса.
 
-> При создании следующих запросов, вставьте свои собственные значения для `CLIENTID` и `CLIENTSECRET` (при условии, что вы получили их, выполняя практическое занятие [Получаем секретный код и ID Aeris Weather API](get-authorization-keys.md#idAeris)). При отсутствии `CLIENTID` и `CLIENTSECRET`, можно использовать [ключи автора](https://idratherbewriting.com/learnapidoc/assets/files/apikeys.txt).
+> При создании следующих запросов, вставьте свои собственные значения для `CLIENTID` и `CLIENTSECRET` (при условии, что вы получили их, выполняя практическое занятие [Получаем секретный код и ID Aeris Weather API](get-authorization-keys.md#idAeris) ). При отсутствии `CLIENTID` и `CLIENTSECRET`, можно использовать [ключи автора](https://idratherbewriting.com/learnapidoc/assets/files/apikeys.txt).
 
 Получаем прогноз погоды для  своего района, используя конечную точку [Observations](https://www.aerisweather.com/support/docs/api/reference/endpoints/observations/):
 
