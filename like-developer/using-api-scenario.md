@@ -19,7 +19,7 @@
 
 Допустим, я - веб-разработчик и хочу добавить информацию о погоде на свой сайт. Мой сайт для велосипедистов. Я хочу, чтобы пользователи, которые заходят на мой сайт, могли видеть текущее состояние ветра и температуры. Что-то вроде этого:
 
-![windy](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/pics/1.jpg?raw=true)
+![windy](pics/1.jpg)
 
 У меня нет собственной метеорологической службы, поэтому мне предстоит сделать несколько звонков в службу погоды, чтобы получить эту информацию. После этого я выдам информацию пользователям.
 
@@ -34,11 +34,11 @@
 
 Нажмем кнопку `Check wind conditions`, чтобы просмотреть сведения о ветре и температуре. Когда мы запрашиваем эти данные, вызывается API сервиса OpenWeatherMap. API получает информацию, а код JavaScript печатает информацию на странице.
 
-![goal](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/pics/2.png?raw=true)
+![goal](pics/2.png)
 
 Пример выше очень прост. Можно сделать более привлекательный интерфейс, например как этот:
 
-![interface](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/pics/3.png?raw=true)
+![interface](pics/3.png)
 
 Концепция и общие приемы более или менее совпадают. За кулисами код делает запросы к API сервиса погоды, а затем отображает возвращенную информацию в стилизованном пользовательском интерфейсе.
 
@@ -69,7 +69,7 @@
 <a name="aeris"></a>
 ## Исследуем API Aeris
 
-Прежде чем углубляться в API OpenWeatherMap, рассмотрим API другого сервиса погоды. В отличие от OpenWeatherMap API, [Aeris Weather API](https://idratherbewriting.com/learnapidoc/docapis_scenario_for_using_weather_api.html#-activity-get-familiar-with-the-openweathermap-api) более надежный и обширный. Исследуйте Aeris Weather API, выполнив следующие действия:
+Прежде чем углубляться в API OpenWeatherMap, рассмотрим API другого сервиса погоды. В отличие от OpenWeatherMap API, [Aeris Weather API](#familiar) более надежный и обширный. Исследуйте Aeris Weather API, выполнив следующие действия:
 
 1. Открываем сайт [https://www.aerisweather.com/](https://www.aerisweather.com/)
 2. Переходим в раздел документации, кликнув на название раздела `Documentation`
@@ -77,13 +77,12 @@
 4. Нажимаем на `Data Endpoints`
 5. Нажимаем на `Reference` в боковом меню и выбираем `Endpoints`(или переходим сразу [по прямой ссылке](https://www.aerisweather.com/support/docs/api/reference/endpoints/))
 
-![endpoints](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/pics/4.png?raw=true)
+![endpoints](pics/4.png)
 
 6. в списке конечных точек выберем [`observations`](https://www.aerisweather.com/support/docs/api/reference/endpoints/observations/)
 7. Просмотрите на тип информации, доступной через эту конечную точку. Предоставляет ли эта конечная точка информацию о ветре и температуре, подходящую для нашего сценария?
 
-> Вот API прогноза погоды Aeris в действии, совершающий в основном те же вызовы, показанные ранее с OpenWeatherMap: [idratherbewriting.com/learnapidoc/assets/files/wind-aeris.html](idratherbewriting.com/learnapidoc/assets/files/wind-aeris.html).
-
+> Вот API прогноза погоды Aeris в действии, совершающий в основном те же вызовы, показанные ранее с OpenWeatherMap: ![wind-aeris](pics/2.jpg).
 
 Для нашего сценария (отображение прогноза погоды на веб-сайте), мы могли бы использовать десятки различных API погоды.
 
@@ -104,4 +103,4 @@ API-интерфейсы значительно различаются по св
 
 Каждый сервис погоды имеет свой подход к документированию API. Как мы увидим, пройдя этот курс, разнообразие и уникальность каждого сайта, посвященного API, (даже при приближении к одной и той же теме - прогнозу погоды) создает много проблем для команд технических писателей. Меняются не только стили веб-сайтов, но и терминология API и словарный запас для описания похожих концепций.
 
-Как упоминалось ранее, REST API - это архитектурный стиль, который следует общим характеристикам и принципам; не все они соответствуют одному и тому же стандарту или спецификации. Пользователи должны прочитать документацию, чтобы понять, как использовать API. (См. [REST - это стиль, а не стандарт»](https://github.com/Starkovden/Documenting_APIs/blob/master/1.%20Introduction%20to%20REST%20APIs/1.8.What%20is%20REST%20API.md#rest---%D1%81%D1%82%D0%B8%D0%BB%D1%8C-%D0%B0-%D0%BD%D0%B5-%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82).)
+Как упоминалось ранее, REST API - это архитектурный стиль, который следует общим характеристикам и принципам; не все они соответствуют одному и тому же стандарту или спецификации. Пользователи должны прочитать документацию, чтобы понять, как использовать API. (См. [REST - это стиль, а не стандарт»](../introduction-rest-api/what-is-rest-api.md#style).)
