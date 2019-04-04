@@ -1,6 +1,6 @@
 # Практическое занятие: Создание спецификации OpenAPI
 
-В [руководстве по OpenAPI](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.4.%20OpenAPI%20tutorial%20overview.md) мы прошли 8 этапов создания документа в спецификации OpenAPI. Теперь стоит попрактиковаться сначала в редактировании, а затем и в создании документа спецификации OpenAPI.
+В [руководстве по OpenAPI](openapi-tutorial-overview.md) мы прошли 8 этапов создания документа в спецификации OpenAPI. Теперь стоит попрактиковаться сначала в редактировании, а затем и в создании документа спецификации OpenAPI.
 
 #### Содержание раздела
 
@@ -11,7 +11,7 @@
 <a name="edit"></a>
 ## 👨‍💻 Практическое занятие: редакция существующего документа в спецификации OpenAPI
 
-Используем простой [API Sunrise and sunset times](https://sunrise-sunset.org/api), чтобы лучше ознакомиться с процессом редактирования файла спецификации OpenAPI. [API Sunrise and sunset times](https://sunrise-sunset.org/api) не требует аутентификации с запросами, поэтому здесь отсутствуют сложные рабочие процессы аутентификации (можно пропустить [объект `security`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.10.%20Step%206%20security%20object.md)). В этом упражнении мы отредактируем некоторые из существующих значений в уже написанном документе спецификации OpenAPI.
+Используем простой [API Sunrise and sunset times](https://sunrise-sunset.org/api), чтобы лучше ознакомиться с процессом редактирования файла спецификации OpenAPI. [API Sunrise and sunset times](https://sunrise-sunset.org/api) не требует аутентификации с запросами, поэтому здесь отсутствуют сложные рабочие процессы аутентификации (можно пропустить [объект `security`](step6-security-object.md)). В этом упражнении мы отредактируем некоторые из существующих значений в уже написанном документе спецификации OpenAPI.
 
 Для редактирования спецификации OpenAPI:
 
@@ -21,14 +21,14 @@
 
 3. Определяем каждый из объектов корневого уровня спецификации OpenAPI:
 
-- [Шаг 1: Объект `openapi`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.5.%20Step%201%20The%20openapi%20object.md)
-- [Шаг 2: Объект `info`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.6.%20Step%202%20The%20info%20object.md)
-- [Шаг 3: Объект `servers`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.7.%20Step%203%20The%20servers%20object.md)
-- [Шаг 4: объект `paths`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.8.%20Step%204%20The%20paths%20object.md)
-- [Шаг 5: Объект `components`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.9.%20Step%205%20The%20components%20object.md)
-- [Шаг 6: Объект `security`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.10.%20Step%206%20security%20object.md)
-- [Шаг 7: Объект `tags`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.11.%20Step%207%20The%20tags%20object.md)
-- [Шаг 8: Объект `externalDocs`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.12.%20Step%208%20The%20externalDocs%20object.md)
+- [Шаг 1: Объект `openapi`](step1-openapi-object.md)
+- [Шаг 2: Объект `info`](step2-info-object.md)
+- [Шаг 3: Объект `servers`](step3-servers-object.md)
+- [Шаг 4: объект `paths`](step4-paths-object.md)
+- [Шаг 5: Объект `components`](step5-components-object.md)
+- [Шаг 6: Объект `security`](step6-security-object.md)
+- [Шаг 7: Объект `tags`](step7-tags-object.md)
+- [Шаг 8: Объект `externalDocs`](step8-externalDocs-object.md)
 
 4. В объекте `info`(в верхней части) внесите изменения в свойство `description` и посмотрите, как обновляется визуальный дисплей в правом столбце.
 5. В объекте `parameters` внесите изменения в одно из свойств описания и посмотрите, как обновляется визуальный редактор.
@@ -41,19 +41,19 @@
 <a name="create"></a>
 ## 👨‍💻 Создание документа в спецификации OpenAPI для выбранного API
 
-[На практике 3 модуля мы искали опен-сорс проект API](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.9.%20Activity%20Find%20an%20open%20source%20project.md#%D0%BF%D0%BE%D0%B8%D1%81%D0%BA-%D0%BE%D0%BF%D0%B5%D0%BD-%D1%81%D0%BE%D1%80%D1%81-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0-%D1%81-api), которому нужна была документация. Сейчас попробуем создать спецификацию OpenAPI для этого API. В зависимости от API, с которым мы решили работать, можно будет использовать этот документ как часть своего портфолио.
+[На практике 3 модуля мы искали опен-сорс проект API](../dpcomenting-api-endpoints/find-open-source-project.md), которому нужна была документация. Сейчас попробуем создать спецификацию OpenAPI для этого API. В зависимости от API, с которым мы решили работать, можно будет использовать этот документ как часть своего портфолио.
 
-Если этот опен-сорс проект не имеет API или API уже имеет спецификацию OpenAPI, можно найти другой API (возможно, из этого [списка из 100+ API](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.2.%20List%20of%20100%20API%20doc%20sites.md)) и создать спецификацию OpenAPI.
+Если этот опен-сорс проект не имеет API или API уже имеет спецификацию OpenAPI, можно найти другой API (возможно, из этого [списка из 100+ API](../Publishing-docs/API-doc-sites-list.md)) и создать спецификацию OpenAPI.
 
 При создании спецификации пройдем по каждому шагу руководства по спецификации OpenAPI, чтобы создать документацию API:
 
-- [Шаг 1: Объект `openapi`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.5.%20Step%201%20The%20openapi%20object.md)
-- [Шаг 2: Объект `info`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.6.%20Step%202%20The%20info%20object.md)
-- [Шаг 3: Объект `servers`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.7.%20Step%203%20The%20servers%20object.md)
-- [Шаг 4: объект `paths`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.8.%20Step%204%20The%20paths%20object.md)
-- [Шаг 5: Объект `components`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.9.%20Step%205%20The%20components%20object.md)
-- [Шаг 6: Объект `security`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.10.%20Step%206%20security%20object.md)
-- [Шаг 7: Объект `tags`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.11.%20Step%207%20The%20tags%20object.md)
-- [Шаг 8: Объект `externalDocs`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.12.%20Step%208%20The%20externalDocs%20object.md)
+- [Шаг 1: Объект `openapi`](step1-openapi-object.md)
+- [Шаг 2: Объект `info`](step2-info-object.md)
+- [Шаг 3: Объект `servers`](step3-servers-object.md)
+- [Шаг 4: объект `paths`](step4-paths-object.md)
+- [Шаг 5: Объект `components`](step5-components-object.md)
+- [Шаг 6: Объект `security`](step6-security-object.md)
+- [Шаг 7: Объект `tags`](step7-tags-object.md)
+- [Шаг 8: Объект `externalDocs`](step8-externalDocs-object.md)
 
 После создания проверяем нашу документацию в [редакторе Swagger](https://swagger.io/tools/swagger-editor/). Выполним запрос, чтобы убедиться, что все работает верно.
