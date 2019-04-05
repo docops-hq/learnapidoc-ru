@@ -1,6 +1,6 @@
 # Руководство OpenAPI Шаг 1: Объект `openapi`
 
-| [**Шаг 1: объект** `openapi`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.5.%20Step%201%20The%20openapi%20object.md) | --> | [*Шаг 2: объект* `info`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.6.%20Step%202%20The%20info%20object.md) | --> | [*Шаг 3: объект* `servers`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.7.%20Step%203%20The%20servers%20object.md) | --> | [*Шаг 4: объект* `paths`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.8.%20Step%204%20The%20paths%20object.md) | --> | [*Шаг 5: объект* `components`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.9.%20Step%205%20The%20components%20object.md) | --> | [*Шаг 6: объект* `security`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.10.%20Step%206%20security%20object.md) | --> | [*Шаг 7: объект* `tags`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.11.%20Step%207%20The%20tags%20object.md) | --> | [*Шаг 8: объект* `externalDocs`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.12.%20Step%208%20The%20externalDocs%20object.md) |
+| [**Шаг 1: объект** `openapi`](step1-openapi-object.md) | --> | [*Шаг 2: объект* `info`](step2-info-object.md) | --> | [*Шаг 3: объект* `servers`](step3-servers-object.md) | --> | [*Шаг 4: объект* `paths`](step4-paths-object.md) | --> | [*Шаг 5: объект* `components`](step5-components-object.md) | --> | [*Шаг 6: объект* `security`](step6-security-object.md) | --> | [*Шаг 7: объект* `tags`](step7-tags-object.md) | --> | [*Шаг 8: объект* `externalDocs`](step8-externalDocs-object.md) |
 
 [Обзор руководства OpenAPI](#overview)
 
@@ -16,9 +16,9 @@
 <a name="overview"></a>
 ## Обзор руководства OpenAPI
 
-Прежде чем перейти к первому шагу учебного руководства по OpenAPI, нужно прочитать [обзор руководства по OpenAPI](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.4.%20OpenAPI%20tutorial%20overview.md) (если еще не читали), чтобы понять суть этого учебного пособия. Вкратце, это руководство по OpenAPI уникально в следующих отношениях:
+Прежде чем перейти к первому шагу учебного руководства по OpenAPI, нужно прочитать [обзор руководства по OpenAPI](openapi-tutorial-overview.md) (если еще не читали), чтобы понять суть этого учебного пособия. Вкратце, это руководство по OpenAPI уникально в следующих отношениях:
 
-- Это руководство OpenAPI показывает спецификацию в контексте API сервиса прогноза погоды, [представленного ранее](https://github.com/Starkovden/Documenting_APIs/blob/master/2.%20Using%20an%20API%20like%20a%20developer/2.1.%20Scenario%20for%20using%20a%20weather%20API.md) в этом курсе.
+- Это руководство OpenAPI показывает спецификацию в контексте API сервиса прогноза погоды, [представленного ранее](../like-developer/using-api-scenario.md) в этом курсе.
 - В руководстве показано, как информация спецификации отображается в [интерфейсе Swagger](https://github.com/swagger-api/swagger-ui).
 - Руководство OpenAPI является выдержкой из [спецификации OpenAPI](https://github.com/OAI/OpenAPI-Specification),  и из [комментариев спецификации OpenAPI](https://swagger.io/docs/specification/about/).
 - В руководстве OpenAPI охвачена версия 3.0 спецификации OpenAPI, которая является последней версией.
@@ -72,7 +72,7 @@
 
 Объект `openapi` не такой большой, и сейчас не хватает контента для проверки спецификации. Но когда мы позже визуализируем свой документ спецификации, мы увидим, что тег «OAS3» появится справа от имени API.
 
-![openapi](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/img/5.png?raw=true)
+![openapi](img/5.png)
 
 На сервере Swagger UI использует версию спецификации 3.0.2 для проверки вашего контента.
 

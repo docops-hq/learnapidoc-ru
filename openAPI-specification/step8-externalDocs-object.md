@@ -1,6 +1,6 @@
 # Руководство OpenAPI Шаг 8: Объект `externalDocs`
 
-| [*Шаг 1: объект* `openapi`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.5.%20Step%201%20The%20openapi%20object.md) | --> | [*Шаг 2: объект* `info`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.6.%20Step%202%20The%20info%20object.md) | --> | [*Шаг 3: объект* `servers`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.7.%20Step%203%20The%20servers%20object.md) | --> | [*Шаг 4: объект* `paths`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.8.%20Step%204%20The%20paths%20object.md) | --> | [*Шаг 5: объект* `components`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.9.%20Step%205%20The%20components%20object.md) | --> | [*Шаг 6: объект* `security`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.10.%20Step%206%20security%20object.md) | --> | [*Шаг 7: объект* `tags`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.11.%20Step%207%20The%20tags%20object.md) | --> | [**Шаг 8: объект** `externalDocs`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.12.%20Step%208%20The%20externalDocs%20object.md) |
+| [*Шаг 1: объект* `openapi`](step1-openapi-object.md) | --> | [*Шаг 2: объект* `info`](step2-info-object.md) | --> | [*Шаг 3: объект* `servers`](step3-servers-object.md) | --> | [*Шаг 4: объект* `paths`](step4-paths-object.md) | --> | [*Шаг 5: объект* `components`](step5-components-object.md) | --> | [*Шаг 6: объект* `security`](step6-security-object.md) | --> | [*Шаг 7: объект* `tags`](step7-tags-object.md) | --> | [**Шаг 8: объект** `externalDocs`](step8-externalDocs-object.md) |
 
 [Объект `externalDocs`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#external-documentation-object) позволяет добавлять ссылки на внешнюю документацию. Можно добавлять ссылки на внешние документы в объекте `paths`.
 
@@ -19,7 +19,7 @@
       description: API Documentation
       url: https://openweathermap.org/api
 
-Обратите внимание, что эта документация должна относиться в целом к API. Чтобы связать определенный параметр с дополнительной документацией, можно добавить объект `externalDocs` к объекту операции, как отмечено в разделе [Operation Objects](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.8.%20Step%204%20The%20paths%20object.md#%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B9) в Шаге 4: Объект `paths`.
+Обратите внимание, что эта документация должна относиться в целом к API. Чтобы связать определенный параметр с дополнительной документацией, можно добавить объект `externalDocs` к объекту операции, как отмечено в описании [Объектов операций](step4-paths-object.md#%operations) в Шаге 4: Объект `paths`.
 
 <a name="appearanse"></a>
 ## Отображение в Swagger UI
@@ -28,11 +28,11 @@
 
 В Swagger UI после описания API появится ссылка вместе с информацией об API:
 
-![externaldoc](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/img/18.png?raw=true)
+![externaldoc](img/18.png)
 
 > Ссылка на внешнюю документацию
 
-На данный момент, мы можем догадаться о некоторых проблемам интеграции Swagger UI с остальной частью нашей документации. Скорее всего, будет два вывода и полуфрагментированный пользовательский опыт. Объект `externalDocs` обеспечивает предсказуемое место для ссылки [безадресных разделов](https://github.com/Starkovden/Documenting_APIs/tree/master/6.%20Non-reference%20API%20topics). См. [Интеграция Swagger UI со сторонними документами](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.18.%20Integrating%20Swagger%20UI%20with%20the%20rest%20of%20your%20docs.md) для получения дополнительной информации о стратегиях интеграции.
+На данный момент, мы можем догадаться о некоторых проблемам интеграции Swagger UI с остальной частью нашей документации. Скорее всего, будет два вывода и полуфрагментированный пользовательский опыт. Объект `externalDocs` обеспечивает предсказуемое место для ссылки [концептуальных разделов](../conceptual-topics/README.md). См. [Интеграция Swagger UI со сторонними документами](integrating-swagger-with-docs.md) для получения дополнительной информации о стратегиях интеграции.
 
 <a name="finish"></a>
 ## Итоговый результат
@@ -41,4 +41,4 @@
 
 Вот как выглядит собранная в Swagger UI спецификация:
 
-![final](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/img/19.png?raw=true)
+![final](img/19.png)
