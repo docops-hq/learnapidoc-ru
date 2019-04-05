@@ -1,6 +1,6 @@
 # Руководство OpenAPI Шаг 4: объект `paths`
 
-| [*Шаг 1: объект* `openapi`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.5.%20Step%201%20The%20openapi%20object.md) | --> | [*Шаг 2: объект* `info`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.6.%20Step%202%20The%20info%20object.md) | --> | [*Шаг 3: объект* `servers`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.7.%20Step%203%20The%20servers%20object.md) | --> | [**Шаг 4: объект** `paths`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.8.%20Step%204%20The%20paths%20object.md) | --> | [*Шаг 5: объект* `components`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.9.%20Step%205%20The%20components%20object.md) | --> | [*Шаг 6: объект* `security`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.10.%20Step%206%20security%20object.md) | --> | [*Шаг 7: объект* `tags`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.11.%20Step%207%20The%20tags%20object.md) | --> | [*Шаг 8: объект* `externalDocs`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.12.%20Step%208%20The%20externalDocs%20object.md) |
+| [*Шаг 1: объект* `openapi`](step1-openapi-object.md) | --> | [*Шаг 2: объект* `info`](step2-info-object.md) | --> | [*Шаг 3: объект* `servers`](step3-servers-object.md) | --> | [**Шаг 4: объект** `paths`](step4-paths-object.md) | --> | [*Шаг 5: объект* `components`](step5-components-object.md) | --> | [*Шаг 6: объект* `security`](step6-security-object.md) | --> | [*Шаг 7: объект* `tags`](step7-tags-object.md) | --> | [*Шаг 8: объект* `externalDocs`](step8-externalDocs-object.md) |
 
 Объект `paths` содержит соль информации нашей API. Объект `paths` имеет несколько подобъектов: [объект элементов пути](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#pathItemObject), [объект операций](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#operationObject) и многое другое.
 
@@ -25,7 +25,7 @@
 
 > Объект `paths` - это та же «конечная точка» в соответствии с терминологии спецификации OpenAPI.
 
-Каждый элемент в объекте `path` содержит [объект операции](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#operation-object). (Операции - это методы GET, POST, PUT и DELETE, которые мы исследовали в разделе [Конечные точки](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.4.%20Step%202%20Endpoints%20and%20methods.md) руководства по API.)
+Каждый элемент в объекте `path` содержит [объект операции](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#operation-object). (Операции - это методы GET, POST, PUT и DELETE, которые мы исследовали в разделе [Конечные точки](../documenting-api-endpoints/step2-endpoints-and-methods.md) руководства по API.)
 
 Начинаем с перечисления путей (конечных точек) и их разрешенных операций (методов). Для конечной точки `weather` в API OpenWeatherMap есть только один путь (`/weather`) и одна операция (`get`) для этого пути:
 
@@ -43,13 +43,13 @@
 - `description`: Полное описание пути. Может содержать неограниченное количество деталей. В Swagger UI достаточно места для полного описания.  CommonMark Markdown разрешен.
 -  [`externalDocs`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#externalDocumentationObject) (объект): ссылка на документацию с доп.информацией о пути.
 - `operationId`: уникальный идентификатор пути.
-- [`parameters`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#parameterObject) (объект): Параметры, принимаемые путем. Не включает параметры тела запроса, которые подробно описаны в объекте `requestBody`. Объект `parameters` также может включать в себя [объект `reference`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#referenceObject), который содержит указатель на описание в объекте `components` (этот объект описан на [шаге 5: Объект `components`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.9.%20Step%205%20The%20components%20object.md)).
-- [`requestBody`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#requestBodyObject) (объект): детали параметра тела запроса для этого пути. Объект `requestBody` также может включать в себя [объект `reference`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#referenceObject), который содержит указатель на описание в объекте `components` (описание в [шаге 5: Объект `components`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.9.%20Step%205%20The%20components%20object.md)).
+- [`parameters`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#parameterObject) (объект): Параметры, принимаемые путем. Не включает параметры тела запроса, которые подробно описаны в объекте `requestBody`. Объект `parameters` также может включать в себя [объект `reference`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#referenceObject), который содержит указатель на описание в объекте `components` (этот объект описан на [шаге 5: Объект `components`](step5-components-object.md) ).
+- [`requestBody`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#requestBodyObject) (объект): детали параметра тела запроса для этого пути. Объект `requestBody` также может включать в себя [объект `reference`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#referenceObject), который содержит указатель на описание в объекте `components` (описание в [шаге 5: Объект `components`](step5-components-object.md) ).
 - [`response`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#responsesObject) (объект): ответы, предоставленные на запросы по этому пути. Объект `response` также может включать в себя [объект `reference`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#referenceObject), который содержит указатель на описание в объекте `components`. Ответы используют стандартные [коды состояния](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#http-status-codes).
 - [`callbacks`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#callbackObject) (объект): детали обратного вызова могут быть инициированы сервером при желании. Callbacks - это операции, выполняемые после завершения выполнения функции. Объект `callbacks` также может включать в себя [объект `reference`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#referenceObject), который содержит указатель на описание в объекте `components`.
 - `deprecated`: Является ли путь устаревшим. Можно опустить, если вы не хотите указать устаревшее поле. Boolean.
-- [`security`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#securityRequirementObject) (объект): Метод безопасной авторизации, используемый с операцией. Этот объект добавляется на уровне пути, только если нужно перезаписать объект `security` на корневом уровне. Имя определяется объектом `securitySchemes` в объекте `components`. Более подробная информация об этом представлена ​​в [шаге 6: объект `security`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.10.%20Step%206%20security%20object.md).
-- [`servers`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#serverObject) (объект): Объект `servers`, который может отличаться от [глобального объекта  `servers`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.7.%20Step%203%20The%20servers%20object.md) для этого пути.
+- [`security`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#securityRequirementObject) (объект): Метод безопасной авторизации, используемый с операцией. Этот объект добавляется на уровне пути, только если нужно перезаписать объект `security` на корневом уровне. Имя определяется объектом `securitySchemes` в объекте `components`. Более подробная информация об этом представлена ​​в [шаге 6: объект `security`](step6-security-object.md).
+- [`servers`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#serverObject) (объект): Объект `servers`, который может отличаться от [глобального объекта  `servers`](step3-servers-object.md) для этого пути.
 
 Каждое из вышеупомянутых свойств, имеющих гиперссылку и «(объект)», содержат дополнительные уровни. Их значения не просто типы данных, такие как строки, а скорее объекты, которые содержат свои собственные свойства.
 
@@ -76,8 +76,8 @@
 И удалим несколько ненужных полей, которые нам не нужны для нашей документации по API OpenWeatherMap:
 
 - Нет необходимости включать [объект `requestBody`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#requestBodyObject) потому что ни один путь API OpenWeatherMap не содержит параметров тела запроса.
-- Нет необходимости включать [объект `servers`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#serverObject) потому что используется тот же URL глобальных `servers`, который мы определили [глобально на корневом уровне](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.7.%20Step%203%20The%20servers%20object.md).
-- Нет необходимости включать [security](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#securityRequirementObject) потому что используется один и тот же объект `security`, который мы определим глобально на корневом уровне позже (см. [Шаг 6: объект security](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.10.%20Step%206%20security%20object.md)).
+- Нет необходимости включать [объект `servers`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#serverObject) потому что используется тот же URL глобальных `servers`, который мы определили [глобально на корневом уровне](step3-servers-object.md)
+- Нет необходимости включать [security](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#securityRequirementObject) потому что используется один и тот же объект `security`, который мы определим глобально на корневом уровне позже (см. [Шаг 6: объект security](step6-security-object.md) ).
 - Нет необходимости включать `deprecated` потому что ни один из путей не устарел.
 - Нет необходимости включать `callbacks` потому что ни один из путей не использует колбэки.
 
@@ -94,7 +94,7 @@
           parameters:
           responses:
 
-Большинство свойств для объекта операции либо требуют простых строк, либо содержат относительно простые объекты. Наиболее подробный объект здесь - это [объект `parmeters`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.8.%20Step%204%20The%20paths%20object.md#%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82-parameters) и [объект `responses`](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.8.%20Step%204%20The%20paths%20object.md#%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82-responses).         
+Большинство свойств для объектов операции либо требуют простых строк, либо содержат относительно простые объекты. Наиболее подробные объекты здесь - это [объект `parameters`](#parameters) и [объект `responses`](#responses).         
 
 <a name="parameters"></a>
 #### Объект `parameters`
@@ -182,7 +182,7 @@
 <a name="responses"></a>
 #### Объект `responses`
 
-Другое существенное свойство в объекте операций - это объект `responses`. Для свойства `responses` обычно ссылаются на полное определение в объекте `components`, поэтому рассказ об объекте `responses` в следующем разделе - [Шаг 5. Объект компонентов](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.9.%20Step%205%20The%20components%20object.md). (На этом шаге уже слишком много информации.)
+Другое существенное свойство в объекте операций - это объект `responses`. Для свойства `responses` обычно ссылаются на полное определение в объекте `components`, поэтому рассказ об объекте `responses` в следующем разделе - [Шаг 5. Объект компонентов](step5-components-object.md). (На этом шаге уже слишком много информации.)
 
 На данный момент, чтобы редактор Swagger проверил и показал наш путь, давайте просто добавим некоторый контент-заполнитель для `responses`:
 
@@ -305,7 +305,7 @@
 
 Отображение `paths` в Swagger UI будет таким:
 
-![paths](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/img/9.png?raw=true)
+![paths](img/9.png)
 
 
 Чтобы увидеть подробности развернем наш раздел «Current Weather Data». Когда нажмем **Try it out**, вы увидите, что поле заполняется описанием. Если вы хотите, чтобы поле заполнялось значением, добавьте свойство `default`  в схему (как показано с параметром `mode` в приведенном выше коде).
