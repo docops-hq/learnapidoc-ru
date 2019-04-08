@@ -1,7 +1,7 @@
 # Непрерывное развертывание Jekyll и CloudCannon
 
 
-[Генераторы статических сайтов](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.10.%20Static%20site%20generators.md) - это разновидность компиляторов веб-сайтов, которые упаковывают группу файлов (обычно написанных на [Markdown](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.5.%20More%20about%20Markdown.md)) и превращают их в полностью развертываемый веб-сайт. Одним из наиболее популярных генераторов статических сайтов (глядя на количество загрузок, использования и сообщества) является [Jekyll](https://jekyllrb.com/). Автор курса выбрал его, т.к. имеет большой опыт, поэтому сосредоточимся здесь на Jekyll, особенно на том, как можно интегрировать Jekyll с CloudCannon для решения публикации с непрерывной доставкой.
+[Генераторы статических сайтов](Static-site-generators.md) - это разновидность компиляторов веб-сайтов, которые упаковывают группу файлов (обычно написанных на [Markdown](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.5.%20More%20about%20Markdown.md)) и превращают их в полностью развертываемый веб-сайт. Одним из наиболее популярных генераторов статических сайтов (глядя на количество загрузок, использования и сообщества) является [Jekyll](https://jekyllrb.com/). Автор курса выбрал его, т.к. имеет большой опыт, поэтому сосредоточимся здесь на Jekyll, особенно на том, как можно интегрировать Jekyll с CloudCannon для решения публикации с непрерывной доставкой.
 
 [О Jekyll](#about)
 
