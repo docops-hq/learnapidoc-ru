@@ -11,7 +11,7 @@
 <a name="topicTest"></a>
 ## Тестирование раздела
 
-1. В [выбранном проекте](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.9.%20Activity%20Find%20an%20open%20source%20project.md#%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5-%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA-open-source-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0) ищем следующие разделы:
+1. В [выбранном проекте](../documenting-api-endpoints/find-open-source-project.md#docNeed) ищем следующие разделы:
 
 - Getting started tutorial (или похожий);
 - API endpoint.
