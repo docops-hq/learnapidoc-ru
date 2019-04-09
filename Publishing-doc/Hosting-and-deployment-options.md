@@ -66,7 +66,7 @@ GitHub Pages бесплатен, но имеет некоторые ограни
 
 Основатели CloudCannon являются экспертами в Jekyll и разработали платформу специально для проектов Jekyll. Они также создали [множество учебных пособий по Jekyll](https://learn.cloudcannon.com/), чтобы обогатить знания разработчиков.
 
-> О настройке и работе Jekyll и CloudCannon в разделе [Непрерывное развертывание Jekyll и CloudCannon](Jekyll-and-cloudCannon.md)
+> О настройке и работе Jekyll и CloudCannon в разделе [Непрерывное развертывание Jekyll и CloudCannon](Jekyll-and-сloudCannon.md)
 
 <a name="readthedocs"></a>
 ## Read the Docs
