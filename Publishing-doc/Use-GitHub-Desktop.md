@@ -19,7 +19,7 @@
 
 В этом разделе мы научимся использовать десктопный клиент GitHub для управления процессом Git.
 
-> Вместо работы в Wiki GitHub (как делали в [предыдущем разделе по GitHub](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.7.%20Activity%20Manage%20content%20in%20a%20GitHub%20wiki.md#%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5-%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D0%BC-%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D1%82%D0%BE%D0%BC-%D0%B2-wiki-github)), будем работать в обычном Git-репозитории. В Wiki GitHub есть некоторые ограничения, когда дело касается отправки запросов.
+> Вместо работы в Wiki GitHub (как делали в [предыдущем разделе по GitHub](Manage-wiki-content.md) ), будем работать в обычном Git-репозитории. В Wiki GitHub есть некоторые ограничения, когда дело касается отправки запросов.
 
 Для настройки репозитория Git используя клиента GitHub Desktop:
 
@@ -141,8 +141,7 @@
 
 Проверим файлы и обратим внимание, что обновления, которые изначально были в ветке development, теперь отображаются и в master.
 
-> Более подробное руководство по созданию запросов извлечения с использованием интерфейса GitHub см. В разделе [Процесс Pull request на GitHub](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.9.%20Activity%20Pull%20request%20workflows%20through%20GitHub.md#-%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5-%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81-pull-request-%D0%BD%D0%B0-github). Работать с Pull Request нужно уметь, если  планируется участие в [опен-сорс проектах](https://github.com/Starkovden/Documenting_APIs/blob/master/3.%20Documenting%20API%20endpoints/3.9.%20Activity%20Find%20an%20open%20source%20project.md#%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5-%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA-open-source-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0).
-
+> Более подробное руководство по созданию запросов извлечения с использованием интерфейса GitHub см. В разделе [Процесс Pull request на GitHub](Pull-request-workflows.md). Работать с Pull Request нужно уметь, если  планируется участие в [опен-сорс проектах](../documenting-api-endpoints/find-open-source-project.md).
 
 <a name="manage"></a>
 ## Управление конфликтами слияния
