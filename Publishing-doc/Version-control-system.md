@@ -61,5 +61,5 @@ Git и GitHub - это две разные вещи. GitHub предоставл
 
 После краткого введения в docs-as-code и контроль версий попробуем попрактиковаться, работая в Git:
 
-- [Практическое занятие: Управляем контентом в Wiki Github](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.7.%20Activity%20Manage%20content%20in%20a%20GitHub%20wiki.md)
-- [Практическое занятие: Используем клиент GitHub для десктопа](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.8.%20Activity%20Use%20the%20GitHub%20Desktop%20client.md)
+- [Практическое занятие: Управляем контентом в Wiki Github](Manage-wiki-content.md)
+- [Практическое занятие: Используем клиент GitHub для десктопа](Use-GitHub-Desktop.md)
