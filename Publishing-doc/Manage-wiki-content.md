@@ -1,8 +1,8 @@
 # Практическое занятие: Управляем контентом в Wiki Github
 
-На этом занятии мы рассмотрим процесс публикации на одной из самых распространенных платформ для разработчиков: GitHub. Созданный репозиторий на GitHub имеет свою Wiki, к которой можно добавлять страницы. Wiki удобна, если исходный код хранится на GitHub. Хотя GitHub может и не быть платформой, на которой мы будем  публиковать свою документацию, понимание того, как работать с этой платформой важно для понимания [контроля версий](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.6.%20Version%20control%20system%20such%20as%20Git.md#%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80-git).
+На этом занятии мы рассмотрим процесс публикации на одной из самых распространенных платформ для разработчиков: GitHub. Созданный репозиторий на GitHub имеет свою Wiki, к которой можно добавлять страницы. Wiki удобна, если исходный код хранится на GitHub. Хотя GitHub может и не быть платформой, на которой мы будем  публиковать свою документацию, понимание того, как работать с этой платформой важно для понимания [контроля версий](Version-control-system.md).
 
-Изучение GitHub позволит ознакомиться с рабочими процессами управления версиями, которые являются общими для многих [инструментов docs-as-code](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.4.%20Doc_as_code%20tools.md#%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D0%B0-docs-as-code). По этой причине на этом курсе есть подробное руководство по использованию GitHub. Независимо от того, используется GitHub в качестве инструмента публикации, это руководство познакомит с рабочими процессами работы Git с контентом.
+Изучение GitHub позволит ознакомиться с рабочими процессами управления версиями, которые являются общими для многих [инструментов docs-as-code](Doc-as-code-tools.md). По этой причине на этом курсе есть подробное руководство по использованию GitHub. Независимо от того, используется GitHub в качестве инструмента публикации, это руководство познакомит с рабочими процессами работы Git с контентом.
 
 [О wiki на GitHub](#about)
 
@@ -45,7 +45,7 @@ Github имеет некоторые ограничения:
 - **нет структуры:** Вики-страницы GitHub выдают пустую страницу и позволяют добавлять разделы. Но нет возможности делать какие-либо продвинутые стили или интерактивные функции.
 
 > Здесь речь именно о встроенной функции Wiki на GitHub, а не [GitHub Pages](https://pages.github.com/). Для стилизования
- и автоматического создания контента можно использовать такие инструменты, как Jekyll.  Более подробно GitHub Pages рассмотрим в [руководстве по Jekyll](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.14.%20Jekyll%20and%20CloudCannon%20continous%20deployment%20tutorial.md#%D0%BD%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%BD%D0%BE%D0%B5-%D1%80%D0%B0%D0%B7%D0%B2%D0%B5%D1%80%D1%82%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-jekyll-%D0%B8-cloudcannon).
+ и автоматического создания контента можно использовать такие инструменты, как Jekyll.  Более подробно GitHub Pages рассмотрим в [руководстве по Jekyll](Jekyll-and-cloudCannon.md).
 
 <a name="install"></a>
 ## Установка Git
@@ -95,7 +95,7 @@ Git можно настроить так, чтобы не приходилось
 
 1. Открываем [GitHub](https://github.com/) и логинимся там. После нажимаем кнопку `+` и выбираем `New repository`
 
-![New_repository](https://github.com/Starkovden/Documenting_APIs/blob/master/1.%20Introduction%20to%20REST%20APIs/pics/16.png?raw=true)
+![New_repository](../introduction-rest-apis/pics/16.png)
 
 *Создание нового репозитория на GitHub*
 
@@ -126,14 +126,14 @@ Git можно настроить так, чтобы не приходилось
 
 2. Просматривая вики-страницу GitHub в своем браузере, обратим внимание на раздел `Clone this wiki locally`. Нажмите кнопку буфера обмена. (Копируется URL клона в ваш буфер обмена.)
 
-![clone](https://github.com/Starkovden/Documenting_APIs/blob/master/1.%20Introduction%20to%20REST%20APIs/pics/17.png?raw=true)
+![clone](../introduction-rest-apis/pics/17.png)
 
 *Клонируем на локальный компьютер*
 
 > Вики - это имеет отдельный URL, не относящийся к репозиторию проекта. Убедитесь, что вы просматриваете вики, а не  проект. URL клона будет включать `.wiki.`
 
 
-В отличие от раздела `Clone this wiki locally`, кнопка «Clone in Desktop» запускает клиент GitHub Desktop и позволяет управлять репозиторием и вашими измененными файлами, фиксировать, передавать и извлекать через клиент GitHub Desktop. Об этом написано в практическом занятии [Используем клиент GitHub для десктопа](https://github.com/Starkovden/Documenting_APIs/blob/master/7.%20Publishing%20your%20API%20documentation/7.8.%20Activity%20Use%20the%20GitHub%20Desktop%20client.md)
+В отличие от раздела `Clone this wiki locally`, кнопка «Clone in Desktop» запускает клиент GitHub Desktop и позволяет управлять репозиторием и вашими измененными файлами, фиксировать, передавать и извлекать через клиент GitHub Desktop. Об этом написано в практическом занятии [Используем клиент GitHub для десктопа](Use-GitHub-Desktop.md)
 
 3. Открываем командную строку
 
@@ -221,7 +221,7 @@ Git ответит сообщением, указывающим, какие фа
 
 Окно терминала на Mac, будет выглядеть примерно так:
 
-![Mac_terminal](https://github.com/Starkovden/Documenting_APIs/blob/master/1.%20Introduction%20to%20REST%20APIs/pics/18.png?raw=true)
+![Mac_terminal](../introduction-rest-apis/pics/18.png)
 
 *Окно терминала с командами Git*
 
