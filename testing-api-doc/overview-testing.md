@@ -24,9 +24,9 @@
 
 Тестирование API-документации настолько критично, что автором курса выделен целый модуль, посвященный этой теме. Этот раздел включает три темы:
 
-- [Настройка тестовой среды окружения](https://github.com/Starkovden/Documenting_APIs/blob/master/5.%20Testing%20API%20documentaion/5.2.%20Set%20up%20a%20test%20environment.md)
-- [Самостоятельное тестирование всех инструкций](https://github.com/Starkovden/Documenting_APIs/blob/master/5.%20Testing%20API%20documentaion/5.3.%20Test%20all%20instructions%20yourself.md)
-- [Тестирование предположений](https://github.com/Starkovden/Documenting_APIs/blob/master/5.%20Testing%20API%20documentaion/5.4.%20Test%20your%20assumptions.md)
+- [Настройка тестовой среды окружения](set-up-test-environment.md)
+- [Самостоятельное тестирование всех инструкций](test-instructions-yourself.md)
+- [Тестирование предположений](test-assumptions.md)
 
 ![tester](img/1.jpg)
 > Фото взято из фотобанка [Flikr](https://www.flickr.com/photos/seattlemunicipalarchives/3739366791/) [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/legalcode) - Городская лаборатория по испытанию воды, 1948 год. Тестировщик документации, как ученый в лаборатории, тщательно настраивающем тесты для измерения реакций и результатов.
