@@ -143,6 +143,31 @@
     - [**Практическое занятие: Тестирование документации проекта**](test-documentation.md)
 
 6. [**Концептуальные разделы**](conceptual-topics/README.md)
+
+    - [**Разделы руководства пользователя**](conceptual-topics/user-guide-topics.md)
+
+    - [**Обзор API**](conceptual-topics/API-overview.md)
+
+    - [**Руководство по началу работы**](conceptual-topics/getting-started.md)
+
+    - [**Требования аутентификации и авторизации**](conceptual-topics/authentication-and-authorization.md)
+
+    - [**Коды статусов и ошибок**](conceptual-topics/status-error-codes.md)
+
+    - [**Ограничения скорости и пределы**](conceptual-topics/rate-limiting.md)
+
+    - [**Описание и образцы кода**](conceptual-topics/code-samples.md)
+
+    - [**SDK и пример приложений**](conceptual-topics/sdks-sample-apps.md)
+
+    - [**Краткое справочное руководство**](conceptual-topics/quick-reference-guide.md)
+
+    - [**API Глоссарий**](conceptual-topics/api-glossary.md)
+
+    - [**Лучшие практики API**](conceptual-topics/best-practices.md)
+
+    - [**Практическое занятие: Оценка безадресного контента в проекте**](conceptual-topics/assess-conceptual-content.md)
+
 7. [**Публикация документации**](Publishing-doc/README.md)
 8. [**Работа технического писателя**](Getting-job/README.md)
 9. [**Исходные библиотеки API**](Native-library/README.md)
