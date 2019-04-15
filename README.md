@@ -131,6 +131,17 @@
     - [**Интеграция Swagger с документацией**](openAPI-specification/integrating-swagger-with-docs.md)
 
 5. [**Тестирование документации**](testing-api-doc/README.md)
+
+    - [**Обзор тестирования документации**](overview-testing.md)
+
+    - [**Настройка тестовой среды окружения**](set-up-test-environment.md)
+
+    - [**Самостоятельное тестирование всех инструкций**](test-instructions-yourself.md)
+
+    - [**Тестирование предположений**](test-assumptions.md)
+
+    - [**Практическое занятие: Тестирование документации проекта**](test-documentation.md)
+
 6. [**Концептуальные разделы**](conceptual-topics/README.md)
 7. [**Публикация документации**](Publishing-doc/README.md)
 8. [**Работа технического писателя**](Getting-job/README.md)
