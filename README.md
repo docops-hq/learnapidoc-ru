@@ -47,7 +47,33 @@
     - [**Практика: Определение цели**](introduction-rest-apis/identify-goals.md)
 
 2. [**Использование API в роли разработчика**](like-developer/README.md)
+
+    - [**Сценарий использования API погоды**](like-developer/using-api-scenario.md)
+
+    - [**Получение ключей авторизации**](like-developer/get-authorization-keys.md)
+
+    - [**Отправка запросов в Postman**](like-developer/submit-requests-postman.md)
+
+    - [**Введение и установка curl**](like-developer/curl-intro-and-instalation.md)
+
+    - [**Создание curl запроса**](like-developer/make-curl-call.md)
+
+    - [**Понимание curl**](like-developer/understand-curl.md)
+
+    - [**Использование методов с curl**](use-methods-with-curl.md)
+
+    - [**Анализ JSON ответов**](like-developer/analyze-json-response.md)
+
+    - [**Изучение полезных данных JSON ответа**](like-developer/inspect-json.md)
+
+    - [**Доступ и вывод на страницу определенного значения JSON**](like-developer/access-print-value.md)
+
+    - [**Погружение в точечную нотацию**](like-developer/dot-notation.md)
+
 3. [**Документирование конечных точек**](documenting-api-endpoints/README.md)
+
+
+
 4. [**Спецификация OpenAPI и Swagger**](openAPI-specification/README.md)
 5. [**Тестирование документации**](testing-api-doc/README.md)
 6. [**Концептуальные разделы**](conceptual-topics/README.md)
