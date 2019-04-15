@@ -93,6 +93,43 @@
     - [**Практическое занятие: Оценка ключевых элементов API документации**](documenting-api-endpoints/evaluate-api-referense-docs.md)
 
 4. [**Спецификация OpenAPI и Swagger**](openAPI-specification/README.md)
+
+    - [**Обзор форматов спецификаций REST API**](openAPI-specification/overview-specification-formats.md)
+
+    - [**Знакомство со спецификациями OpenAPI и Swagger**](openAPI-specification/introduction-openapi-and-swagger.md)
+
+    - [**Работа в YAML**](openAPI-specification/working-in-YAML.md)
+
+    - [**Обзор руководства OpenAPI**](openAPI-specification/openapi-tutorial-overview.md)
+
+    - [**Шаг 1: Объект `openapi`**](openAPI-specification/step1-openapi-object.md)
+
+    - [**Шаг 2: Объект `info`**](openAPI-specification/step2-info-object.md)
+
+    - [**Шаг3: Объект `servers`**](openAPI-specification/step3-servers-object.md)
+
+    - [**Шаг 4: Объект `paths`**](openAPI-specification/step4-paths-object.md)
+
+    - [**Шаг 5: Объект `components`**](openAPI-specification/step5-components-object.md)
+
+    - [**Шаг 6: Объект `security`**](openAPI-specification/step6-security-object.md)
+
+    - [**Шаг 7: Объект `tags`**](openAPI-specification/step7-tags-object.md)
+
+    - [**Шаг 8: Объект `externalDocs`**](openAPI-specification/step8-externalDocs-object.md)
+
+    - [**Практическое занятие: Создание спецификации OpenAPI**](openAPI-specification/сreate-openapi-specification.md)
+
+    - [**Руководство Swagger UI**](openAPI-specification/swagger-ui-tutorial.md)
+
+    - [**Демо Swagger UI**](openAPI-specification/swagger-ui-demo.md)
+
+    - [**Введение и руководство SwaggerHub**](openAPI-specification/swaggerhub-introduction-and-tutorial.md)
+
+    - [**Stoplight - инструмент визуального моделирования для создания спецификаций**](openAPI-specification/stoplight.md)
+
+    - [**Интеграция Swagger с документацией**](openAPI-specification/integrating-swagger-with-docs.md)
+
 5. [**Тестирование документации**](testing-api-doc/README.md)
 6. [**Концептуальные разделы**](conceptual-topics/README.md)
 7. [**Публикация документации**](Publishing-doc/README.md)
