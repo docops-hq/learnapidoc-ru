@@ -229,3 +229,11 @@
     - [**Создание бессылочной документации при помощи исходных библиотек API**](Native-library/Create-non-refsdocs-with-native-library-APIs.md)
 
 10. [**Глоссарий API и источники**](glossary-and-resourses/README.md)
+
+    - [**Глоссарий API документации**](glossary-and-resourses/Glossary-for-API-documentation.md)
+
+    - [**Практические занятия REST API**](glossary-and-resourses/RESTAPI-activities.md)
+
+    - [**Практическое занятие: Получить информацию о событии, иcпользуя API сервиса Eventbrite**](glossary-and-resourses/Get-event-information-using-Eventbrite-API.md)
+
+    - [**Практическое занятие: Извлечь галерею, используя API сервиса Flikr**](glossary-and-resourses/Retrieve-gallery-using-Flickr-API.md)
