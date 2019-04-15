@@ -72,7 +72,25 @@
 
 3. [**Документирование конечных точек**](documenting-api-endpoints/README.md)
 
+    - [**Документирование новой конечной точки**](documenting-api-endpoints/new-endpoint.md)
 
+    - [**Обзор пошагового описания API ссылки**](documenting-api-endpoints/api-reference-tutorial-overview.md)
+
+    - [**Шаг 1: Описание ресурса**](documenting-api-endpoints/step1-resourse-description.md)
+
+    - [**Шаг 2: Конечные точки и методы**](documenting-api-endpoints/step2-endpoints-and-methods.md)
+
+    - [**Шаг 3: Параметры**](documenting-api-endpoints/step3-parameters.md)
+
+    - [**Шаг 4: Пример запроса**](documenting-api-endpoints/step4-request-example.md)
+
+    - [**Шаг 5: Пример и схема ответа**](documenting-api-endpoints/step5-response-example-and-schema.md)
+
+    - [**Собираем все вместе**](documenting-api-endpoints/putt-all-together.md)
+
+    - [**Практическое занятие: Поиск open-source проекта**](documenting-api-endpoints/find-open-source-project.md)
+
+    - [**Практическое занятие: Оценка ключевых элементов API документации**](documenting-api-endpoints/evaluate-api-referense-docs.md)
 
 4. [**Спецификация OpenAPI и Swagger**](openAPI-specification/README.md)
 5. [**Тестирование документации**](testing-api-doc/README.md)
