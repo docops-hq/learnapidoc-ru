@@ -201,5 +201,31 @@
     - [**Кейс для изучения: Переход на Docs-as-code**](Publishing-doc/Switching-tools.md)
 
 8. [**Работа технического писателя**](Getting-job/README.md)
+
+    - [**Рынок труда технического писателя**](Getting-job/job-market.md)
+
+    - [**Необходимое количество кода, которое нужно знать**](Getting-job/how-much-code-to-know.md)
+
+    - [**Лучшие локации для работы**](Getting-job/best-locations.md)
+
 9. [**Исходные библиотеки API**](Native-library/README.md)
+
+    - [**Обзор нативных библиотек API**](Native-library/Overview-of-library.md)
+
+    - [**Получаем пример Java проекта**](Native-library/Get-the-sample-Java-project.md)
+
+    - [**Java Ускоренный курс**](Native-library/Java-crash-course.md)
+
+    - [**Практическое занятие: Генерация Javadoc в примере проекта**](Native-library/Activity-Generate-Javadoc.md)
+
+    - [**Теги Javadoc**](Native-library/Javadoc-tags.md)
+
+    - [**Изучение вывода Javadoc**](Native-library/Explore-Javadoc-output.md)
+
+    - [**Редактирование тегов Javadoc**](Native-library/Make-edits-Javadocs-tags.md)
+
+    - [**Doxygen, генератор документации для С++**](Native-library/Doxygen.md)
+
+    - [**Создание бессылочной документации при помощи исходных библиотек API**](Native-library/Create-non-refsdocs-with-native-library-APIs.md)
+
 10. [**Глоссарий API и источники**](glossary-and-resourses/README.md)
