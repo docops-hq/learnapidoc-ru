@@ -169,6 +169,37 @@
     - [**Практическое занятие: Оценка безадресного контента в проекте**](conceptual-topics/assess-conceptual-content.md)
 
 7. [**Публикация документации**](Publishing-doc/README.md)
+
+    - [**Обзор вариантов публикации документации**](Publishing-doc/Overview-for-publishing.md)
+
+    - [**Список из 100 сайтов с API документацией**](Publishing-doc/API-doc-sites-list.md)
+
+    - [**Шаблоны проектирования сайтов API документации**](Publishing-doc/Design-patterns.md)
+
+    - [**Инструменты Docs-as-code**](Publishing-doc/Docs-as-code-tools.md)
+
+    - [**Подробнее о Markdown**](Publishing-doc/More-about-Markdown.md)
+
+    - [**Система контроля версий (пример Git)**](Publishing-doc/Version-control-system.md)
+
+    - [**Практическое занятие: Управляем контентом в Wiki Github**](Publishing-doc/Manage-wiki-content.md)
+
+    - [**Практическое занятие: Используем клиент GitHub для десктопа**](Publishing-doc/Use-GitHub-Desctop.md)
+
+    - [**Практическое занятие: процесс Pull request на GitHub**](Publishing-doc/Pull-request-workflows.md)
+
+    - [**Генераторы статичных сайтов**](Publishing-doc/Static-site-generators.md)
+
+    - [**Варианты хостинга и развертывания**](Publishing-doc/Hosting-and-deployment-options.md)
+
+    - [**Возможности автономных CMS**](Publishing-doc/Headless-cms-options.md)
+
+    - [**Рекомендации - какой инструмент документирования выбирать**](Publishing-doc/Which-tool-choose.md)
+
+    - [**Непрерывное развертывание Jekyll и CloudCannon**](Publishing-doc/Jekyll-and-cloudCannon.md)
+
+    - [**Кейс для изучения: Переход на Docs-as-code**](Publishing-doc/Switching-tools.md)
+
 8. [**Работа технического писателя**](Getting-job/README.md)
 9. [**Исходные библиотеки API**](Native-library/README.md)
 10. [**Глоссарий API и источники**](glossary-and-resourses/README.md)
