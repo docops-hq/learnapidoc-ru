@@ -74,7 +74,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.181-b13, mixed mode)
 
 Скачиваем и устанавливаем  [Eclipse IDE for Java Developers](https://www.eclipse.org/downloads/packages/)
 
-![ide](img/1.png)
+<p align="left"><img src="img/1.png" width="200" height="220"></p>
+
 
 Запускаем Eclipse. Когда будет предложено выбрать рабочее пространство, выбираем местоположение по умолчанию и нажимаем `Launch`. Закрываем вкладку приветствия.
 
