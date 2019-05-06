@@ -216,7 +216,7 @@
 
     - [**Java Ускоренный курс**](Native-library/Java-crash-course.md)
 
-    - [**Практическое занятие: Генерация Javadoc в примере проекта**](Native-library/Activity-Generate-Javadoc.md)
+    - [**Практическое занятие: Генерация Javadoc из примера проекта**](Native-library/Activity-Generate-Javadoc.md)
 
     - [**Теги Javadoc**](Native-library/Javadoc-tags.md)
 
