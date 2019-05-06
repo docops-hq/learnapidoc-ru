@@ -14,7 +14,7 @@ API нативных библиотек относятся к Java, C ++ или 
 
 [**Java Ускоренный курс**](Java-crash-course.md)
 
-[**Практическое занятие: Генерация Javadoc в примере проекта**](Activity-Generate-Javadoc.md)
+[**Практическое занятие: Генерация Javadoc из примера проекта**](Activity-Generate-Javadoc.md)
 
 [**Теги Javadoc**](Javadoc-tags.md)
 
