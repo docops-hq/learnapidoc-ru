@@ -41,6 +41,71 @@ Javadoc - это генератор документов, который про�
 <a name="commentsortags"></a>
 ##Комментарии или теги Javadoc
 
+Обычно комментарии в Java выглядят так:
+
+```
+// sample comment...
+
+/*
+sample comment
+*/
+```
+
+Javadoc ничего не делает с такими комментариями.
+
+Чтобы включить контент в Javadoc, добавляем две звездочки в начале, перед классом или методом:
+
+```
+/**
+*
+*
+*
+*
+*/
+```
+
+В Eclipse, если ввеcnb `/**` и нажать return, он автоматически заполнит оставшуюся часть синтаксиса.
+
+
+Формат для добавления различных элементов выглядит следующим образом:
+
+```
+/**
+* [short description]
+* <p>
+* [long description]
+*
+* [author, version, params, returns, throws, see, other tags]
+* [see also]
+*/
+```
+
+Реальный пример комментариев метода в Javadoc:
+
+```
+/**
+* Zaps the roadrunner with the number of volts you specify.
+* <p>
+* Do not exceed more than 30 volts or the zap function will backfire.
+* For another way to kill a roadrunner, see the {@link Dynamite#blowDynamite()} method.
+*
+* @exception IOException if you don't enter a data type amount for the voltage
+* @param voltage the number of volts you want to send into the roadrunner's body
+* @see #findRoadRunner
+* @see Dynamite#blowDynamite
+*/
+public void zapRoadRunner(int voltage) throws IOException {
+   if (voltage < 31) {
+       System.out.println("Zapping roadrunner with " + voltage + " volts!!!!");
+   }
+   else {
+    System.out.println("Backfire!!! zapping coyote with 1,000,000 volts!!!!");
+   }
+}
+```
+
+Описание Javadoc и теги помещаем перед классом или методом (нет необходимости в пробеле между описанием и классом или методом).
+
 <a name="commonTags"></a>
 ## Общие теги Javadoc
 
