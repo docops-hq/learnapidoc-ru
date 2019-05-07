@@ -212,7 +212,7 @@ Oracle предлагает следующий порядок тэгов:
 
 Описание параметра - это фраза, а не полное предложение. Порядок нескольких тегов `@param` должен соответствовать их порядку в методе или конструкторе.
 
-[Стивен Колбурн рекомендует](https://blog.joda.org/2012/11/javadoc-coding-standards.html) добавить дополнительный пробел после имени параметра, чтобы повысить удобочитаемость.
+[Стивен Коулборн рекомендует](https://blog.joda.org/2012/11/javadoc-coding-standards.html) добавить дополнительный пробел после имени параметра, чтобы повысить удобочитаемость.
 
 
 Что касается включения типа данных в описание параметра, Oracle говорит:
@@ -244,31 +244,120 @@ Oracle предлагает следующий порядок тэгов:
 ```
 
 <a name="return"></a>
-## @return теги
+## `@return` тэги
+
+
+Возвращают значения только методы, поэтому только методы получают тэг `@return`. Если метод имеет модификатор `void`, он ничего не возвращает. Если в нем нет `void`, нужно включить тэг `@return`, чтобы избежать ошибки при компиляции Javadoc.
 
 <a name="throws"></a>
-## @throws теги
+## `@throws` тэги
+
+Тэги `@throws` добавляются  в методы или классы только в том случае, если метод или класс генерируют ошибку определенного типа. Вот пример:
+
+```
+@throws IOException if your input format is invalid
+```
+
+Стивен Коулборн рекомендует начинать описание тэга throws с предложения «if» для удобства чтения. Он говорит:
+
+> За функцией` @throws` обычно следует if ... и остальная часть фразы, описывающая условие. Например, `@throws, if the file could not be found`. Это способствует удобочитаемости исходного кода и при его создании.
+
+Несколько тэгов `@throws` располагают в алфавитном порядке.
 
 <a name="constructors"></a>
 ## Комментарии к конструкторам
 
+Рекомендуется включать конструктор в класс. Однако, если конструктор отсутствует, Javadoc автоматически создает конструктор в Javadoc, но исключает любое описание конструктора.
+
+Конструкторы имеют тэги `@param`, но не теги `@return`. Все остальное так же, как и с методами.
+
 <a name="fields"></a>
 ## Комментарии к полям
+
+Поля имеют только описания. Можно добавлять комментарии в поле, если бы поле было чем-то, что пользователь будет использовать.
+
 
 <a name="cases"></a>
 ## Кейсы, где комментарии не нужны
 
+Oracle говорит, что есть три сценария, где комментарии к документу наследуются, поэтому вам не нужно включать комментарии в эти сценарии:
+
+- когда метод в классе переопределяет метод в суперклассе;
+- когда метод в интерфейсе переопределяет метод в суперинтерфейсе;
+- когда метод в классе реализует метод в интерфейсе
+(См. [How to write Javadoc comments](https://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#tag) )
+
 <a name="see"></a>
-## @see теги
+## `@see` тэги
+
+Тэг `@see` предоставляет ссылку. Существуют различные способы обозначить то, на что надо ссылаться, чтобы создать ссылку. При ссылке на поле, конструктор или метод в том же поле, используется `#`.
+
+При ссылке на другой класс, сначала пишется имя этого класса, затем `#` и имя конструктора, метода или поля.
+
+При ссылке на класс в другом пакете, сначала указывается имя пакета, затем класс и так далее. Пример из Oracle:
+
+```
+@see #field
+@see #Constructor(Type, Type...)
+@see #Constructor(Type id, Type id...)
+@see #method(Type, Type,...)
+@see #method(Type id, Type, id...)
+@see Class
+@see Class#field
+@see Class#Constructor(Type, Type...)
+@see Class#Constructor(Type id, Type id)
+@see Class#method(Type, Type,...)
+@see Class#method(Type id, Type id,...)
+@see package.Class
+@see package.Class#field
+@see package.Class#Constructor(Type, Type...)
+@see package.Class#Constructor(Type id, Type id)
+@see package.Class#method(Type, Type,...)
+@see package.Class#method(Type id, Type, id)
+```
+
+Для подробной информации см. [How to write Javadoc comments](https://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#tag)
 
 <a name="links"></a>
 ## Ссылки
 
+Создавать ссылки на другие классы и методы можно используя тэг `{@link}`.
+
+Пример создания ссылки из [Javadoc coding standards]
+(https://blog.joda.org/2012/11/javadoc-coding-standards.html):
+
+```
+/**
+* First paragraph.
+* <p>
+* Link to a class named 'Foo': {@link Foo}.
+* Link to a method 'bar' on a class named 'Foo': {@link Foo#bar}.
+* Link to a method 'baz' on this class: {@link #baz}.
+* Link specifying text of the hyperlink after a space: {@link Foo the Foo class}.
+* Link to a method handling method overload {@link Foo#bar(String,int)}.
+*/
+public ...
+```
+
+Для ссылки на другой метод в том же классе используется формат: `{@link #baz}`. Чтобы связать метод с другим классом, используется формат: `{@link Foo # baz}`. Тем не менее, не надо мудрить с гиперссылкой. При обращении к другим классам можно использовать тэги <code>.
+
+Для изменения связанного текста, после слова `#baz` пишется: `@see #baz Baz Method`.
+
 <a name="preview"></a>
 ## Предпросмотр комментариев Javadoc
 
+В Eclipse вкладку Javadoc можно использовать в нижней части экрана, для просмотра информации Javadoc, включенную для просматриваемого класса.
+
+![javadoc pane](img/11.png)
+
 <a name="details"></a>
-## Зачем такие подробности о тегах Javadoc?
+## Зачем такие подробности о тэгах Javadoc?
+
+Для чего здесь добавлено много конкретных деталей и рекомендаций по стилю тэгов Javadoc? Для понимания того, что аннотации для Javadoc следуют множеству стилевых соглашений и лучших практик. Эти соглашения и рекомендации не всегда могут быть очевидны или соблюдаются в файлах Java, с которыми приходится работать. Можно добавить большую ценность, просто убедившись, что содержимое соответствует таким стилевым соглашениям.
 
 <a name="moreInfo"></a>
 ## Дополнительная информация о Javadoc
+
+[Oracle’s explanation of Javadoc tags](https://www.oracle.com/technetwork/articles/java/index-137868.html)
+
+[Javadoc](https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javadoc.html)
