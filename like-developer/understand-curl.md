@@ -23,9 +23,7 @@
 
 Одним из преимуществ API REST является то, что вы можете использовать практически любой язык программирования для вызова конечной точки. Конечная точка - это просто ресурс, расположенный на веб-сервере по определенному пути.
 
-
 Каждый язык программирования имеет свой способ совершать веб-вызовы. Вместо того, чтобы тратить силы, пытаясь показать, как совершать веб-вызовы на Java, Python, C ++, JavaScript, Ruby и т. Д., можно просто использовать curl.
-
 
 curl предоставляет общий, независимый от языка способ демонстрации HTTP-запросов и ответов. Пользователи могут видеть формат запроса, включая любые заголовки и другие параметры. Можно перевести результат в определенный формат для используемого языка.
 
@@ -55,7 +53,7 @@ curl http://example.com -i
 
 Заголовок будет включен над телом ответа:
 
-```
+```javascript
 ~/projects $ curl http://example.com -I
 HTTP/1.1 200 OK
 Content-Encoding: gzip
@@ -101,7 +99,7 @@ curl -X GET http://example.com -I
 
 Рассмотрим поближе запрос, который сделали в API сервиса прогноза погоды в предыдущем разделе [Создание curl запроса](make-curl-call.md):
 
-```
+```javascript
 curl -X GET -H "Cache-Control: no-cache" -H "Postman-Token: 930d08d6-7b2a-6ea2-0725-27324755c684" "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
 ```
 
@@ -109,7 +107,7 @@ curl -X GET -H "Cache-Control: no-cache" -H "Postman-Token: 930d08d6-7b2a-6ea2-0
 
 Вот расшифровка команд:
 
-- `-Х GET`. `-X` Показывает, что в запросе бедт использоваться какой-то метод. Общие параметры: `GET`, `POST`, `DELETE`, `PUT`. (Также можете увидеть использование `--get`. Большинство команд curl имеют несколько разных представлений. `-X GET` также можно записать как `--get`.)
+- `-Х GET`. `-X` Показывает, что в запросе будет использоваться какой-то метод. Общие параметры: `GET`, `POST`, `DELETE`, `PUT`. (Также можете увидеть использование `--get`. Большинство команд curl имеют несколько разных представлений. `-X GET` также можно записать как `--get`.)
 - `-H` Отправляет пользовательский заголовок. Для каждого заголовка пары ключ-значение включаем дополнительный `-H`.
 
 <a name="query"></a>
@@ -143,16 +141,19 @@ curl -X GET -H "Cache-Control: no-cache" -H "Postman-Token: 930d08d6-7b2a-6ea2-0
 
 Вот пример запроса curl, который объединяет некоторые из этих команд:
 
-        curl -i -H "Accept: application/json" -X POST -d "{status:MIA}" http://personsreport.com/status/person123
+``` javascript
+curl -i -H "Accept: application/json" -X POST -d "{status:MIA}" http://personsreport.com/status/person123
+```
 
 Запрос также может быть отформатирован с разрывом строки, чтобы быть более читабельным:
 
-        curl -i \
-             -H "Accept: application/json" \
-             -X POST \
-             -d "{status:MIA}" \
-             http://personsreport.com/status/person123 \
-
+``` javascript
+curl -i \
+     -H "Accept: application/json" \
+     -X POST \
+     -d "{status:MIA}" \
+     http://personsreport.com/status/person123 \
+```
 Разрывы строк является проблемой для Windows, поэтому лучше не форматировать запросы curl.
 
 
