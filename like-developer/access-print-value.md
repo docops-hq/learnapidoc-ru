@@ -29,7 +29,7 @@ response.wind.speed
 
 Код будет выглядеть так:
 
-```
+```javascript
 $.ajax(settings).done(function (response) {
     console.log(response);
     console.log("wind speed: " + response.wind.speed);
@@ -48,7 +48,7 @@ wind speed: 13.87
 
 Работать будем с [тем же кодом](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html) из [предыдущего раздел](inspect-json.md)а. Этот код выглядит так:
 
-```
+```html
 <!DOCTYPE html>
 <html>
    <head>
@@ -78,7 +78,7 @@ wind speed: 13.87
 
 1. Добавим следующие строки внутрь функции `ajax`
 
-```
+```javascript
 $.ajax(settings).done(function (response) {
 console.log(response);
 
@@ -90,14 +90,16 @@ $("#windSpeed").append(content);
 
 2. В теле страницы (внутри тега `body`) добавим следующий тэг `div`:
 
-        <body>
-            <h1>Sample page</h2>
-            <div id="windSpeed">Wind speed: </div>
-        </body>
+```html
+<body>
+    <h1>Sample page</h2>
+    <div id="windSpeed">Wind speed: </div>
+</body>
+```
 
 Код должен получиться таким:
 
-```
+```html
 <!DOCTYPE html>
 <html>
    <head>
@@ -134,19 +136,19 @@ $("#windSpeed").append(content);
 
 В теге метода `done` AJAX'а извлекли желаемое значение в переменную:
 
-```
+```javascript
 var content = response.wind.speed;
 ```
 
 И добавили названный элемент в тело страницы
 
-```
+```html
 <div id="windSpeed">Wind speed: </div>
 ```
 
 Мы использовали [метод `append` jQuery](Мы использовали метод append jQuery для добавления переменной содержимого к элементу с идентификатором windSpeed ​​на странице:) для добавления переменной `content` к элементу с ID `windSpeed` ​​на странице:
 
-```
+```javascript
 $("#windSpeed").append(content);
 ```
 
@@ -157,7 +159,7 @@ $("#windSpeed").append(content);
 
 В предыдущей части мы получили значение из объекта JSON. Теперь получим значение из массива. Давайте получим свойство `main` из массива `weather` в ответе. Вот как выглядит массив JSON:
 
-```
+```yaml
 {
   "weather": [
     {
@@ -181,7 +183,7 @@ response.weather[0].main
 
 Теперь код будет выглядеть так:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>

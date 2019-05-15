@@ -27,24 +27,26 @@
 
 1. Создаем текстовый файл и пишем в нем следующий код (эта информация будет передана в памраметре `-d` curl запроса):
 
+```yaml
+{
+    "id": 123,
+    "category": {
+        "id": 123,
+        "name": "test"
+    },
+    "name": "fluffy",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
         {
-            "id": 123,
-            "category": {
-                "id": 123,
-                "name": "test"
-            },
-            "name": "fluffy",
-            "photoUrls": [
-                "string"
-            ],
-            "tags": [
-                {
-                    "id": 0,
-                    "name": "string"
-                }
-            ],
-            "status": "available"
+            "id": 0,
+            "name": "string"
         }
+    ],
+    "status": "available"
+}
+```
 
 2. Изменим значение в первом id и поменяем кличку с "fluffy" на какое-нибудь другое
 
@@ -61,15 +63,17 @@
 
 5. После того, как вы перешли в Терминале/командной строке в каталог с сохраненным JSON файлом, создаем нашего питомца следующим curl запросом:
 
-        curl -X POST --header "Content-Type: application/json" --header "Accept: application/json" -d @mypet.json "http://petstore.swagger.io/v2/pet"
-
+```javascript
+curl -X POST --header "Content-Type: application/json" --header "Accept: application/json" -d @mypet.json "http://petstore.swagger.io/v2/pet"
+```
 
 `Content-Type` указывает тип контента, представленного в теле запроса. `Accept` указывает тип контента, который мы примем в ответе.
 
 Ответ будет выглядеть примерно так:
 
-        {"id":891654,"category":{"id":4,"name":"testexecution"},"name":"SpeedDemon","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
-
+```yaml
+{"id":891654,"category":{"id":4,"name":"testexecution"},"name":"SpeedDemon","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+```
 Проверьте, что в ответе кличка именно вашего питомца.
 
 > Не стесняйтесь выполнить этот же запрос несколько раз. REST API являются «идемпотентными», что означает, что выполнение одного и того же запроса более одного раза не приведет к дублированию результатов (мы просто создаем одного питомца, а не нескольких питомцев). Тодд Фредрих объясняет идемпотентность, сравнивая ее с беременной коровой. Допустим, вы привели быка, чтобы забеременеть. Даже если бык и корова спариваются несколько раз, результатом будет всего одна беременность, а не беременность для каждого сеанса спаривания.
@@ -85,7 +89,9 @@
 
 2. Вместо метода POST используем метод PUT для обновления имени (в остальном запрос не меняется):
 
-        curl -X PUT --header "Content-Type: application/json" --header "Accept: application/json" -d @mypet.json "http://petstore.swagger.io/v2/pet"
+```javascript
+curl -X PUT --header "Content-Type: application/json" --header "Accept: application/json" -d @mypet.json "http://petstore.swagger.io/v2/pet"
+```
 
 В ответе будет новое имя питомца.
 
@@ -98,33 +104,38 @@
 
 2. В команде curl заменим `51231236` на id своего питомца и узнаем информацию о нем:
 
-        curl -X GET --header "Accept: application/json" "http://petstore.swagger.io/v2/pet/51231236"
+```javascript
+curl -X GET --header "Accept: application/json" "http://petstore.swagger.io/v2/pet/51231236"
+```
 
 В ответе будет информация о нашем питомце:
 
-        {"id":891654,"category":{"id":123,"name":"test"},"name":"Beatle","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+```yaml
+{"id":891654,"category":{"id":123,"name":"test"},"name":"Beatle","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+```
 
 Можно отформатировать JSON, вставив его в [инструмент форматирования JSON](http://jsonprettyprint.com/)
 
-    {
-        "id": 891654,
-        "category": {
-            "id": 123,
-            "name": "test"
-        },
-        "name": "Beatle",
-        "photoUrls": [
-            "string"
-        ],
-        "tags": [
-            {
-                "id": 0,
-                "name": "string"
-            }
-        ],
-        "status": "available"
-    }
-
+```yaml
+{
+    "id": 891654,
+    "category": {
+        "id": 123,
+        "name": "test"
+    },
+    "name": "Beatle",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+        {
+            "id": 0,
+            "name": "string"
+        }
+    ],
+    "status": "available"
+}
+```
 <a name="delPet"></a>
 ## Удаление питомца
 
@@ -132,16 +143,20 @@
 
 1. Для удаления питомца используем метод DELETE. В примере ниже меняем `5123123` на id своего питомца:
 
-        curl -X DELETE --header "Accept: application/json" "http://petstore.swagger.io/v2/pet/891654"
-
+```javascript
+curl -X DELETE --header "Accept: application/json" "http://petstore.swagger.io/v2/pet/891654"
+```
 Теперь проверим, получилось удалить питомца. Используем метод GET в этой же команде
 
-        curl -X GET --header "Accept: application/json" "http://petstore.swagger.io/v2/pet/891654"
+```javascript
+curl -X GET --header "Accept: application/json" "http://petstore.swagger.io/v2/pet/891654"
+```
 
 Ответ будет примерно таким:
 
-        {"code":1,"type":"error","message":"Pet not found"}
-
+```yaml
+{"code":1,"type":"error","message":"Pet not found"}
+```
 
 Этот пример позволил нам увидеть, как можно работать с curl для создания, чтения, обновления и удаления ресурсов. Эти четыре операции называются `CRUD` и являются общими почти для каждого языка программирования.
 
@@ -156,7 +171,9 @@
 
 2. В диалоговом окне выбираем вкладку "Paste Raw Text" и вводим команду:
 
-        curl -X GET --header "Accept: application/json" "http://petstore.swagger.io/v2/pet/891654"
+```javascript
+curl -X GET --header "Accept: application/json" "http://petstore.swagger.io/v2/pet/891654"
+```
 
 Указываем свой Id питомца и проверяем, что нет лишних пробелов.
 
@@ -181,17 +198,20 @@
 
 4. Копируем отрывок кода
 
-        curl -X GET \
-            'https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=-121.9689848&units=imperial&appid=fd4698c940c6d1da602a70ac34f0b147' \
-            -H 'Postman-Token: de0da6b7-1dbc-44d6-acc1-9741f05a7bf1' \
-            -H 'cache-control: no-cache'
-
+```javascript
+curl -X GET \
+    'https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=-121.9689848&units=imperial&appid=fd4698c940c6d1da602a70ac34f0b147' \
+    -H 'Postman-Token: de0da6b7-1dbc-44d6-acc1-9741f05a7bf1' \
+    -H 'cache-control: no-cache'
+```
 Вы можете видеть, что Postman добавляет дополнительную информацию заголовка (`-H 'Postman-Token: de0da6b7-1dbc-44d6-acc1-9741f05a7bf1' \ -H 'cache-control: no-cache'`) в запрос. Эта дополнительная информация заголовка не нужна и может быть удалена.
 
 5. Удаляем обратный слэш и разрывы строк. На Windows еще  меняем одинарные кавычки на двойные.
 
 6. Вставляем команду curl в терминал и смотрим результат.
 
-        curl -X GET "https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=-121.9689848&units=imperial&appid=fd4698c940c6d1da602a70ac34f0b147"
+```javascript
+curl -X GET "https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=-121.9689848&units=imperial&appid=fd4698c940c6d1da602a70ac34f0b147"
+```
 
 Благодаря функциям импорта и кода Postman можно легко переключаться между Postman и curl.

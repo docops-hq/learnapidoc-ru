@@ -116,12 +116,14 @@
 
 Пример конечной точки для 5-дневного прогноза, который указывает местоположение по почтовому индексу, выглядит следующим образом:
 
-    https://api.openweathermap.org/data/2.5/forecast?zip=95050,us
-
+```
+https://api.openweathermap.org/data/2.5/forecast?zip=95050,us
+```
 Добавим в параметры запроса значения API и units
 
-    https://api.openweathermap.org/data/2.5/forecast?zip=95050&appid=APIKEY&units=imperial
-
+```
+https://api.openweathermap.org/data/2.5/forecast?zip=95050&appid=APIKEY&units=imperial
+```
 В своей ссылке замените `APIKEY` на ключ API
 
 <a name="oneMoreRequest"></a>
@@ -131,7 +133,9 @@
 
 Например:
 
-    https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=-121.9689848&units=imperial&appid=fd4698c940c6d1da602a70ac34f0b147
+```
+https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=-121.9689848&units=imperial&appid=fd4698c940c6d1da602a70ac34f0b147
+```
 
 <a name="paw"></a>
 ## Аналогичные запросы в Paw вместо Postman
@@ -171,7 +175,8 @@ http://api.aerisapi.com/observations/Chimborazo,Ecuador?client_id=CLIENTID&clien
 
 Узнайте, вся ли музыка кантри в Ноксвилле, штат Теннесси, дает людям мигрени, используя конечную конечную точку [Indices](https://www.aerisweather.com/support/docs/api/reference/endpoints/indices/):
 
-```http://api.aerisapi.com/indices/migraine/Knoxville,TN?client_id=CLIENTID&client_secret=CLIENTSECRET
+```
+http://api.aerisapi.com/indices/migraine/Knoxville,TN?client_id=CLIENTID&client_secret=CLIENTSECRET
 ```
 
 Подумываете о переезде в Аризону, но вы хотите найти получше место? Используйте конечную точку [normals](https://www.aerisweather.com/support/docs/api/reference/endpoints/normals/)

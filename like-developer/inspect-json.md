@@ -17,17 +17,19 @@
 
 1. В текстовом редакторе создаем новый html-файл и вставляем в него шаблон (который содержит основные теги HTML и ссылку на jQuery):
 
-        <html>
-        <meta charset="UTF-8">
-            <head>
-                <title>Sample page</title>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-            </head>
-        <body>
-            <h1>Sample page</h2>
+```html
+<html>
+<meta charset="UTF-8">
+    <head>
+        <title>Sample page</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    </head>
+    <body>
+    <h1>Sample page</h2>
 
-        </body>
-    </html>
+    </body>
+</html>
+```
 
 2. сохраняем файл с именем **weather.html**
 
@@ -39,7 +41,7 @@
 
 Код AJAX должен выглядеть так:
 
-```
+```javascript
 var settings = {
   "async": true,
   "crossDomain": true,
@@ -62,16 +64,18 @@ $.ajax(settings).done(function (response) {
 
 7. В коде jQuery удаляем объект `headers`, который вставил Postman:
 
-        "headers": {
-            "cache-control": "no-cache",
-            "postman-token": "e9be9756-b922-89b3-7109-66bc4cf06b17"
-        }   
+```
+"headers": {
+    "cache-control": "no-cache",
+    "postman-token": "e9be9756-b922-89b3-7109-66bc4cf06b17"
+}   
+```
 
 8. Также удалим точку после метода GET `"method": "GET"` .
 
 Финальный код должен выглядеть так:
 
-```
+```html
 <!DOCTYPE html>
 <html>
    <meta charset="UTF-8">
@@ -115,7 +119,7 @@ $.ajax(settings).done(function (response) {
 
 В этом разделе узнаем больше о функции `ajax`, которую мы использовали ранее. Возможно, эта информация не важна для документирования API, но ее хорошо понимать. Скрипт `ajax`в коде выглядит так:
 
-```
+```javascript
 <script>
    var settings = {
      "async": true,
@@ -132,14 +136,16 @@ $.ajax(settings).done(function (response) {
 
 Если вы работаете с JavaScript и API, [метод `ajax` из jQuery](http://api.jquery.com/jquery.ajax/) может помочь с примерами кода. Метод `ajax` ниже принимает один аргумент: `settings`
 
-```
+```JavaScript
 $.ajax(settings)
 ```
 
 Аргумент `settings` - это объект, который содержит множество пар ключ-значение.
 
-    var settings = {
-    }
+```javascript
+var settings = {
+}
+```
 
 Каждая из разрешенных пар ключ-значение определены в [документации jQuery ajax](http://api.jquery.com/jquery.ajax/#jQuery-ajax-settings).  
 
@@ -149,7 +155,7 @@ $.ajax(settings)
 
 Получаем ответ, вызвав метод `done`.
 
-```
+```JavaScript
 $.ajax(settings).done(function (response) {
 })
 ```
@@ -173,7 +179,9 @@ $.ajax(settings).done(function (response) {
 
 Можно добавить другую информацию в сообщение журнала консоли. Чтобы предварить сообщение журнала своей строкой, можно сделать так:
 
-    console.log("Here's the response: " + response);
+```
+console.log("Here's the response: " + response);
+```
 
 Строки всегда заключаются в кавычки, и используем знак `+` для объединения строк с переменными JavaScript, такими как response.
 

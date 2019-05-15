@@ -47,71 +47,74 @@
 
 1. Создаем новый текстовый файл и вставляем в него следующий код:
 
-        <!DOCTYPE html>
-            <html>
-                <head>
-                    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-                    <meta charset="utf-8">
-                    <title>JSON dot notation practice</title>
-                    <script>
-                        $( document ).ready(function() {
+```html
+<!DOCTYPE html>
+    <html>
+        <head>
+            <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+            <meta charset="utf-8">
+            <title>JSON dot notation practice</title>
+            <script>
+                $( document ).ready(function() {
 
-                            var john = {
-                                "hair": "brown",
-                                "eyes": "green",
-                                "shoes": {
-                                    "brand": "nike",
-                                    "type": "basketball"
-                                },
-                                "favcolors": [
-                                    "azure",
-                                    "goldenrod"
-                                ],
-                                "children": [
-                                    {
-                                        "child1": "Sarah",
+                    var john = {
+                        "hair": "brown",
+                        "eyes": "green",
+                        "shoes": {
+                            "brand": "nike",
+                            "type": "basketball"
+                        },
+                        "favcolors": [
+                            "azure",
+                            "goldenrod"
+                        ],
+                        "children": [
+                            {
+                                "child1": "Sarah",
                                         "age": 2
-                                    },
-                                    {
-                                        "child2": "Jimmy",
+                            },
+                            {
+                                "child2": "Jimmy",
                                         "age": 5
-                                    }
-                                ]
                             }
+                        ]
+                    }
 
-                            var sarahjson = john.children[0].child1;
-                            var greenjson = john.children[0].child1;
-                            var nikejson = john.children[0].child1;
-                            var goldenrodjson = john.children[0].child1;
-                            var jimmyjson = john.children[0].child1;
+                    var sarahjson = john.children[0].child1;
+                    var greenjson = john.children[0].child1;
+                    var nikejson = john.children[0].child1;
+                    var goldenrodjson = john.children[0].child1;
+                    var jimmyjson = john.children[0].child1;
 
-                            $("#sarah").append(sarahjson);
-                            $("#green").append(greenjson);
-                            $("#nike").append(nikejson);
-                            $("#goldenrod").append(goldenrodjson);
-                            $("#jimmy").append(jimmyjson);
-                        });
-                    </script>
-                </head>
-                <body>
-                    <div id="sarah">Sarah: </div>
-                    <div id="green">green: </div>
-                    <div id="nike">nike: </div>
-                    <div id="goldenrod">goldenrod: </div>
-                    <div id="jimmy">Jimmy: </div>
-                </body>
-            </html>
-
+                    $("#sarah").append(sarahjson);
+                    $("#green").append(greenjson);
+                    $("#nike").append(nikejson);
+                    $("#goldenrod").append(goldenrodjson);
+                    $("#jimmy").append(jimmyjson);
+                });
+            </script>
+        </head>
+        <body>
+            <div id="sarah">Sarah: </div>
+            <div id="green">green: </div>
+            <div id="nike">nike: </div>
+            <div id="goldenrod">goldenrod: </div>
+            <div id="jimmy">Jimmy: </div>
+        </body>
+        </html>
+```
 
 Здесь у нас есть объект JSON, определенный как переменная с именем `john`. (как правило, API получают ответ через URL-запрос, но для практики мы просто определяем объект локально)
 
 Если открыть наш файл в браузере то в каждом элементе мы увидим `Sarah` потому что мы извлекаем это значение: `john.children [0] .child1` для каждого элемента.
 
-    var sarahjson = john.children[0].child1;
-    var greenjson = john.children[0].child1;
-    var nikejson = john.children[0].child1;
-    var goldenrodjson = john.children[0].child1;
-    var jimmyjson = john.children[0].child1;
+```javascript
+var sarahjson = john.children[0].child1;
+var greenjson = john.children[0].child1;
+var nikejson = john.children[0].child1;
+var goldenrodjson = john.children[0].child1;
+var jimmyjson = john.children[0].child1;
+```
 
 2. Изменим `john.children[0].child1` для отображения правильных значений для каждого элемента. Например слово `green` должно появиться в тэге ID
 
@@ -122,50 +125,52 @@
 
 В разделе [Сценарий использования API прогнозных сервисов](using-api-scenario.md) был показан пример встраивания скорости ветра и других параметров на веб-сайт. Вернемся к этому примеру кода и посмотрим, как он составлен.
 
-    <html>
-        <head>
-            <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-            <link rel="stylesheet"  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
-            <title>OpenWeatherMap Integration</title>
-            <style>
-                #wind_direction, #wind_speed, #wind_speed_unit, #wind_degree_unit, #weather_conditions, #main_temp_unit, #main_temp {color: red; font-weight: bold;}
-                body {margin:20px;}
-            </style>
-        </head>
-        <body>
-            <script>
-                function checkWind() {
-                    var settings = {
-                        "async": true,
-                        "crossDomain": true,
-                        "dataType": "json",
-                        "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050,us&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
-                        "method": "GET"
-                }
+```html
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <link rel="stylesheet"  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+        <title>OpenWeatherMap Integration</title>
+        <style>
+            #wind_direction, #wind_speed, #wind_speed_unit, #wind_degree_unit, #weather_conditions, #main_temp_unit, #main_temp {color: red; font-weight: bold;}
+            body {margin:20px;}
+        </style>
+    </head>
+    <body>
+        <script>
+            function checkWind() {
+                var settings = {
+                    "async": true,
+                    "crossDomain": true,
+                    "dataType": "json",
+                    "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050,us&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+                    "method": "GET"
+            }
 
-                    $.ajax(settings)
+                $.ajax(settings)
 
-                    .done(function (response) {
-                        console.log(response);
+                .done(function (response) {
+                    console.log(response);
 
-                $("#wind_speed").append (response.wind.speed);
-                $("#wind_direction").append (response.wind.deg);
-                $("#main_temp").append (response.main.temp);
-                $("#weather_conditions").append (response.weather[0].main);
-                $("#wind_speed_unit").append (" MPH");
-                $("#wind_degree_unit").append (" degrees");
-                $("#main_temp_unit").append (" F");
-                });
-                }
-            </script>
-            <button type="button" onclick="checkWind()" class="btn btn-danger weatherbutton">Check wind conditions</button>
-            <h2>Wind conditions for Santa Clara</h2>
-            <span><b>Temperature: </b></span><span id="main_temp"></span><span id="main_temp_unit"></span><br/>
-            <span><b>Wind speed: </b></span><span id="wind_speed"></span> <span id="wind_speed_unit"></span><br/>
-            <span><b>Wind direction: </b></span><span id="wind_direction"></span><span id="wind_degree_unit"></span><br/>
-            <span><b>Current conditions: </b></span><span id="weather_conditions"></span>
-        </body>
-    </html>
+            $("#wind_speed").append (response.wind.speed);
+            $("#wind_direction").append (response.wind.deg);
+            $("#main_temp").append (response.main.temp);
+            $("#weather_conditions").append (response.weather[0].main);
+            $("#wind_speed_unit").append (" MPH");
+            $("#wind_degree_unit").append (" degrees");
+            $("#main_temp_unit").append (" F");
+            });
+            }
+        </script>
+        <button type="button" onclick="checkWind()" class="btn btn-danger weatherbutton">Check wind conditions</button>
+        <h2>Wind conditions for Santa Clara</h2>
+        <span><b>Temperature: </b></span><span id="main_temp"></span><span id="main_temp_unit"></span><br/>
+        <span><b>Wind speed: </b></span><span id="wind_speed"></span> <span id="wind_speed_unit"></span><br/>
+        <span><b>Wind direction: </b></span><span id="wind_direction"></span><span id="wind_degree_unit"></span><br/>
+        <span><b>Current conditions: </b></span><span id="weather_conditions"></span>
+    </body>
+</html>
+```
 
 По сути это тот же код, который мы создали в разделе [Доступ и вывод на страницу определенного значения JSON](access-print-value.md.md), но кое-какие различия есть. Вот что отличается:
 
