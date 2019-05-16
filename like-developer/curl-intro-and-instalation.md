@@ -73,7 +73,7 @@ curl -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4
 
 В ответ должен вернуться мнимизированный JSON:
 
-```javascript
+```yaml
 {"coord":{"lon":-121.96,"lat":37.35},"weather":[{"id":701,"main":"Mist","description":"mist","icon":"50d"}],"base":"stations","main":{"temp":66.92,"pressure":1017,"humidity":50,"temp_min":53.6,"temp_max":75.2},"visibility":16093,"wind":{"speed":10.29,"deg":300},"clouds":{"all":75},"dt":1522526400,"sys":{"type":1,"id":479,"message":0.0051,"country":"US","sunrise":1522504404,"sunset":1522549829},"id":420006397,"name":"Santa Clara","cod":200}
 ```
 
