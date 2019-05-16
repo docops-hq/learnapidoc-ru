@@ -12,7 +12,7 @@
 
 [**Практические занятия REST API**](RESTAPI-activities.md)
 
-[**Практическое занятие: Получить информацию о событии, иcпользуя API сервиса Eventbrite**](Get-event-information-using-Eventbrite-API.md)
+[**Практическое занятие: Получить информацию о событии, используя API сервиса Eventbrite**](Get-event-information-using-Eventbrite-API.md)
 
 [**Практическое занятие: Извлечь галерею, используя API сервиса Flikr**](Retrieve-gallery-using-Flickr-API.md)
 
