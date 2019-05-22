@@ -237,3 +237,9 @@
     - [**Практическое занятие: Получить информацию о событии, иcпользуя API сервиса Eventbrite**](glossary-and-resourses/Get-event-information-using-Eventbrite-API.md)
 
     - [**Практическое занятие: Извлечь галерею, используя API сервиса Flikr**](glossary-and-resourses/Retrieve-gallery-using-Flickr-API.md)
+
+    - [**Получить скорость ветра, используя API сервиса Aeris Weather**](Get-wind-speed-using-Aeris-API.md)
+
+    - [**Справочник RAML**](RAML-tutorial.md)
+
+    - [**Справочник API Blueprint**](API-Blueprint-tutorial.md)
