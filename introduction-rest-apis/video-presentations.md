@@ -105,6 +105,6 @@
 <a name="sacramento"></a>
 [семинар по API в Сакраменто](https://youtu.be/GerbihyUpdo)
 
-[👈 previous](course-overview.md)
+[🔙](course-overview.md)
 
-[Next👉](course-slides.md)
+[Go next ➡](course-slides.md)
