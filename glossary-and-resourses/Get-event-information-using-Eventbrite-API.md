@@ -106,5 +106,55 @@ $.ajax(settings).done(function (response) {
 <a name="customize"></a>
 ## 5. Настраиваем ответ на странице
 
+Информация, возвращаемая из объекта `event`, содержит гораздо больше деталей, чем нам нужно. Мы просто хотим отобразить название и описание мероприятия на нашем сайте. Для этого мы будем использовать код jQuery AJAX, скопированный с предыдущего шага. Более подробно об использовании AJAX в предыдущих разделах:
+
+- [Изучение данных JSON ответа](../like-developer/inspect-json.md)
+- [Доступ и вывод на страницу определенного значения JSON](../like-developer/access-print-value.md)
+- [Точечная нотация](../like-developer/dot-notation.md)
+
+Чтобы интегрировать код JQuery AJAX из Postman в свой веб-сайт и вывести поля `title`  и `description` в ответе, используем следующий код:
+
+```html
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+  var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "https://www.eventbriteapi.com/v3/events/49216045517/",
+    "method": "GET",
+    "headers": {
+      "Authorization": "Bearer IO6EB7MM6TSCIL2TIOHC",
+      "Content-Type": "application/json"
+    }
+  }
+
+  $.ajax(settings).done(function (data) {
+    console.log(data);
+    var content = "<h2>" + data.name.text + "</h2>" + data.description.html;
+    $("#eventbrite").append(content);
+  });
+</script>
+
+<div id="eventbrite"></div>
+
+</body>
+</html>
+```
+
+Вот [результат](https://idratherbewriting.com/learnapidoc/assets/files/eventbrite-example.html)
+
+![результат](img/6.png)
+
 <a name="explanation"></a>
 ## Пояснения кода
+
+Пример реализации настолько прост, насколько это возможно в отношении стиля. Но в примерах кода документации API всегда есть желание хранить простые примеры кода. На самом деле, скорее всего, демоверсия вообще не нужна. Просто отображение полезной нагрузки, возвращаемой в браузере, достаточно для разработчика пользовательского интерфейса. Однако для тестирования интересно, чтобы контент действительно отображался на странице.
+
+Вкратце, вот что происходит. Метод `ajax` из jQuery получает полезную нагрузку для URL-адреса конечной точки, а затем назначает его аргументу `data`. При желании мы регистрируем `data` в консоли, чтобы легче было проверить их полезную нагрузку. Чтобы вывести различные свойства объекта, мы используем точечную нотацию. `data.name.text` получает свойство text из объекта `name`, а `data.description.html` получает тело.
+
+Затем мы переименовываем содержимое, которое нам нужно, с помощью переменной (`var content`) и используем `append` метод jQuery, чтобы назначить содержимое переменной определенному тегу (`eventbrite`) на странице.
