@@ -15,3 +15,7 @@
 [Публикация документации API](https://idratherbewriting.com/learnapidoc/slides/publishing_api_docs.html#/)
 
 [Работа писателя документации API](https://idratherbewriting.com/learnapidoc/slides/getting_job_api_docs.html#/)
+
+[🔙](video-presentations.md)
+
+[Go next ➡](workshop-activities.md)
