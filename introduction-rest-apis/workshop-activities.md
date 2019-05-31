@@ -159,7 +159,7 @@ https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=-121.9689848&
 
 Код Postman для запроса прогноза погоды OpenWeatherMap выглядит в формате cURL следующим образом:
 
-```
+```javascript
 curl -X GET \
       'https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=-121.9689848&units=imperial&appid=fd4698c940c6d1da602a70ac34f0b147' \
       -H 'Postman-Token: dcf3c17f-ef3f-4711-85e1-c2d928e1ea1a' \
@@ -183,7 +183,7 @@ curl -X GET "https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=
 
 Ответ от OpenWeatherMap на наш запрос будет выглядеть так:
 
-```
+```javascript
 {"coord":{"lon":-121.96,"lat":37.35},"weather":[{"id":801,"main":"Clouds","description":"few clouds","icon":"02d"}],"base":"stations","main":{"temp":65.59,"pressure":1014,"humidity":46,"temp_min":60.8,"temp_max":69.8},"visibility":16093,"wind":{"speed":4.7,"deg":270},"clouds":{"all":20},"dt":1522608960,"sys":{"type":1,"id":479,"message":0.1642,"country":"US","sunrise":1522590719,"sunset":1522636280},"id":420006397,"name":"Santa Clara","cod":200}
 ```
 
@@ -203,18 +203,18 @@ curl -X GET "https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=
 
 1. В текстовом редакторе (например, Sublime Text) создадим новый файл HTML (который содержит основные теги HTML) и вставим в него следующий скрипт:
 2.
-```
-		<html>
-		<meta charset="UTF-8">
-  		<head>
-    		<title>Sample page</title>
-    			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  		</head>
-			<body>
-  			<h1>Sample page</h2>
+```html
+<html>
+<meta charset="UTF-8">
+  <head>
+      <title>Sample page</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  </head>
+<body>
+  <h2>Sample page</h2>
 
-				</body>
-		</html>
+</body>
+</html>
 ```
 
 2. Сохраняем файл на ПК, с именем **weather.html**.
@@ -225,28 +225,28 @@ curl -X GET "https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=
 
 Код AJAX должен выглядеть так:
 
-```
-    var settings = {
-      "async": true,
-      "crossDomain": true,
-      "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&units=imperial&appid=8d3f4ca3fe57058a39b58b2a30945699",
-      "method": "GET",
-      "headers": {
-    	"cache-control": "no-cache",
-    	"Postman-Token": "72cd795c-8600-4f6e-870a-82aa572232e2"
-      }
-    }
+```javascript
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+  "method": "GET",
+  "headers": {
+    "cache-control": "no-cache",
+    "postman-token": "e9be9756-b922-89b3-7109-66bc4cf06b17"
+  }
+}
 
-    $.ajax(settings).done(function (response) {
-      console.log(response);
-    });
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
 ```
 
 5. Нажимаем кнопку `Copy to Clipboard` для копирования примера кода.
 6. В том же шаблоне, который начали создавать на шаге 1, добавляем пару тегов `<script></script>` под ссылкой jQuery, а затем вставляем скопированный код Postman между тегов `script`.
 7. В коде jQuery убираем объект `headers`, вставленный Postman
 8.
-```
+```javascript
 "headers": {
 	"cache-control": "no-cache",
  	"postman-token": "e9be9756-b922-89b3-7109-66bc4cf06b17"
@@ -257,31 +257,31 @@ curl -X GET "https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=
 
 Финальный код должен выглядеть так:
 
-```
-	<!DOCTYPE html>
-	<html>
-		<meta charset="UTF-8">
-		<head>
-			<meta charset="UTF-8">
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-			<title>Sample Page</title>
-			<script>
-				var settings = {
-					"async": true,
-					"crossDomain": true,
-					"url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
-					"method": "GET"
-				}
+```html
+<!DOCTYPE html>
+<html>
+   <meta charset="UTF-8">
+   <head>
+      <meta charset="UTF-8">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <title>Sample Page</title>
+      <script>
+         var settings = {
+           "async": true,
+           "crossDomain": true,
+           "url": "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial",
+           "method": "GET"
+         }
 
-				$.ajax(settings).done(function (response) {
-					console.log(response);
-				});
-			</script>
-		</head>
-		<body>
-			<h1>Sample Page</h1>
-			</body>
-		</html>
+         $.ajax(settings).done(function (response) {
+           console.log(response);
+         });
+      </script>
+   </head>
+   <body>
+      <h1>Sample Page</h1>
+   </body>
+</html>
 ```
 
 > Совет: Файл можно посмотреть [по ссылке](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html). (Добавлено несколько инструкций по открытию консоли разработчика, потому что в противном случае отображение страницы на этом этапе в учебнике было бы совершенно пустым.)
@@ -408,31 +408,35 @@ curl -X GET "https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=
 Swagger UI отправляет запрос и показывает отправленный curl.
 В примере был отправлен curl:
 
-	curl -X POST "https://petstore.swagger.io/v2/pet" -H "accept: application/xml" -H "Content-Type: application/json" -d "{ \"id\": 1000, \"category\": { \"id\": 0, \"name\": \"string\" }, \"name\": \"Bentley\", \"photoUrls\": [ \"string\" ], \"tags\": [ { \"id\": 0, \"name\": \"string\" } ], \"status\": \"available\"}"
+```
+curl -X POST "https://petstore.swagger.io/v2/pet" -H "accept: application/xml" -H "Content-Type: application/json" -d "{ \"id\": 1000, \"category\": { \"id\": 0, \"name\": \"string\" }, \"name\": \"Bentley\", \"photoUrls\": [ \"string\" ], \"tags\": [ { \"id\": 0, \"name\": \"string\" } ], \"status\": \"available\"}"
+```
 
 Обратите внимание, что с параметром -d (data) параметр тела запроса экранируется и добавляется непосредственно в команду curl, а не загружается из файла (как описано в [Common curl commands related to REST]()).
 
 В разделе "Ответы" Swagger UI выдает ответ сервера. По умолчанию ответ возвращает XML:
 
-	<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-		<Pet>
-			<category>
-				<id>0</id>
-				<name>string</name>
-			</category>
-			<id>1000</id>
-			<name>Bentley</name>
-			<photoUrls>
-				<photoUrl>string</photoUrl>
-			</photoUrls>
-			<status>available</status>
-			<tags>
-				<tag>
-					<id>0</id>
-					<name>string</name>
-				</tag>
-			</tags>
-		</Pet>
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+  <Pet>
+    <category>
+      <id>0</id>
+      <name>string</name>
+    </category>
+    <id>1000</id>
+    <name>Bentley</name>
+    <photoUrls>
+      <photoUrl>string</photoUrl>
+    </photoUrls>
+    <status>available</status>
+    <tags>
+      <tag>
+        <id>0</id>
+        <name>string</name>
+      </tag>
+    </tags>
+  </Pet>
+```
 
 Если выбрать в выпадающем списке "Response content type" JSON, то в ответе вернется JSON вместо XML.
 
@@ -504,38 +508,43 @@ Swagger UI отправляет запрос и показывает отпра�
 
 6. Перетащим файл спецификации OpenAPI (из шага 1) в папку dist. (Если вы используете предварительно созданные файлы OpenAPI, файл называется либо openapi_openweathermap.yml, либо openapi_sunrise_sunset.yml.) Файловая структура должна выглядеть следующим образом:
 
-
-		├── dist
-		│   ├── favicon-16x16.png
-		│   ├── favicon-32x32.png
-		│   ├── index.html
-		│   ├── oauth2-redirect.html
-		│   ├── swagger-ui-bundle.js
-		│   ├── swagger-ui-bundle.js.map
-		│   ├── swagger-ui-standalone-preset.js
-		│   ├── swagger-ui-standalone-preset.js.map
-		│   ├── swagger-ui.css
-		│   ├── swagger-ui.css.map
-		│   ├── swagger-ui.js
-		│   ├── swagger-ui.js.map
-		│   ├── swagger30.yml
-		│   └── [your openapi specification file]
-
+```
+├── dist
+│   ├── favicon-16x16.png
+│   ├── favicon-32x32.png
+│   ├── index.html
+│   ├── oauth2-redirect.html
+│   ├── swagger-ui-bundle.js
+│   ├── swagger-ui-bundle.js.map
+│   ├── swagger-ui-standalone-preset.js
+│   ├── swagger-ui-standalone-preset.js.map
+│   ├── swagger-ui.css
+│   ├── swagger-ui.css.map
+│   ├── swagger-ui.js
+│   ├── swagger-ui.js.map
+│   ├── swagger30.yml
+│   └── [your openapi specification file]
+```
 
 7. В папке `dist` открываем файл index.html в редакторе [Atom](https://atom.io/) или [Sublime Text](https://www.sublimetext.com/)
 
 8. Ищем следующий код:
 
-		url: "http://petstore.swagger.io/v2/swagger.json",
+```
+url: "http://petstore.swagger.io/v2/swagger.json",
+```
 
 9. Меняем значение `url` из [http://petstore.swagger.io/v2/swagger.json](http://petstore.swagger.io/v2/swagger.json) на относительный путь к файлу YAML и сохраняем файл. Пример:
 
-		url: "openapi_openweathermap.yml",
+```
+url: "openapi_openweathermap.yml",
+```
 
 или
 
-		url: "openapi_sunrise_sunset.yml",
-
+```
+url: "openapi_sunrise_sunset.yml",
+```
 10. Рассмотрим файл index.html локально в вашем браузере. Обратите внимание, что ограничения безопасности Chrome (CORS objections) не позволяют просматривать файл пользовательского интерфейса Swagger локально, но есть несколько обходных путей:
 
  - Просмотр файла локально с помощью [Firefox](https://www.mozilla.org/en-US/firefox/new/) (это самый простой способ);
@@ -596,48 +605,50 @@ Stoplight имеет веб-версию и приложение для деск
 
 3. Переключаем на вкладку `Editor` и нажимаем `Generate from JSON` и вставим JSON ответ от конечной точки OpenWeatherMap:
 
-		{
-			"coord": {
-				"lon": -121.96,
-				"lat": 37.35
-			},
-			"weather": [
-				{
-					"id": 801,
-					"main": "Clouds",
-					"description": "few clouds",
-					"icon": "02d"
-				}
-			],
-			"base": "stations",
-			"main": {
-				"temp": 75.51,
-				"pressure": 1014,
-				"humidity": 8,
-				"temp_min": 66.92,
-				"temp_max": 80.6
-			},
-			"visibility": 16093,
-			"wind": {
-				"speed": 11.41,
-				"deg": 330
-			},
-			"clouds": {
-				"all": 20
-			},
-			"dt": 1541544960,
-			"sys": {
-				"type": 1,
-				"id": 479,
-				"message": 0.0043,
-				"country": "US",
-				"sunrise": 1541515128,
-				"sunset": 1541552625
-			},
-			"id": 420006397,
-			"name": "Santa Clara",
-			"cod": 200
-		}
+```json
+{
+  "coord": {
+    "lon": -121.96,
+    "lat": 37.35
+  },
+  "weather": [
+    {
+      "id": 801,
+      "main": "Clouds",
+      "description": "few clouds",
+      "icon": "02d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 75.51,
+    "pressure": 1014,
+    "humidity": 8,
+    "temp_min": 66.92,
+    "temp_max": 80.6
+  },
+  "visibility": 16093,
+  "wind": {
+    "speed": 11.41,
+    "deg": 330
+  },
+  "clouds": {
+    "all": 20
+  },
+  "dt": 1541544960,
+  "sys": {
+    "type": 1,
+    "id": 479,
+    "message": 0.0043,
+    "country": "US",
+    "sunrise": 1541515128,
+    "sunset": 1541552625
+  },
+  "id": 420006397,
+  "name": "Santa Clara",
+  "cod": 200
+}
+```
 
 4. Нажимаем `Generate!`
 
@@ -799,16 +810,20 @@ Stoplight автоматически генерирует схему JSON, со�
 
 5. Вводим `git clone`, затем вызываем правой кнопкой мыши контекстное меню и нажимаем `paste`. Сохраненный в буфере URL нашей wiki добавится в строку команды (можно и вручную ввести url wiki):
 
-		git clone https://github.com/tomjoht/weatherapi.wiki.git
+```
+git clone https://github.com/tomjoht/weatherapi.wiki.git
+```
 
 Нажимаем `Enter` и ждем пока система клонирует wiki. В это время видим на экране исполнение команды:
 
-		Cloning into 'weatherapi.wiki'...
-		remote: Enumerating objects: 3, done.
-		remote: Counting objects: 100% (3/3), done.
-		remote: Compressing objects: 100% (2/2), done.
-		remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 6
-		Unpacking objects: 100% (9/9), done.
+```
+Cloning into 'weatherapi.wiki'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 6
+Unpacking objects: 100% (9/9), done.
+```
 
 В примере Git создал папку `weatherapi.wiki` 	
 
@@ -834,7 +849,9 @@ Stoplight автоматически генерирует схему JSON, со�
 
 4. Добавим все файлы:
 
-		git add .
+```
+git add .
+```
 
 Git не отслеживает все файлы в той папке, где он был инициализирован. Git отслеживает изменения только для файлов, которые были «добавлены» в Git. Набрав `git add .` или `git add --all`, вы говорите Git начать отслеживать изменения всех файлов в этом каталоге. Вместо этого вы также можете ввести здесь определенное имя файла, например `git add Home.md`, чтобы просто добавить определенный файл (а не все файлы, которые были изменены) для отслеживания в Git.		
 
@@ -842,14 +859,18 @@ Git не отслеживает все файлы в той папке, где �
 
 5. Просмотреть статус файла можно командой
 
-		git status
+```
+git status
+```
 
 Git ответит сообщением, указывающим, какие файлы готовы для коммита.
 
-		Changes to be committed:
-			(use "git reset HEAD <file>..." to unstage)
+```
+Changes to be committed:
+	(use "git reset HEAD <file>..." to unstage)
 
-    			modified:   Home.md
+		modified:   Home.md
+```
 
 В области подготовки перечислены все файлы, которые были добавлены в Git и которые вы каким-либо образом изменили.
 
@@ -857,7 +878,9 @@ Git ответит сообщением, указывающим, какие фа
 
 6. Коммитим изменения
 
-		git commit -m "updated some content"
+```
+git commit -m "updated some content"
+```
 
 Коммит создает слепок файла в данный момент времени для версионирования.
 
@@ -869,7 +892,9 @@ Git ответит сообщением, указывающим, какие фа
 
 7. Отправляем изменения на удаленный репозиторий командой
 
-		git push
+```
+git push
+```
 
 Если автоматическая аутентификация на GitHub не настроена, то будет предложено ввести ваши учетные данные: логин и пароль (Ваш `username` - это логин ID на GitHub).
 
