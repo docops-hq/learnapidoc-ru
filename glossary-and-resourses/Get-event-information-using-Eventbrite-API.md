@@ -19,14 +19,27 @@
 <a name="about"></a>
 ## О Eventbrite
 
+Eventbrite - это инструмент управления событиями, с которым можно взаимодействовать через API для получения необходимой информации о событии. В этом примере используем API-интерфейс Eventbrite для отображения описания события на своей странице.
+
 <a name="getToken"></a>
 ## 1. Получаем токен OAuth
+
+Eventbrite использует [метод OAuth для авторизации](../conceptual-topics/authentication-and-authorization.md#auth2). Для выполнения любых запросов нам понадобится токен OAuth, о котором можно узнать в [документации по аутентификации на Eventbrite](https://www.eventbrite.com/platform/api).
+
+
+Если есть желание подписаться на собственный токен, сначала нужно [войти в Eventbrite](https://www.eventbrite.com/), а затем создать и зарегистрировать свое приложение [здесь](https://www.eventbrite.com/signin/?referrer=%2Fmyaccount%2Fapps%2F). После создания приложения нужно нажать **Show Client Secret and OAuth Token** и скопировать «Anonymous access OAuth token».
 
 <a name="determine"></a>
 ## 2. Определяем необходимый ресурс и конечную точку
 
+Документация по Eventbrite API доступна по адресу https://www.eventbrite.com/platform/api/. Посмотреть список доступных конечных точек можно в разделе "Reference" на боковой панели. Какую конечную точку нам использовать?
+
+Чтобы получить информацию о событии, мы будем использовать объект ["event"](https://www.eventbrite.com/platform/api#/reference/event), который представляет событие "Eventbrite". (API Eventbrite использует термин «объекты» вместо «ресурсы» ) В частности, мы будем использовать ["Retrieve"](https://www.eventbrite.com/platform/api#/reference/event). Единственный параметр, который нам нужно передать - это идентификатор события.
+
 <a name="request"></a>
 ## 3. Создаем запрос
+
+Хотя у Eventbrite есть пояснения, как передавать авторизацию в запросы, проще использовать предварительно созданный curl-запрос из примеров кода документации, а затем использовать Postman для преобразования его в JavaScript jQuery AJAX.
 
 <a name="codeRequest"></a>
 ## 4. Получаем jQuery AJAX код запроса
