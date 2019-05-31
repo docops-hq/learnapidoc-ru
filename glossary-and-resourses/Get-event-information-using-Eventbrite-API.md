@@ -41,14 +41,67 @@ Eventbrite использует [метод OAuth для авторизации]
 
 Хотя у Eventbrite есть пояснения, как передавать авторизацию в запросы, проще использовать предварительно созданный curl-запрос из примеров кода в документации, а затем использовать Postman для преобразования его в JavaScript jQuery AJAX.
 
-Документация Eventbrite создана на Apiary, который предоставляет функцию пробного запуска или [API Explorer](../Publishing-doc/Design-patterns.md#fifth) на правой панели. Панель открывается при нажатии на кнопку **Retrieve an Event**:
+Документация Eventbrite создана на Apiary, который предоставляет функцию пробного запуска или [API Explorer](../Publishing-doc/Design-patterns.md#fifth) на правой панели. Панель открывается при нажатии на кнопку **Retrieve an Event**
 
 ![Retrieve an Event](img/1.png)
 
 На панели консоли справа нажмите кнопку `Try`, чтобы включить возможность вызова ресурса (если кнопка `Call Resource` еще не отображается)
 
+Перед успешным вызовом ресурса сделаем следующее:
+
+- Перейдем на вкладку **URI Parameters** и изменим значение для идентификатора события на `49216045517`. Этот идентификатор соответствует проведенному семинару под названием «Документирование API-интерфейсов REST», который можно просмотреть [здесь](https://www.eventbrite.com/e/documenting-rest-apis-a-jumpstart-workshop-for-technical-writers-tickets-49216045517#). Идентификатор события будет отображаться в URL.
+- Перейдем на вкладку **Headers** и добавим свой собственный токен OAuth в поле `PERSONAL_OAUTH_TOKEN`.
+
+![Headers](img/2.png)
+
+Нажмем кнопку `Call Resource` и затем прокрутим вниз до раздела **Body Response**, чтобы увидеть ответ. Он должен содержать основной текст страницы Eventbrite. (При ошибке с токеном OAuth или идентификатором события, отобразится ответ об ошибке.)
+
 <a name="codeRequest"></a>
 ## 4. Получаем jQuery AJAX код запроса
+
+Мы получили ответ. Теперь ради интереса выведем ответ на странице (как будто мы рекламируем это событие на нашем собственном сайте).
+
+На панели консоли под разделом параметров кликнем **Show Code Example**
+
+![Show Code Example](img/3.png)
+
+в раскрывающемся списке языков выбираем параметр cURL и копируем значение. Это должно выглядеть примерно так:
+
+```javascript
+curl --include \
+     --header "Authorization: Bearer IO6EB7MM6TSCIL2TIOHC" \
+     --header "Content-Type: application/json" \
+  'https://www.eventbriteapi.com/v3/events/49216045517/'
+```
+
+Открываем [Postman](../like-developer/submit-requests-postman.md) В Postman переходим **File > Import** и выбираем вкладку **Paste Raw Text**. В поле вставляем скопированный код curl.
+
+![curl code](img/4.png)
+
+После чего кликаем **Import**. Информация будет отображаться в новой вкладке Postman. В Postman, если развернуть вкладку **Headers**, вы увидите информацию OAuth. Поле GET включает извлеченную конечную точку Eventbrite с идентификатором события, добавленным в качестве [параметра пути](../documenting-api-endpoints/step3-parameters.md#pathParam).
+
+В Postman, под кнопкой `Send`, нажимаем `Code`. В диалоговом окне **Generate Code Snippets** выбираем **JavaScript > Jquery AJAX**. Копируем полученное значение
+
+![Copy value](img/5.png)
+
+Удаляем пары ключ-значение `cache-control` и `Postman-Token` чтобы пример кода выглядел так:
+
+```javascript
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://www.eventbriteapi.com/v3/events/49216045517/",
+  "method": "GET",
+  "headers": {
+    "Authorization": "Bearer IO6EB7MM6TSCIL2TIOHC",
+    "Content-Type": "application/json"
+  }
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
 
 <a name="customize"></a>
 ## 5. Настраиваем ответ на странице
