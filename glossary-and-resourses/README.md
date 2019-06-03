@@ -14,7 +14,7 @@
 
 [**Практическое занятие: Получить информацию о событии, используя API сервиса Eventbrite**](Get-event-information-using-Eventbrite-API.md)
 
-[**Практическое занятие: Извлечь галерею, используя API сервиса Flikr**](Retrieve-gallery-using-Flickr-API.md)
+[**Практическое занятие: Извлечь галерею, используя API сервиса Flickr**](Retrieve-gallery-using-Flickr-API.md)
 
 [**Получить скорость ветра, используя API сервиса Aeris Weather**](Get-wind-speed-using-Aeris-API.md)
 
