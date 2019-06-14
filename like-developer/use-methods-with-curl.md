@@ -215,3 +215,8 @@ curl -X GET "https://api.openweathermap.org/data/2.5/weather?lat=37.3565982&lon=
 ```
 
 Благодаря функциям импорта и кода Postman можно легко переключаться между Postman и curl.
+
+
+[🔙](understand-curl.md)
+
+[Go next ➡](analyze-json-response.md)

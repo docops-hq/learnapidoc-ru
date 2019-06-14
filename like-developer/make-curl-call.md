@@ -65,3 +65,8 @@ curl -H "Content-Type: application/json" -H "Authorization: 123" -X POST -d @myp
 ```
 
 Здесь curl будет искать в существующем каталоге файл `mypostbody.json`. (Вы также можете указать полный путь к файлу JSON на вашем компьютере.)
+
+
+[🔙](curl-intro-and-instalation.md)
+
+[Go next ➡](understand-curl.md)
