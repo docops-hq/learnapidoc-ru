@@ -29,3 +29,8 @@
 [**Доступ и вывод на страницу определенного значения JSON**](access-print-value.md)
 
 [**Погружение в точечную нотацию**](dot-notation.md)
+
+
+[🔙](../introduction-rest-apis/identify-goals.md)
+
+[Go next ➡](using-api-scenario.md)
