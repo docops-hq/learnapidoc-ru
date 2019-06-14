@@ -229,3 +229,8 @@ $.ajax(settings).done(function (response) {
 - [Получаем информацию о событии при использовании API Eventbrite](https://idratherbewriting.com/learnapidoc/docapis_eventbrite_example.html)
 - [Пример Flickr: извлекаем галерею Flickr](https://idratherbewriting.com/learnapidoc/docapis_flickr_example.html)
 - [Получаем скорость ветра при использовании сервиса API Aeris Weather](https://idratherbewriting.com/learnapidoc/docapis_aerisweather_example.html)
+
+
+[🔙](inspect-json.md)
+
+[Go next ➡](dot-notation.md)
