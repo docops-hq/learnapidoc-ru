@@ -110,7 +110,7 @@
     - [**Краткое справочное руководство**](conceptual-topics/quick-reference-guide.md)
     - [**API Глоссарий**](conceptual-topics/api-glossary.md)
     - [**Лучшие практики API**](conceptual-topics/best-practices.md)
-    - [**Практическое занятие: Оценка безадресного контента в проекте**](conceptual-topics/assess-conceptual-content.md)
+    - [**Практическое занятие: Оценка концептуального контента в проекте**](conceptual-topics/assess-conceptual-content.md)
 
 7. [**Публикация документации**](Publishing-doc/README.md)
 
