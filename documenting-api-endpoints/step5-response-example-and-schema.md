@@ -163,37 +163,39 @@ API Citygrid, который мы рассмотрели в разделе [Пр
 
 Ниже пример ответа конечной точки `surfreport/{beachId}`
 
-    {
-        "surfreport": [
-            {
-                "beach": "Santa Cruz",
-                "monday": {
-                    "1pm": {
-                        "tide": 5,
-                        "wind": 15,
-                        "watertemp": 80,
-                        "surfheight": 5,
-                        "recommendation": "Go surfing!"
-                    },
-                    "2pm": {
-                        "tide": -1,
-                        "wind": 1,
-                        "watertemp": 50,
-                        "surfheight": 3,
-                        "recommendation": "Surfing conditions are okay, not great."
-                    },                      
-                    "3pm": {
-                        "tide": -1,
-                        "wind": 10,
-                        "watertemp": 65,
-                        "surfheight": 1,
-                        "recommendation": "Not a good day for surfing."
-                    }
-                    ...
+```yaml
+{
+    "surfreport": [
+        {
+            "beach": "Santa Cruz",
+            "monday": {
+                "1pm": {
+                    "tide": 5,
+                    "wind": 15,
+                    "watertemp": 80,
+                    "surfheight": 5,
+                    "recommendation": "Go surfing!"
+                },
+                "2pm": {
+                    "tide": -1,
+                    "wind": 1,
+                    "watertemp": 50,
+                    "surfheight": 3,
+                    "recommendation": "Surfing conditions are okay, not great."
+                },
+                "3pm": {
+                    "tide": -1,
+                    "wind": 10,
+                    "watertemp": 65,
+                    "surfheight": 1,
+                    "recommendation": "Not a good day for surfing."
                 }
+                ...
             }
-        ]
-    }
+        }
+    ]
+}
+```
 
 В таблице ниже описание для каждого пункта
 
@@ -212,3 +214,7 @@ API Citygrid, который мы рассмотрели в разделе [Пр
 ## Следующие шаги
 
 Мы прошлись по каждому из разделов, теперь взглянем на них вместе в разделе [Собираем все вместе](putt-all-together.md).
+
+[🔙](step4-request-example.md)
+
+[Go next ➡](putt-all-together.md)

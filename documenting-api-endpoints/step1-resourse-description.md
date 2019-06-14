@@ -120,3 +120,7 @@
 ## Следующие шаги
 
 Теперь пришло время перечислить [конечные точки и методы](step2-endpoints-and-methods.md)
+
+[🔙](api-reference-tutorial-overview.md)
+
+[Go next ➡](step2-endpoints-and-methods.md)

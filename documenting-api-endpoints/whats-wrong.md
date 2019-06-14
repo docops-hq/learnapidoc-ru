@@ -49,7 +49,7 @@ https://api.openweathermap.org/data/2.5/surfreport/12345?zip=95050&appid=fd4698c
 <a name="response"></a>
 ### Пример ответа
 
-```json
+```yaml
 {
     "surfreport": [
         {
@@ -105,3 +105,7 @@ https://api.openweathermap.org/data/2.5/surfreport/12345?zip=95050&appid=fd4698c
 ### Ответы
 
 Посмотреть ошибки можно в разделе [Описание ошибок](../glossary-and-resourses/answeres-whats-wrong.md)
+
+[🔙](putt-all-together.md)
+
+[Go next ➡](find-open-source-project.md)
