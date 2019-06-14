@@ -63,31 +63,33 @@
 
 Образец формата:
 
-    {
-        "surfreport": [
-            {
-                "beach": "Santa Cruz",
-                "monday": {
-                    "1pm": {
-                        "tide": 5,
-                        "wind": 15,
-                        "watertemp": 60,
-                        "surfheight": 5,
-                        "recommendation": "Go surfing!"
-                    },
-                    "2pm": {
-                        "tide": -1,
-                        "wind": 1,
-                        "watertemp": 50,
-                        "surfheight": 3,
-                        "recommendation": "Surfing conditions are okay, not great"
-                    }
-                    ...
-
+```yaml
+{
+    "surfreport": [
+        {
+            "beach": "Santa Cruz",
+            "monday": {
+                "1pm": {
+                    "tide": 5,
+                    "wind": 15,
+                    "watertemp": 60,
+                    "surfheight": 5,
+                    "recommendation": "Go surfing!"
+                },
+                "2pm": {
+                    "tide": -1,
+                    "wind": 1,
+                    "watertemp": 50,
+                    "surfheight": 3,
+                    "recommendation": "Surfing conditions are okay, not great"
                 }
+                ...
+
             }
-        ]
-    }
+        }
+    ]
+}
+```
 
 Отрицательные значения прилива означают поступающий прилив.
 
@@ -108,3 +110,7 @@
 ## Следующие шаги
 
 Давайте перейдем к [Обзору пошагового описания API](api-reference-tutorial-overview.md)  для обзора пяти шагов, которые мы рассмотрим при создании раздела адресного API для этой новой конечной точки.
+
+[🔙](README.md)
+
+[Go next ➡](api-reference-tutorial-overview.md)
