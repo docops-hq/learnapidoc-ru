@@ -104,15 +104,19 @@
 
 В одной компании URL-адреса конечных точек ресурса Rewards выглядели так:
 
-    /rewards
-    /rewards/{rewardId}
-    /users/{userId}/rewards
-    /users/{userId}/rewards/{rewardId}
+```
+/rewards
+/rewards/{rewardId}
+/users/{userId}/rewards
+/users/{userId}/rewards/{rewardId}
+```
 
 А Rewards в контексте Missions выглядели вот так:
 
-    /users/{userId}/rewards/{missionId}
-    /missions/{missionid}/rewards
+```
+/users/{userId}/rewards/{missionId}
+/missions/{missionid}/rewards
+```
 
 Сказать, что можно использовать ресурс Rewards, не всегда было достаточно конкретно, потому что было несколько Rewards и конечных точек Missions.
 
@@ -135,3 +139,7 @@
 ## Следующие шаги
 
 Теперь, когда мы описали ресурс и перечислили конечные точки и методы, пришло время заняться одной из самых важных частей API: [раздел "Параметры"](step3-parameters.md).
+
+[🔙](step1-resourse-description.md)
+
+[Go next ➡](step3-parameters.md)
