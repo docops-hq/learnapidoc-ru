@@ -33,3 +33,7 @@
 [**Практическое занятие: Поиск open-source проекта**](find-open-source-project.md)
 
 [**Практическое занятие: Оценка ключевых элементов API документации**](evaluate-api-referense-docs.md)
+
+[🔙](../like-developer/dot-notation.md)
+
+[Go next ➡](new-endpoint.md)
