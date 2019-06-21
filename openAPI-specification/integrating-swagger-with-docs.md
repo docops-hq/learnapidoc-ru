@@ -40,11 +40,14 @@
 
 Бывает, имеется больше данных, которые нужно сообщить пользователю, но которые не вписываются в спецификацию. Например, в конечной точке `weather` в [примере API OpenWeatherMap](https://idratherbewriting.com/learnapidoc/assets/files/swagger/), который мы использовали в этом курсе, есть некоторые подробности об идентификаторах городов, которые требуют некоторого объяснения.
 
-    },
-    "id": 420006397,
-    "name": "Santa Clara",
-    "cod": 200
-    }
+```json
+...
+},
+"id": 420006397,
+"name": "Santa Clara",
+"cod": 200
+}
+```
 
 Что означает `"cod": 200`? Если перейти в раздел [«Идентификатор города» в документации OpenWeatherMap](https://openweathermap.org/current#cityid), увидим ссылку для загрузки списка кодов городов файлов.
 
@@ -62,9 +65,7 @@
 
 Одним из решений является внедрение Swagger UI непосредственно в документацию. Пример этого здесь: [Swagger UI Demo](swagger-ui-demo.md). Вставить Swagger в HTML-страницу довольно легко. Последняя версия Swagger имеет более отзывчивый, гибкий дизайн. Так и просится быть встроенным в другой сайт.
 
-
 Единственная проблема с вариантом встраивания состоит в том, что некоторые из моделей не ограничены в своем контейнере, поэтому они расширяются за пределы контейнера. Попробуйте расширить раздел «Модель» в демоверсии - будет понятно, о чем речь.
-
 
 Может быть джедай стилей и смог бы изменить такое поведение. Возможно, но падаван, который не силен в стилях, не может решить такую проблему. В [Swagger UI Demo](swagger-ui-demo.md) добавлены несколько пользовательских стилей, для внесения изменений в интерфейс Swagger в разных местах. Если просмотреть исходный код этой страницы и изучить второй блок `<style>`, можно увидеть добавленные стили.
 
@@ -75,41 +76,45 @@
 
 Этот вариант предполагает попытку поместить всю информацию в сам документ спецификации. Удивительно, сколько информации можно включить в спецификацию. Любой элемент `description` (не только свойство `description` в объекте `info`) позволяет использовать Markdown и HTML. Например, вот объект `info` в спецификации OpenAPI, где появляется описание. (При желании можно набрать `>`, для перевода на следующую строку, а затем сделать отступ в два пробела. Можно добавить много содержимого в элементах `description`.)
 
-    info:
-      title: OpenWeatherMap API
-      description: 'Get the current weather, daily forecast for 16 days, and a three-hour-interval forecast for 5 days for your city. Helpful stats, graphics, and this day in history charts are available for your reference. Interactive maps show precipitation, clouds, pressure, wind around your location. Data is available in JSON, XML, or HTML format. **Note**: This sample Swagger file covers the `weather` endpoint only from the OpenWeatherMap API. <br/><br/> **Tip**: We recommend that you call the API by city ID (using the `id` parameter) to get unambiguous results for your city.'
-      version: '2.5'
+```yaml
+info:
+  title: OpenWeatherMap API
+  description: 'Get the current weather, daily forecast for 16 days, and a three-hour-interval forecast for 5 days for your city. Helpful stats, graphics, and this day in history charts are available for your reference. Interactive maps show precipitation, clouds, pressure, wind around your location. Data is available in JSON, XML, or HTML format. **Note**: This sample Swagger file covers the `weather` endpoint only from the OpenWeatherMap API. <br/><br/> **Tip**: We recommend that you call the API by city ID (using the `id` parameter) to get unambiguous results for your city.'
+  version: '2.5'
+```
 
 Можно делать ссылки на Bootstrap CSS и JS в заголовке `index.html` проекта Swagger UI, и затем включать предупреждения Bootstrap и кнопки раскрытия / свертывания в элементе `description`. Вот пример:
 
-    info:
-      description: >
-      ACME offers a lot of configuration options...
-      <div class="alert alert-success" role="alert"><i class="fa fa-info-circle"></i> <b>Tip: </b>See the resources available in the portal for more detail.</div>
-      <div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>The  network includes a firewall that protects your access to the resources...</div>
+```yaml
+info:
+  description: >
+    ACME offers a lot of configuration options...
+    <div class="alert alert-success" role="alert"><i class="fa fa-info-circle"></i> <b>Tip: </b>See the resources available in the portal for more detail.</div>
+    <div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>The  network includes a firewall that protects your access to the resources...</div>
 
-      <div class="container">
-      <div class="apiConfigDetails">
-      <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#demo">
-      <span class="glyphicon glyphicon-collapse-down"></span> See API Configuration Details
-      </button>
-      <div id="demo" class="collapse">
+    <div class="container">
+    <div class="apiConfigDetails">
+    <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#demo">
+    <span class="glyphicon glyphicon-collapse-down"></span> See API Configuration Details
+    </button>
+    <div id="demo" class="collapse">
 
-      <h2>Identifiers Allowed</h2>
+    <h2>Identifiers Allowed</h2>
 
-      <p>Based on this configuration, ACME will accept any of the following identifiers in requests.</p>
+    <p>Based on this configuration, ACME will accept any of the following identifiers in requests.</p>
 
-      <table class="table">
-      <thead>
-      <tr>
-      <th>Request Codes</th>
-      <th>Data Type</th>
-      <th>Comparison Method</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-      ...
+    <table class="table">
+    <thead>
+    <tr>
+    <th>Request Codes</th>
+    <th>Data Type</th>
+    <th>Comparison Method</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    ...
+```
 
 Результатом будет сжатие большей части информации в одну кнопку, которая при нажатии разворачивалась, выдавая более подробную информацию. Включая разделы «развернуть/ свернуть» из Bootstrap, можно добавить массу информации в объект `description`. (Для необходимого JavaScript надо добавить теги `<script>` в заголовок или футер того же файла `index.html`, где мы ссылались на файл `openapi.yaml`)
 
@@ -130,32 +135,34 @@
 
 Если используется инструмент, такой как Jekyll, включающий язык под названием Liquid, можно использовать инстанс Liquid для Jekyll, для чтения документации спецификации OpenAPI (который, в конце концов, просто синтаксис YAML). Например, можно использовать [цикл `for`](https://learn.cloudcannon.com/jekyll/looping-in-liquid/) для итерации значений спецификации OpenAPI. В примере ниже файл `swagger.yml` хранится в каталоге `_data Jekyll`.
 
-    <table>
-        <thead>
-        <tr><th>Name</th><th>Type</th><th>Description</th><th>Required?</th></tr>
-        </thead>
-        {% for parameter in site.data.swagger.paths.get.parameters %}
+```html
+<table>
+    <thead>
+    <tr><th>Name</th><th>Type</th><th>Description</th><th>Required?</th></tr>
+    </thead>
+    {% for parameter in site.data.swagger.paths.get.parameters %}
         {% if parameter.in == "query" %}
-            <tr>
-                <td><code>{{ parameter.name }}</code></td>
-                <td><code>{{ parameter.type }}</code></td>
-                <td>
-                {% assign found = false %}
-                {% for param in site.data.swagger.paths.get.parameters %}
-                    {% if parameter.name == param.name %}
-                        {{ param.description }}
-                        {% assign found = true %}
-                    {% endif %}
-                {% endfor %}
-                {% if found == false %}
-                    ** New parameter **
+        <tr>
+            <td><code>{{ parameter.name }}</code></td>
+            <td><code>{{ parameter.type }}</code></td>
+            <td>
+            {% assign found = false %}
+            {% for param in site.data.swagger.paths.get.parameters %}
+                {% if parameter.name == param.name %}
+                    {{ param.description }}
+                    {% assign found = true %}
                 {% endif %}
-                </td>
-                <td><code>{{ parameter.required }}</code></td>
-            </tr>
+            {% endfor %}
+            {% if found == false %}
+                ** New parameter **
             {% endif %}
-        {% endfor %}
-    </table>
+            </td>
+            <td><code>{{ parameter.required }}</code></td>
+        </tr>
+        {% endif %}
+    {% endfor %}
+</table>
+```
 
 Особая благодарность Питеру Хендерсону за то, что он поделился этой техникой и кодом. При таком подходе, возможно, придется выяснить правильный синтаксис Liquid для итерации вашей спецификации OpenAPI, и это может занять некоторое время. Но это может сработать в поиске тесной интеграции с авторским инструментом. (Стоит обратить внимание, что многие [генераторы статических сайтов](../Publishing-doc/Static-site-generator.md) могут анализировать YAML, а не только Jekyll.)
 
@@ -169,20 +176,24 @@
 
 Jekyll позволяет хранить содержимое в файлах YAML в папке `_data`. Допустим, внутри `_data` есть файл `parameters.yml` со следующим содержимым:
 
-    acme_parameter: >
-      This is a description of my parameter ...
-
+```yaml
+acme_parameter: >
+  This is a description of my parameter ...
+```
 
 Затем можно обернуть эту ссылку в такие теги:
 
-    {{site.data.parameters.acme_parameter}}
-
+```
+{{site.data.parameters.acme_parameter}}
+```
 
 В проекте Jekyll ссылка на спецификацию выглядела бы следующим образом:
 
-    info:
-      description: >
-        {{site.data.parameters.acme_parameter}}
+```yaml
+info:
+  description: >
+    {{site.data.parameters.acme_parameter}}
+```
 
 После берем вывод из Jekyll, который содержит контент, вставленный в каждое свойство спецификации. В этой модели происходит генерация спецификацию OpenAPI из проекта Jekyll.
 
@@ -191,9 +202,11 @@ Jekyll позволяет хранить содержимое в файлах YA
 
 Скорее всего, придется подключить весь проект Swagger UI к сайту Jekyll. Вверху файла `Swagger.yml` нужно добавить frontmatter с `layout: null`, чтобы Jekyll обработал файл:
 
-    ---
-    layout: null
-    ---
+```yaml
+---
+layout: null
+---
+```
 
 В команде `jekyll serve` конфигурируем место назначения (`destination`), чтобы преобразовать выходные данные в папку `htdocs`, в которой работает [простой локальный HTTP-сервер](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server). С каждой сборкой, нужно проверять наличие ошибок.
 
@@ -224,3 +237,8 @@ Jekyll позволяет хранить содержимое в файлах YA
 ## Следующие шаги
 
 Итак, мы разобрались со адресной документацией API, пришло время погрузиться в тестирование. Поскольку мы работаем с конечными точками API и кодом, нам нужно будет самостоятельно тестировать конечные точки, чтобы собрать и проверить информацию, содержащуюся в документации. Тестирование - не всегда просто. Поэтому ему посвящен целый раздел. Переходим к [обзору тестирования документации](../testing-api-doc/overview-testing.md).
+
+
+[🔙](stoplight.md)
+
+[Go next ➡](../testing-api-docs/README.md)

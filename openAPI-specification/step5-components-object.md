@@ -58,110 +58,111 @@
 
 На предыдущем шаге Для параметров мы перечислили все детали непосредственно в объекте `parameters`. Чтобы облегчить переиспользование тех же параметров в других путях, давайте сохраним содержимое `parameters` в `components`. Код ниже показывает, как сделать эти ссылки:
 
-    paths:
-      /weather:
-        get:
-          tags:
-          - Current Weather Data
-          summary: "Call current weather data for one location"
-          description: "Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations."
-          operationId: CurrentWeatherData
-          parameters:
-            - $ref: '#/components/parameters/q'
-            - $ref: '#/components/parameters/id'
-            - $ref: '#/components/parameters/lat'
-            - $ref: '#/components/parameters/lon'
-            - $ref: '#/components/parameters/zip'
-            - $ref: '#/components/parameters/units'
-            - $ref: '#/components/parameters/lang'
-            - $ref: '#/components/parameters/mode'
-
-        responses:
-          200:
-            description: Successful response
-            content:
-              application/json:
-                schema:
-                  title: Sample
-                  type: object
-                  properties:
-                    placeholder:
-                      type: string
-                      description: Placeholder description
-
-          404:
-            description: Not found response
-            content:
-              text/plain:
-                schema:
-                  title: Weather not found
-                  type: string
-                  example: Not found
-
-    components:
-
+```yaml
+paths:
+  /weather:
+    get:
+      tags:
+      - Current Weather Data
+      summary: "Call current weather data for one location"
+      description: "Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations."
+      operationId: CurrentWeatherData
       parameters:
-        q:
-          name: q
-          in: query
-          description: "**City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by a comma; use ISO 3166 country codes."
-          schema:
-            type: string
-        id:
-          name: id
-          in: query
-          description: "**City ID**. *Example: `2172797`*. You can call by city ID. The API responds with the exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in this parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs, it's treated as 3 API calls.*"
-          schema:
-            type: string
+        - $ref: '#/components/parameters/q'
+        - $ref: '#/components/parameters/id'
+        - $ref: '#/components/parameters/lat'
+        - $ref: '#/components/parameters/lon'
+        - $ref: '#/components/parameters/zip'
+        - $ref: '#/components/parameters/units'
+        - $ref: '#/components/parameters/lang'
+        - $ref: '#/components/parameters/mode'
 
-        lat:
-          name: lat
-          in: query
-          description: "**Latitude**. *Example: 35*. The latitude coordinate of the location of your interest. Must use with `lon`."
-          schema:
-            type: string
+      responses:
+        200:
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                title: Sample
+                type: object
+                properties:
+                  placeholder:
+                    type: string
+                    description: Placeholder description
 
-        lon:
-          name: lon
-          in: query
-          description: "**Longitude**. *Example: 139*. Longitude coordinate of the location of your interest. Must use with `lat`."
-          schema:
-            type: string
+        404:
+          description: Not found response
+          content:
+            text/plain:
+              schema:
+                title: Weather not found
+                type: string
+                example: Not found
 
-        zip:
-          name: zip
-          in: query
-          description: "**Zip code**. Search by zip code. *Example: 95050,us*. Please note that if the country is not specified, the search uses USA as a default."
-          schema:
-            type: string
+components:
 
-        units:
-          name: units
-          in: query
-          description: '**Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use the `units` parameter, the format is `standard` by default.'
-          schema:
-            type: string
-            enum: [standard, metric, imperial]
-            default: "imperial"
+  parameters:
+    q:
+      name: q
+      in: query
+      description: "**City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by a comma; use ISO 3166 country codes."
+      schema:
+        type: string
+    id:
+      name: id
+      in: query
+      description: "**City ID**. *Example: `2172797`*. You can call by city ID. The API responds with the exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in this parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs, it's treated as 3 API calls.*"
+      schema:
+        type: string
 
-        lang:
-          name: lang
-          in: query
-          description: '**Language**. *Example: en*. You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - `ar`, Bulgarian - `bg`, Catalan - `ca`, Czech - `cz`, German - `de`, Greek - `el`, English - `en`, Persian (Farsi) - `fa`, Finnish - `fi`, French - `fr`, Galician - `gl`, Croatian - `hr`, Hungarian - `hu`, Italian - `it`, Japanese - `ja`, Korean - `kr`, Latvian - `la`, Lithuanian - `lt`, Macedonian - `mk`, Dutch - `nl`, Polish - `pl`, Portuguese - `pt`, Romanian - `ro`, Russian - `ru`, Swedish - `se`, Slovak - `sk`, Slovenian - `sl`, Spanish - `es`, Turkish - `tr`, Ukrainian - `ua`, Vietnamese - `vi`, Chinese Simplified - `zh_cn`, Chinese Traditional - `zh_tw`.'
-          schema:
-            type: string
-            enum: [ar, bg, ca, cz, de, el, en, fa, fi, fr, gl, hr, hu, it, ja, kr, la, lt, mk, nl, pl, pt, ro, ru, se, sk, sl, es, tr, ua, vi, zh_cn, zh_tw]
-            default: "en"
+    lat:
+      name: lat
+      in: query
+      description: "**Latitude**. *Example: 35*. The latitude coordinate of the location of your interest. Must use with `lon`."
+      schema:
+        type: string
 
-        mode:
-          name: mode
-          in: query
-          description: "**Mode**. *Example: html*. Determines the format of the response. Possible values are `xml` and `html`. If the mode parameter is empty, the format is `json` by default."
-          schema:
-            type: string
-              enum: [json, xml, html]
-              default: "json"
+    lon:
+      name: lon
+      in: query
+      description: "**Longitude**. *Example: 139*. Longitude coordinate of the location of your interest. Must use with `lat`."
+      schema:
+        type: string
 
+    zip:
+      name: zip
+      in: query
+      description: "**Zip code**. Search by zip code. *Example: 95050,us*. Please note that if the country is not specified, the search uses USA as a default."
+      schema:
+        type: string
+
+    units:
+      name: units
+      in: query
+      description: '**Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use the `units` parameter, the format is `standard` by default.'
+      schema:
+        type: string
+        enum: [standard, metric, imperial]
+        default: "imperial"
+
+    lang:
+      name: lang
+      in: query
+      description: '**Language**. *Example: en*. You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - `ar`, Bulgarian - `bg`, Catalan - `ca`, Czech - `cz`, German - `de`, Greek - `el`, English - `en`, Persian (Farsi) - `fa`, Finnish - `fi`, French - `fr`, Galician - `gl`, Croatian - `hr`, Hungarian - `hu`, Italian - `it`, Japanese - `ja`, Korean - `kr`, Latvian - `la`, Lithuanian - `lt`, Macedonian - `mk`, Dutch - `nl`, Polish - `pl`, Portuguese - `pt`, Romanian - `ro`, Russian - `ru`, Swedish - `se`, Slovak - `sk`, Slovenian - `sl`, Spanish - `es`, Turkish - `tr`, Ukrainian - `ua`, Vietnamese - `vi`, Chinese Simplified - `zh_cn`, Chinese Traditional - `zh_tw`.'
+      schema:
+        type: string
+        enum: [ar, bg, ca, cz, de, el, en, fa, fi, fr, gl, hr, hu, it, ja, kr, la, lt, mk, nl, pl, pt, ro, ru, se, sk, sl, es, tr, ua, vi, zh_cn, zh_tw]
+        default: "en"
+
+    mode:
+      name: mode
+      in: query
+      description: "**Mode**. *Example: html*. Determines the format of the response. Possible values are `xml` and `html`. If the mode parameter is empty, the format is `json` by default."
+      schema:
+        type: string
+        enum: [json, xml, html]
+        default: "json"
+```
 Заменим существующий объект `paths` в редакторе Swagger приведенным выше примером кода, включив новый объект `components` и обратим внимание, что отображаемое изображение по-прежнему выглядит так же.              
 
 <a name="reuseObjects"></a>
@@ -171,38 +172,40 @@
 
 Давайте поглубже изучим то, как использовать свойства схемы для документирования объекта `response`. Мы также будем хранить  содержимое схемы в `components`, чтобы его можно было повторно использовать в других частях документа спецификации. Если вспомнить [предыдущий шаг](step4-paths-object.md), объект ответов для конечной точки погоды выглядел так:
 
-    paths:
-      /current:
-        get:
-          parameters:
+```yaml
+paths:
+  /current:
+    get:
+      parameters:
 
-          ...
+      ...
 
-          responses:
-            200:
-              description: Successful response
-              content:
-                application/json:
-                  schema:
-                    title: Sample
-                    type: object
-                    properties:
-                      placeholder:
-                      type: string
-                      description: Placeholder description
-
-            404:
-              description: Not found response
-              content:
-                text/plain:
-                  schema:
-                    title: Weather not found
+      responses:
+        200:
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                title: Sample
+                type: object
+                properties:
+                  placeholder:
                     type: string
-                    example: Not found
+                    description: Placeholder description
+
+        404:
+          description: Not found response
+          content:
+            text/plain:
+              schema:
+                title: Weather not found
+                type: string
+                example: Not found
+```
 
 Перенесем описание `schema` для ответа `200` в объект `components`:
 
-```
+```yaml
 paths:
   /weather:
     get:
@@ -242,55 +245,57 @@ paths:
 
 Прежде чем мы опишем ответ в объекте `components`, может быть полезно посмотреть, как выглядит ответ `weather` от API OpenWeatherMap. Ответ JSON содержит несколько вложенных объектов на разных уровнях.
 
+```json
+{
+  "coord": {
+    "lon": 145.77,
+    "lat": -16.92
+  },
+  "weather": [
     {
-      "coord": {
-        "lon": 145.77,
-        "lat": -16.92
-      },
-      "weather": [
-        {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04n"
-        }
-      ],
-      "base": "cmc stations",
-      "main": {
-        "temp": 293.25,
-        "pressure": 1019,
-        "humidity": 83,
-        "temp_min": 289.82,
-        "temp_max": 295.37,
-        "sea_level": 984,
-        "grnd_level": 990
-      },
-      "wind": {
-        "speed": 5.1,
-        "deg": 150
-      },
-      "clouds": {
-        "all": 75
-      },
-      "rain": {
-        "3h": 3
-      },
-      "snow": {
-        "3h": 6
-      },
-      "dt": 1435658272,
-      "sys": {
-        "type": 1,
-        "id": 8166,
-        "message": 0.0166,
-        "country": "AU",
-        "sunrise": 1435610796,
-        "sunset": 1435650870
-      },
-      "id": 2172797,
-      "name": "Cairns",
-      "cod": 200
+      "id": 803,
+      "main": "Clouds",
+      "description": "broken clouds",
+      "icon": "04n"
     }
+  ],
+  "base": "cmc stations",
+  "main": {
+    "temp": 293.25,
+    "pressure": 1019,
+    "humidity": 83,
+    "temp_min": 289.82,
+    "temp_max": 295.37,
+    "sea_level": 984,
+    "grnd_level": 990
+  },
+  "wind": {
+    "speed": 5.1,
+    "deg": 150
+  },
+  "clouds": {
+    "all": 75
+  },
+  "rain": {
+    "3h": 3
+  },
+  "snow": {
+    "3h": 6
+  },
+  "dt": 1435658272,
+  "sys": {
+    "type": 1,
+    "id": 8166,
+    "message": 0.0166,
+    "country": "AU",
+    "sunrise": 1435610796,
+    "sunset": 1435650870
+  },
+  "id": 2172797,
+  "name": "Cairns",
+  "cod": 200
+}
+```
 
 Существует несколько способов описания этого ответа. Можно создать длинное описание, содержащее всю отраженную иерархию. Однако одной из проблем такого подхода является то, что трудно поддерживать все уровни на одном уровне. С таким количеством вложенных объектов это головокружительно запутанно. Кроме того, легко ошибиться. Хуже всего то, что нельзя переиспользовать отдельные объекты. В первую очередь это подрывает одну из основных причин хранения этого объекта в `components`.    
 
@@ -300,7 +305,7 @@ paths:
 
 Объект `responses` с документацией `components`:
 
-```
+```yaml
 paths:
   /weather:
     get:
@@ -615,7 +620,7 @@ components:
 
 Скопируем код ниже и вставим его в редактор Swagger после объектов `openapi`, `info` и `servers`
 
-```
+```yaml
 paths:
   /weather:
     get:
@@ -947,3 +952,8 @@ components:
 ## Определения `security`
 
 Объект `components` также содержит [объект `securitySchemes`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#securitySchemeObject), который определяет метод авторизации, используемый с каждым путем. Не будем углубляться в детали конфигурации безопасности, исследуем `security` на [шаге 6: объект безопасности](step6-security-object.md).
+
+
+[🔙](step4-paths-object.md)
+
+[Go next ➡](step6-security-object.md)

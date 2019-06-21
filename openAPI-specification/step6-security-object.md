@@ -38,19 +38,22 @@ Swagger UI предоставляет функцию **Try it out**, котор�
 
 На корневом уровне документа OpenAPI добавим объект `security`, который определяет глобальный метод безопасности API:
 
-    security:
-    - app_id: []
+```yaml
+security:
+- app_id: []
+```
 
 `app_id` - произвольное имя, которое мы дали этой схеме безопасности в нашем объекте `securitySchemes`. Мы могли бы назвать ее как угодно. Мы определим `app_id` в `components`.
 
 Все пути будут использовать метод безопасности `app_id` по умолчанию, если он не переопределен значением на [уровне объекта `path`](step4-paths-object.md). Например, на уровне пути мы могли бы перезаписать метод глобальной безопасности следующим образом:
 
-    /current:
-      get:
-        ...
-        security:
-        - some_other_key: []
-
+```yaml
+/current:
+  get:
+    ...
+    security:
+    - some_other_key: []
+```
 
 Тогда путь `weather` будет использовать метод безопасности `some_other_key`, в то время как все другие пути будут использовать глобально объявленную безопасность `app_id`.
 
@@ -59,15 +62,17 @@ Swagger UI предоставляет функцию **Try it out**, котор�
 
 В [объекте `components`](step5-components-object.md) добавим [объект `securitySchemes`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#securitySchemeObject), который определяет подробности о схеме безопасности, которую использует API:
 
-    components:
-      ...
+```yaml
+components:
+  ...
 
-      securitySchemes:
-        app_id:
-          type: apiKey
-          description: API key to authorize requests. If you don't have an OpenWeatherMap API key, use `fd4698c940c6d1da602a70ac34f0b147`.
-          name: appid
-          in: query
+  securitySchemes:
+    app_id:
+      type: apiKey
+      description: API key to authorize requests. If you don't have an OpenWeatherMap API key, use `fd4698c940c6d1da602a70ac34f0b147`.
+      name: appid
+      in: query
+```
 
 Свойства, которые можно использовать для каждого элемента в объекте `securitySchemes`, включают следующее:
 
@@ -85,23 +90,27 @@ Swagger UI предоставляет функцию **Try it out**, котор�
 
 В редакторе Swagger, если еще не указано, добавим объект `security` на корневом уровне:
 
-    security:
+```yaml
+security:
     - app_id: []
+```
 
 И вставим объект `securitySchemes` в объект `components` (на том же уровне, что и `parameters` и `responses`):
 
-    components:
-      parameters:
-      ...
-      responses:
-      ...
+```yaml
+components:
+  parameters:
+  ...
+  responses:
+  ...
 
-      securitySchemes:
-        app_id:
-          type: apiKey
-          description: API key to authorize requests. If you don't have an OpenWeatherMap API key, use `fd4698c940c6d1da602a70ac34f0b147`.
-          name: appid
-          in: query
+  securitySchemes:
+    app_id:
+      type: apiKey
+      description: API key to authorize requests. If you don't have an OpenWeatherMap API key, use `fd4698c940c6d1da602a70ac34f0b147`.
+      name: appid
+      in: query
+```
 
 И проверим, как изменился наш Swagger UI в правой части: появилась кнопка `Authorize`
 
@@ -124,8 +133,9 @@ Swagger UI предоставляет функцию **Try it out**, котор�
 
 При выполнении запроса, Swagger UI показывает отправленный запрос. Например, после выполнения запроса погоды, curl выглядит следующим образом:
 
+```json
     curl -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050%2Cus&units=imperial&lang=en&mode=json&appid=fd4698c940c6d1da602a70ac34f0b147" -H "accept: application/json"
-
+```
 
 `&Appid = fd4698c940c6d1da602a70ac34f0b147` "указывает, что ключ API включается в строку запроса, поэтому запрос будет авторизован. Если вы скопируете отправленный curl и вставите его в командную строку, вы увидите успешный ответ:
 
@@ -135,57 +145,62 @@ Swagger UI предоставляет функцию **Try it out**, котор�
 
 Ответ сервера также отображается непосредственно в Swagger UI со ссылкой для его загрузки:
 
+```json
+{
+  "coord": {
+    "lon": -121.96,
+    "lat": 37.35
+  },
+  "weather": [
     {
-      "coord": {
-        "lon": -121.96,
-        "lat": 37.35
-      },
-      "weather": [
-        {
-          "id": 500,
-          "main": "Rain",
-          "description": "light rain",
-          "icon": "10d"
-        },
-        {
-          "id": 701,
-          "main": "Mist",
-          "description": "mist",
-          "icon": "50d"
-        }
-      ],
-      "base": "stations",
-      "main": {
-        "temp": 55.24,
-        "pressure": 1012,
-        "humidity": 77,
-        "temp_min": 51.08,
-        "temp_max": 59
-      },
-      "visibility": 16093,
-      "wind": {
-        "speed": 5.82,
-        "deg": 320
-      },
-      "rain": {
-        "1h": 0.25
-      },
-      "clouds": {
-        "all": 40
-      },
-      "dt": 1544039760,
-      "sys": {
-        "type": 1,
-        "id": 5122,
-        "message": 0.0052,
-        "country": "US",
-        "sunrise": 1544022470,
-        "sunset": 1544057391
-      },
-      "id": 420006397,
-      "name": "Santa Clara",
-      "cod": 200
+      "id": 500,
+      "main": "Rain",
+      "description": "light rain",
+      "icon": "10d"
+    },
+    {
+      "id": 701,
+      "main": "Mist",
+      "description": "mist",
+      "icon": "50d"
     }
-
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 55.24,
+    "pressure": 1012,
+    "humidity": 77,
+    "temp_min": 51.08,
+    "temp_max": 59
+  },
+  "visibility": 16093,
+  "wind": {
+    "speed": 5.82,
+    "deg": 320
+  },
+  "rain": {
+    "1h": 0.25
+  },
+  "clouds": {
+    "all": 40
+  },
+  "dt": 1544039760,
+  "sys": {
+    "type": 1,
+    "id": 5122,
+    "message": 0.0052,
+    "country": "US",
+    "sunrise": 1544022470,
+    "sunset": 1544057391
+  },
+  "id": 420006397,
+  "name": "Santa Clara",
+  "cod": 200
+}
+```
 
 Обратите внимание, если вы обнаружите при реализации Swagger UI, что запрос curl работает? но ответ не отображается в Swagger UI, может возникнуть проблема CORS с вашими запросами на блокировку API от веб-приложений, таких как Swagger. Подробнее см. [Troubleshooting issues with Swagger UI]().
+
+[🔙](step5-components-object.md)
+
+[Go next ➡](step7-tags-object.md)

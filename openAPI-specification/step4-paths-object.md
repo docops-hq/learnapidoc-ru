@@ -29,9 +29,11 @@
 
 Начинаем с перечисления путей (конечных точек) и их разрешенных операций (методов). Для конечной точки `weather` в API OpenWeatherMap есть только один путь (`/weather`) и одна операция (`get`) для этого пути:
 
-    paths:
-      /weather:
-        get:
+```yaml
+paths:
+  /weather:
+    get:
+```
 
 <a name="operations"></a>
 ### Объекты операций
@@ -57,21 +59,23 @@
 
 Давайте добавим скелет объекта операций к нашему коду:
 
-    paths:
-      /weather:
-        get:
-          tags:
-          summary:
-          description:
-          operationId:
-          externalDocs:
-          parameters:
-          responses:
-          deprecated:
-          security:
-          servers:
-          requestBody:
-          callbacks:
+```yaml
+paths:
+  /weather:
+    get:
+      tags:
+      summary:
+      description:
+      operationId:
+      externalDocs:
+      parameters:
+      responses:
+      deprecated:
+      security:
+      servers:
+      requestBody:
+      callbacks:
+```
 
 И удалим несколько ненужных полей, которые нам не нужны для нашей документации по API OpenWeatherMap:
 
@@ -83,16 +87,18 @@
 
 В результате мы можем уменьшить количество соответствующих полей до следующего:
 
-    paths:
-      /weather:
-        get:
-          tags:
-          summary:
-          description:
-          operationId:
-          externalDocs:
-          parameters:
-          responses:
+```yaml
+paths:
+  /weather:
+    get:
+      tags:
+      summary:
+      description:
+      operationId:
+      externalDocs:
+      parameters:
+      responses:
+```
 
 Большинство свойств для объектов операции либо требуют простых строк, либо содержат относительно простые объекты. Наиболее подробные объекты здесь - это [объект `parameters`](#parameters) и [объект `responses`](#responses).         
 
@@ -116,68 +122,70 @@
 
 Вот объект `paths`, который включает детали `parameters`:
 
-    paths:
-      /weather:
-        get:
-          tags:
-          - Current Weather Data
-          summary: "Call current weather data for one location."
-          description: "Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations."
-          operationId: CurrentWeatherData
-          parameters:
-          - name: q
-            in: query
-            description: "**City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by a comma; use ISO 3166 country codes."
-            schema:
-              type: string
+```yaml    
+paths:
+  /weather:
+    get:
+      tags:
+      - Current Weather Data
+      summary: "Call current weather data for one location."
+      description: "Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations."
+      operationId: CurrentWeatherData
+      parameters:
+      - name: q
+        in: query
+        description: "**City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by a comma; use ISO 3166 country codes."
+        schema:
+          type: string
 
-          - name: id
-            in: query
-            description: "**City ID**. *Example: `2172797`*. You can call by city ID. The API responds with the exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in this parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs, it's treated as 3 API calls.*"
-            schema:
-              type: string
+      - name: id
+        in: query
+        description: "**City ID**. *Example: `2172797`*. You can call by city ID. The API responds with the exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in this parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs, it's treated as 3 API calls.*"
+        schema:
+          type: string
 
-          - name: lat
-            in: query
-            description: "**Latitude**. *Example: 35*. The latitude coordinate of the location of your interest. Must use with `lon`."
-            schema:
-              type: string
+      - name: lat
+        in: query
+        description: "**Latitude**. *Example: 35*. The latitude coordinate of the location of your interest. Must use with `lon`."
+        schema:
+          type: string
 
-          - name: lon
-            in: query
-            description: "**Longitude**. *Example: 139*. Longitude coordinate of the location of your interest. Must use with `lat`."
-            schema:
-              type: string
+      - name: lon
+        in: query
+        description: "**Longitude**. *Example: 139*. Longitude coordinate of the location of your interest. Must use with `lat`."
+        schema:
+          type: string
 
-          - name: zip
-            in: query
-            description: "**Zip code**. Search by zip code. *Example: 95050,us*. Please note that if the country is not specified, the search uses USA as a default."
-            schema:
-              type: string
+      - name: zip
+        in: query
+        description: "**Zip code**. Search by zip code. *Example: 95050,us*. Please note that if the country is not specified, the search uses USA as a default."
+        schema:
+          type: string
 
-          - name: units
-            in: query
-            description: '**Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use the `units` parameter, the format is `standard` by default.'
-            schema:
-              type: string
-              enum: [standard, metric, imperial]
-              default: "imperial"
+      - name: units
+        in: query
+        description: '**Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use the `units` parameter, the format is `standard` by default.'
+        schema:
+          type: string
+          enum: [standard, metric, imperial]
+          default: "imperial"
 
-          - name: lang
-            in: query
-            description: '**Language**. *Example: en*. You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - `ar`, Bulgarian - `bg`, Catalan - `ca`, Czech - `cz`, German - `de`, Greek - `el`, English - `en`, Persian (Farsi) - `fa`, Finnish - `fi`, French - `fr`, Galician - `gl`, Croatian - `hr`, Hungarian - `hu`, Italian - `it`, Japanese - `ja`, Korean - `kr`, Latvian - `la`, Lithuanian - `lt`, Macedonian - `mk`, Dutch - `nl`, Polish - `pl`, Portuguese - `pt`, Romanian - `ro`, Russian - `ru`, Swedish - `se`, Slovak - `sk`, Slovenian - `sl`, Spanish - `es`, Turkish - `tr`, Ukrainian - `ua`, Vietnamese - `vi`, Chinese Simplified - `zh_cn`, Chinese Traditional - `zh_tw`.'
-            schema:
-              type: string
-              enum: [ar, bg, ca, cz, de, el, en, fa, fi, fr, gl, hr, hu, it, ja, kr, la, lt, mk, nl, pl, pt, ro, ru, se, sk, sl, es, tr, ua, vi, zh_cn, zh_tw]
-              default: "en"
+      - name: lang
+        in: query
+        description: '**Language**. *Example: en*. You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - `ar`, Bulgarian - `bg`, Catalan - `ca`, Czech - `cz`, German - `de`, Greek - `el`, English - `en`, Persian (Farsi) - `fa`, Finnish - `fi`, French - `fr`, Galician - `gl`, Croatian - `hr`, Hungarian - `hu`, Italian - `it`, Japanese - `ja`, Korean - `kr`, Latvian - `la`, Lithuanian - `lt`, Macedonian - `mk`, Dutch - `nl`, Polish - `pl`, Portuguese - `pt`, Romanian - `ro`, Russian - `ru`, Swedish - `se`, Slovak - `sk`, Slovenian - `sl`, Spanish - `es`, Turkish - `tr`, Ukrainian - `ua`, Vietnamese - `vi`, Chinese Simplified - `zh_cn`, Chinese Traditional - `zh_tw`.'
+        schema:
+          type: string
+          enum: [ar, bg, ca, cz, de, el, en, fa, fi, fr, gl, hr, hu, it, ja, kr, la, lt, mk, nl, pl, pt, ro, ru, se, sk, sl, es, tr, ua, vi, zh_cn, zh_tw]
+          default: "en"
 
-          - name: mode
-            in: query
-            description: "**Mode**. *Example: html*. Determines the format of the response. Possible values are `xml` and `html`. If the mode parameter is empty, the format is `json` by default."
-            schema:
-              type: string
-                enum: [json, xml, html]
-                default: "json"
+      - name: mode
+        in: query
+        description: "**Mode**. *Example: html*. Determines the format of the response. Possible values are `xml` and `html`. If the mode parameter is empty, the format is `json` by default."
+        schema:
+          type: string
+          enum: [json, xml, html]
+          default: "json"
+```
 
 <a name="responses"></a>
 #### Объект `responses`
@@ -186,27 +194,29 @@
 
 На данный момент, чтобы редактор Swagger проверил и показал наш путь, давайте просто добавим некоторый контент-заполнитель для `responses`:
 
-    responses:
-      200:
-        description: Successful response
-        content:
-          application/json:
-            schema:
-              title: Sample
-              type: object
-              properties:
-                placeholder:
-                  type: string
-                  description: Placeholder description
+```yaml
+responses:
+  200:
+    description: Successful response
+    content:
+      application/json:
+        schema:
+          title: Sample
+          type: object
+          properties:
+            placeholder:
+              type: string
+              description: Placeholder description
 
-    404:
-      description: Not found response
-      content:
-        text/plain:
-          schema:
-            title: Weather not found
-            type: string
-            example: Not found
+  404:
+    description: Not found response
+    content:
+      text/plain:
+        schema:
+          title: Weather not found
+          type: string
+          example: Not found
+```
 
 См. [Describing Parameters](https://swagger.io/docs/specification/describing-parameters/) в документации OpenAPI Swagger для более подробной информации.
 
@@ -215,81 +225,82 @@
 
 Теперь давайте объединим два вышеупомянутых блока кода (и `parameters`, и `responses`) для нашего объекта `paths`. Можем вставить этот код в редактор Swagger, добавляем  наш объект `paths` под кодом `openapi`, `info` и `server`, которые мы добавили в предыдущих уроках.
 
-    paths:
-      /weather:
-        get:
-          tags:
-          - Current Weather Data
-          summary: "Call current weather data for one location."
-          description: "Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations."
-          operationId: CurrentWeatherData
-          parameters:
-          - name: q
-            in: query
-            description: "**City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by a comma; use ISO 3166 country codes."
-            schema:
-              type: string
+```yaml
+paths:
+  /weather:
+    get:
+      tags:
+      - Current Weather Data
+      summary: "Call current weather data for one location."
+      description: "Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations."
+      operationId: CurrentWeatherData
+      parameters:
+      - name: q
+        in: query
+        description: "**City name**. *Example: London*. You can call by city name, or by city name and country code. The API responds with a list of results that match a searching word. For the query value, type the city name and optionally the country code divided by a comma; use ISO 3166 country codes."
+        schema:
+          type: string
 
-          - name: id
-            in: query
-            description: "**City ID**. *Example: `2172797`*. You can call by city ID. The API responds with the exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in this parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs, it's treated as 3 API calls.*"
-            schema:
-              type: string
+      - name: id
+        in: query
+        description: "**City ID**. *Example: `2172797`*. You can call by city ID. The API responds with the exact result. The List of city IDs can be downloaded [here](http://bulk.openweathermap.org/sample/). You can include multiple cities in this parameter &mdash; just separate them by commas. The limit of locations is 20. *Note: A single ID counts as a one API call. So, if you have city IDs, it's treated as 3 API calls.*"
+        schema:
+          type: string
 
-          - name: lat
-            in: query
-            description: "**Latitude**. *Example: 35*. The latitude coordinate of the location of your interest. Must use with `lon`."
-            schema:
-              type: string
+      - name: lat
+        in: query
+        description: "**Latitude**. *Example: 35*. The latitude coordinate of the location of your interest. Must use with `lon`."
+        schema:
+          type: string
 
-          - name: lon
-            in: query
-            description: "**Longitude**. *Example: 139*. Longitude coordinate of the location of your interest. Must use with `lat`."
-            schema:
-              type: string
+      - name: lon
+        in: query
+        description: "**Longitude**. *Example: 139*. Longitude coordinate of the location of your interest. Must use with `lat`."
+        schema:
+          type: string
 
-          - name: zip
-            in: query
-            description: "**Zip code**. Search by zip code. *Example: 95050,us*. Please note that if the country is not specified, the search uses USA as a default."
-            schema:
-              type: string
+      - name: zip
+        in: query
+        description: "**Zip code**. Search by zip code. *Example: 95050,us*. Please note that if the country is not specified, the search uses USA as a default."
+        schema:
+          type: string
 
-          - name: units
-            in: query
-            description: '**Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use the `units` parameter, the format is `standard` by default.'
-            schema:
-              type: string
-              enum: [standard, metric, imperial]
-              default: "imperial"
+      - name: units
+        in: query
+        description: '**Units**. *Example: imperial*. Possible values: `standard`, `metric`, and `imperial`. When you do not use the `units` parameter, the format is `standard` by default.'
+        schema:
+          type: string
+          enum: [standard, metric, imperial]
+          default: "imperial"
 
-          - name: lang
-            in: query
-            description: '**Language**. *Example: en*. You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - `ar`, Bulgarian - `bg`, Catalan - `ca`, Czech - `cz`, German - `de`, Greek - `el`, English - `en`, Persian (Farsi) - `fa`, Finnish - `fi`, French - `fr`, Galician - `gl`, Croatian - `hr`, Hungarian - `hu`, Italian - `it`, Japanese - `ja`, Korean - `kr`, Latvian - `la`, Lithuanian - `lt`, Macedonian - `mk`, Dutch - `nl`, Polish - `pl`, Portuguese - `pt`, Romanian - `ro`, Russian - `ru`, Swedish - `se`, Slovak - `sk`, Slovenian - `sl`, Spanish - `es`, Turkish - `tr`, Ukrainian - `ua`, Vietnamese - `vi`, Chinese Simplified - `zh_cn`, Chinese Traditional - `zh_tw`.'
-            schema:
-              type: string
-              enum: [ar, bg, ca, cz, de, el, en, fa, fi, fr, gl, hr, hu, it, ja, kr, la, lt, mk, nl, pl, pt, ro, ru, se, sk, sl, es, tr, ua, vi, zh_cn, zh_tw]
-              default: "en"
+      - name: lang
+        in: query
+        description: '**Language**. *Example: en*. You can use lang parameter to get the output in your language. We support the following languages that you can use with the corresponded lang values: Arabic - `ar`, Bulgarian - `bg`, Catalan - `ca`, Czech - `cz`, German - `de`, Greek - `el`, English - `en`, Persian (Farsi) - `fa`, Finnish - `fi`, French - `fr`, Galician - `gl`, Croatian - `hr`, Hungarian - `hu`, Italian - `it`, Japanese - `ja`, Korean - `kr`, Latvian - `la`, Lithuanian - `lt`, Macedonian - `mk`, Dutch - `nl`, Polish - `pl`, Portuguese - `pt`, Romanian - `ro`, Russian - `ru`, Swedish - `se`, Slovak - `sk`, Slovenian - `sl`, Spanish - `es`, Turkish - `tr`, Ukrainian - `ua`, Vietnamese - `vi`, Chinese Simplified - `zh_cn`, Chinese Traditional - `zh_tw`.'
+        schema:
+          type: string
+          enum: [ar, bg, ca, cz, de, el, en, fa, fi, fr, gl, hr, hu, it, ja, kr, la, lt, mk, nl, pl, pt, ro, ru, se, sk, sl, es, tr, ua, vi, zh_cn, zh_tw]
+          default: "en"
 
-          - name: mode
-            in: query
-            description: "**Mode**. *Example: html*. Determines the format of the response. Possible values are `xml` and `html`. If the mode parameter is empty, the format is `json` by default."
-            schema:
-              type: string
-              enum: [json, xml, html]
-              default: "json"
+      - name: mode
+        in: query
+        description: "**Mode**. *Example: html*. Determines the format of the response. Possible values are `xml` and `html`. If the mode parameter is empty, the format is `json` by default."
+        schema:
+          type: string
+          enum: [json, xml, html]
+          default: "json"
 
-        responses:
-          200:
-            description: Successful response
-            content:
-              application/json:
-                schema:
-                  title: Sample
-                  type: object
-                  properties:
-                    placeholder:
-                      type: string
-                      description: Placeholder description
+      responses:
+        200:
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                title: Sample
+                type: object
+                properties:
+                  placeholder:
+                    type: string
+                    description: Placeholder description
 
         404:
           description: Not found response
@@ -299,6 +310,7 @@
                 title: Weather not found
                 type: string
                 example: Not found
+```
 
 <a name="appearance"></a>
 ## Отображение в Swagger UI
@@ -322,3 +334,8 @@
 > OpenAPI 3.0 не поддерживает зависимости параметров и взаимоисключающие параметры. Существует открытый запрос функции по адресу [https://github.com/OAI/OpenAPI-Specification/issues/256](https://github.com/OAI/OpenAPI-Specification/issues/256). Можно задокументировать ограничения в описании параметра и определить логику в ответе 400 Bad Request. ([Parameter Dependencies](https://swagger.io/docs/specification/describing-parameters/#parameter-dependencies-19))
 
 В случае конечной точки погоды с OpenWeatherMap большинство параметров являются взаимоисключающими. Мы не можем выполнять поиск по идентификатору города и почтовому индексу одновременно. Хотя параметры являются необязательными, мы должны использовать хотя бы один параметр. Кроме того, при использовании параметра `lat`, нужно использовать и параметр `lon`, потому что это парные параметры. Спецификация OpenAPI не может программно отражать эту структурированную логику, поэтому мы должны объяснить это в свойстве `description` или в другой, более концептуальной документации.
+
+
+[🔙](step3-servers-object.md)
+
+[Go next ➡](step5-components-object.md)

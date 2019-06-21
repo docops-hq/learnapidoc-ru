@@ -277,3 +277,8 @@ OpenAPI может не подходить для каждого API, но ес�
 - [Swagger-ui Responsive theme](https://github.com/jensoleg/swagger-ui)
 - [Swagger-ui](https://github.com/swagger-api/swagger-ui)
 - [Undisturbed REST: A Guide to Designing the Perfect API, by Michael Stowe](https://www.mulesoft.com/lp/ebook/api/restbook)
+
+
+[🔙](overview-specification-formats.md)
+
+[Go next ➡](working-in-YAML.md)
