@@ -29,19 +29,23 @@
 Записи семинара по API документации в Менло-Парке, штат Калифорния, 8 ноября 2018 года. (Более подробную информацию см. [В этом сообщении в блоге](https://idratherbewriting.com/2018/10/31/upcoming-api-doc-workshop/).) Эта запись тесно связана с последним содержанием и упражнениями в этом курсе. Семинар разделен на пять видео.
 
 <a name="video1"></a>
-[Видео 1](https://youtu.be/X1u453Gtw9g)
+[![Видео 1](pics/31.jpg)](https://youtu.be/X1u453Gtw9g)
 
 <a name="video2"></a>
-[Видео 2](https://youtu.be/FuZfob2eVb4)
+[![Видео 2](pics/32.jpg)](https://youtu.be/FuZfob2eVb4)
 
 <a name="video3"></a>
-[Видео 3](https://youtu.be/GgA8772arys)
+[![Видео 3](pics/33.jpg)](https://youtu.be/GgA8772arys)
 
 <a name="video4"></a>
-[Видео 4](https://youtu.be/mLnea0LLTh4)
+[![Видео 4](pics/34.jpg)](https://youtu.be/mLnea0LLTh4)
 
 <a name="video5"></a>
-[Видео 5](https://youtu.be/9mSqxqV7TXY)
+[![Видео 5](pics/35.jpg)](https://youtu.be/9mSqxqV7TXY)
+
+Ниже основные моменты всех семинаров собраны в часовое видео:
+
+[![one-hour](pics/30.jpg)](https://youtu.be/5pzhtrrtkXY)
 
 Если предпочитаете слушать записи, то ниже ссылки на аудио записи семинаров
 
