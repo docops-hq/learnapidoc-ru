@@ -69,14 +69,13 @@
 Записи семинара по API документации в Денвере, штат Колорадо, 10 марта 2018 года. (Подробнее см. [В этом сообщении в блоге](https://idratherbewriting.com/2018/03/12/api-documentation-workshop-in-denver/)). Эта версия семинара немного отличается от последней версии курса, но содержание хорошее. Видео разделено на три части.
 
 <a name="part1"></a>
-[Часть первая](https://youtu.be/Ivum3YbOWQ4)
-
+[![Часть первая](pics/36.jpg)](https://youtu.be/Ivum3YbOWQ4)
 
 <a name="part2"></a>
-[Часть вторая](https://youtu.be/zV6m-6_j56w)
+[![Часть вторая](pics/37.jpg)](https://youtu.be/zV6m-6_j56w)
 
 <a name="part3"></a>
-[Часть третья](https://youtu.be/LSLg6Oy1OzM)
+[![Часть третья](pics/38.jpg)](https://youtu.be/LSLg6Oy1OzM)
 
 <a name="audio2"></a>
 ### Аудио записи семинара
