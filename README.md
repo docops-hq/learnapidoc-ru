@@ -159,4 +159,6 @@
     - [**Справочник API Blueprint**](glossary-and-resourses/API-Blueprint-tutorial.md)
     - [**Описание ошибок**](glossary-and-resourses/answeres-whats-wrong.md)
 
+11. [**Документирование кода**](doc-code/doc-code.md)
+
 # [Go next ➡](introduction-rest-apis/README.md)
