@@ -42,3 +42,8 @@
 Вот как выглядит собранная в Swagger UI спецификация:
 
 ![final](img/19.png)
+
+
+[🔙](step7-tags-object.md)
+
+[Go next ➡](сreate-openapi-specification.md)

@@ -57,3 +57,8 @@
 - [Шаг 8: Объект `externalDocs`](step8-externalDocs-object.md)
 
 После создания проверяем нашу документацию в [редакторе Swagger](https://swagger.io/tools/swagger-editor/). Выполним запрос, чтобы убедиться, что все работает верно.
+
+
+[🔙](step8-externalDocs-object.md)
+
+[Go next ➡](swagger-ui-tutorial.md)

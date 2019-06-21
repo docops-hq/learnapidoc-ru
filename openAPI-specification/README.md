@@ -39,3 +39,8 @@
 [**Stoplight - инструмент визуального моделирования для создания спецификаций**](stoplight.md)
 
 [**Интеграция Swagger с документацией**](integrating-swagger-with-docs.md)
+
+
+[🔙](../documenting-api-endpoints/evaluate-api-referense-docs.md)
+
+[Go next ➡](overview-specification-formats.md)

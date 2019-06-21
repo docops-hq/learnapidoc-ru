@@ -150,3 +150,8 @@ application_programming_interface: *apidef
 В руководстве по OpenAPI не будем использовать эти уникальные функции YAML, но их стоит отметить, поскольку JSON и YAML не совсем эквивалентны. Подробнее о других различиях между JSON и YAML см. В разделе [«Изучение YAML за несколько минут»](http://learnxinyminutes.com/docs/yaml/). Чтобы узнать больше о YAML, можно посмотреть [справочник YAML](https://rhnh.net/2011/01/31/yaml-tutorial/).
 
 YAML также используется в [Jekyll](../Publishing-doc/Jekyll-and-cloudCannon.md). Можно изучить [учебник автора по YAML в контексте Jekyll](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_yaml_tutorial) для более подробной информации.
+
+
+[🔙](introduction-openapi-and-swagger.md)
+
+[Go next ➡](openapi-tutorial-overview.md)
