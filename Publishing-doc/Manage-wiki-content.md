@@ -82,7 +82,7 @@ Git можно настроить так, чтобы не приходилось
 - [Adding a new SSH key to your GitHub account](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
 - [Associating text editors with Git](https://help.github.com/en/articles/associating-text-editors-with-git)
 
-Чтобы настройки вступили в илу терминал нужно перезапустить.
+Чтобы настройки вступили в силу терминал нужно перезапустить.
 
 > GitHub и Git - это разные вещи. Git обеспечивает распределенный контроль версий. GitHub - это платформа, которая помогает управлять проектами Git. GitHub также предоставляет графический интерфейс, который позволяет выполнять множество команд Git.
 
