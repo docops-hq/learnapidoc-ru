@@ -48,7 +48,7 @@
     - [**Введение и установка curl**](like-developer/curl-intro-and-instalation.md)
     - [**Создание curl запроса**](like-developer/make-curl-call.md)
     - [**Понимание curl**](like-developer/understand-curl.md)
-    - [**Использование методов с curl**](use-methods-with-curl.md)
+    - [**Использование методов с curl**](like-developer/use-methods-with-curl.md)
     - [**Анализ JSON ответов**](like-developer/analyze-json-response.md)
     - [**Изучение полезных данных JSON ответа**](like-developer/inspect-json.md)
     - [**Доступ и вывод на страницу определенного значения JSON**](like-developer/access-print-value.md)
