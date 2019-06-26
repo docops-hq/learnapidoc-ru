@@ -64,7 +64,7 @@
     - [**Шаг 4: Пример запроса**](documenting-api-endpoints/step4-request-example.md)
     - [**Шаг 5: Пример и схема ответа**](documenting-api-endpoints/step5-response-example-and-schema.md)
     - [**Собираем все вместе**](documenting-api-endpoints/putt-all-together.md)
-    - [**Практическое занятие: Что не так с разделом API?**](documenting-api-endpoints/whats-wrong.md)
+    - [**Практическое занятие: Что не так в разделе API?**](documenting-api-endpoints/whats-wrong.md)
     - [**Практическое занятие: Поиск open-source проекта**](documenting-api-endpoints/find-open-source-project.md)
     - [**Практическое занятие: Оценка ключевых элементов API документации**](documenting-api-endpoints/evaluate-api-referense-docs.md)
 
