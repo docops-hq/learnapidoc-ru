@@ -28,7 +28,7 @@
 
 [**Собираем все вместе**](putt-all-together.md)
 
-[**Практическое занятие: Что не так с разделом API?**](whats-wrong.md)
+[**Практическое занятие: Что не так в разделе API?**](whats-wrong.md)
 
 [**Практическое занятие: Поиск open-source проекта**](find-open-source-project.md)
 
