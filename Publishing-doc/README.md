@@ -35,3 +35,7 @@ Docs-as-code включает в себя использование облег�
 [**Непрерывное развертывание Jekyll и CloudCannon**](Jekyll-and-cloudCannon.md)
 
 [**Кейс для изучения: Переход на Docs-as-code**](Switching-tools.md)
+
+[🔙](../conceptual-topics/assess-conceptual-content.md)
+
+[Go next ➡](Overview-for-publishing.md)
