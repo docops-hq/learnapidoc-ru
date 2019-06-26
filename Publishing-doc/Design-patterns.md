@@ -34,99 +34,107 @@
 
 Вот как можно это делать. Во frontmatter страницы (например, endpoints.yml) можно перечислить пары ключ-значение для каждого раздела.
 
-    resource_name: surfreport
-    resource_description: Gets the surf conditions for a specific beach.
-    endpoint: /surfreport
+```
+resource_name: surfreport
+resource_description: Gets the surf conditions for a specific beach.
+endpoint: /surfreport
+```
 
 и так далее.
 
 После чего можно использовать [цикл for](https://help.shopify.com/en/themes/liquid/objects/for-loops) для циклического перебора каждого из элементов и вставки их в шаблон:
 
-    {% for p in site.endpoints %}
-    <div class="resName">{{p.resource_name}}</div>
-    <div class="resDesc">{{p.resource_description}}</div>
-    <div class="endpointDef">{{p.endpoint}}</div>
-    {% endfor %}
+```html
+{% for p in site.endpoints %}
+<div class="resName">{{p.resource_name}}</div>
+<div class="resDesc">{{p.resource_description}}</div>
+<div class="endpointDef">{{p.endpoint}}</div>
+{% endfor %}
+```
 
 Такой подход позволяет легко менять шаблон без переформатирования всех страниц. Если нужно будет изменить порядок элементов на странице, или добавить новые классы или другое значение, просто меняется шаблон. Значения остаются неизменными, так как они могут быть обработаны в любом порядке.
 
 Полноценным примером API-шаблонов является [Тема Aviator от CloudCannon](https://github.com/CloudCannon/aviator-jekyll-template). Пример конечной точки для добавления книг в теме «Авиатор» выглядит следующим образом:
 
-    ---
-    title: /books
-    position: 1.1
-    type: post
-    description: Create Book
-    right_code: |
-      ~~~ json
-      {
-        "id": 3,
-        "title": "The Book Thief",
-        "score": 4.3,
-        "dateAdded": "5/1/2015"
-      }
-      ~~~
-      {: title="Response" }
+```
+---
+title: /books
+position: 1.1
+type: post
+description: Create Book
+right_code: |
+  ~~~ json
+  {
+    "id": 3,
+    "title": "The Book Thief",
+    "score": 4.3,
+    "dateAdded": "5/1/2015"
+  }
+  ~~~
+  {: title="Response" }
 
-      ~~~ json
-      {
-        "error": true,
-        "message": "Invalid score"
-      }
-      ~~~
-      {: title="Error" }
-    ---
-    title
-    : The title for the book
+  ~~~ json
+  {
+    "error": true,
+    "message": "Invalid score"
+  }
+  ~~~
+  {: title="Error" }
+---
+title
+: The title for the book
 
-    score
-    : The book's score between 0 and 5
+score
+: The book's score between 0 and 5
 
-    The book will automatically be added to your reading list
-    {: .success }
+The book will automatically be added to your reading list
+{: .success }
 
-    Adds a book to your collection.
+Adds a book to your collection.
 
-    ~~~ javascript
-    $.post("http://api.myapp.com/books/", {
-      "token": "YOUR_APP_KEY",
-      "title": "The Book Thief",
-      "score": 4.3
-    }, function(data) {
-      alert(data);
-    });
-    ~~~
-    {: title="jQuery" }
+~~~ javascript
+$.post("http://api.myapp.com/books/", {
+  "token": "YOUR_APP_KEY",
+  "title": "The Book Thief",
+  "score": 4.3
+}, function(data) {
+  alert(data);
+});
+~~~
+{: title="jQuery" }
+```
 
 (`~~~` - это альтернативная разметка для обратного апострофа. Обозначение `{: .success}` - это синтаксис [kramdown](https://kramdown.gettalong.org/) для пользовательских классов.) Автор темы создал макет, который просматривает эти значения и помещает содержимое в формат HTML. Если вы посмотрите [файл index.html в Aviator](), вы увидите следующий код:
 
-    {% assign sorted_collections = site.collections | sort: "position" %}
-    {% for collection in sorted_collections %}
-      {% assign sorted_docs = collection.docs | sort: "position" %}
-      {% for doc in sorted_docs %}
-         <section class="doc-content">
-           <section class="left-docs">
-             <h3>
-               <a id="{{ doc.id | replace: '/', '' | replace: '.', '' }}">
-                 {{ doc.title }}
-                 {% if doc.type %}
-                 <span class="endpoint {{ doc.type }}"></span>
-                 {% endif %}
-               </a>
-             </h3>
-             {% if doc.description %}
-             <p class="description">{{doc.description}}</p>
+```html
+{% assign sorted_collections = site.collections | sort: "position" %}
+{% for collection in sorted_collections %}
+  {% assign sorted_docs = collection.docs | sort: "position" %}
+  {% for doc in sorted_docs %}
+     <section class="doc-content">
+       <section class="left-docs">
+         <h3>
+           <a id="{{ doc.id | replace: '/', '' | replace: '.', '' }}">
+             {{ doc.title }}
+             {% if doc.type %}
+             <span class="endpoint {{ doc.type }}"></span>
              {% endif %}
-             {{ doc.content | replace: "<dl>", "<h6>Parameters</h6><dl>" }}
-             </section>
-             {% if doc.right_code %}
-             <section class="right-code">
-               {{ doc.right_code | markdownify }}
-             </section>
-             {% endif %}
-           </section>
-           {% endfor %}
-    {% endfor %}
+           </a>
+         </h3>
+         {% if doc.description %}
+         <p class="description">{{doc.description}}</p>
+         {% endif %}
+         {{ doc.content | replace: "<dl>", "<h6>Parameters</h6><dl>" }}
+         </section>
+         {% if doc.right_code %}
+         <section class="right-code">
+           {{ doc.right_code | markdownify }}
+         </section>
+         {% endif %}
+       </section>
+       {% endfor %}
+{% endfor %}
+```
 
 Этот код использует циклы `for` в [сценариях Liquid](https://help.shopify.com/en/themes/liquid/basics) для итерации по элементам в коллекции `docs` и вставляет содержимое в стили HTML шаблона. Результат выглядит так:
 
