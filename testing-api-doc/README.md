@@ -17,3 +17,7 @@
 [**Тестирование предположений**](test-assumptions.md)
 
 [**Практическое занятие: Тестирование документации проекта**](test-documentation.md)
+
+[🔙](../openAPI-specification/integrating-swagger-with-docs.md)
+
+[Go next ➡](overview-testing.md)
