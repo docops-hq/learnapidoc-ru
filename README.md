@@ -1,7 +1,7 @@
-![GitHub repo size in bytes](https://img.shields.io/github/repo-size/docops-hq/learnapidoc-ru.svg?style=plastic)
+![GitHub repo size in bytes](https://img.shields.io/github/repo-size/docops-hq/learnapidoc-ru.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/docops-hq/learnapidoc-ru.svg?logo=%20)
-![GitHub watchers](https://img.shields.io/github/watchers/docops-hq/learnapidoc-ru.svg?style=social)
-![GitHub stars](https://img.shields.io/github/stars/docops-hq/learnapidoc-ru.svg?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/docops-hq/learnapidoc-ru.svg)
+![GitHub stars](https://img.shields.io/github/stars/docops-hq/learnapidoc-ru.svg)
 
 # Курс по документированию REST API
 
