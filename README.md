@@ -115,7 +115,7 @@
     - [**Обзор вариантов публикации документации**](Publishing-doc/Overview-for-publishing.md)
     - [**Список из 100 сайтов с API документацией**](Publishing-doc/API-doc-sites-list.md)
     - [**Шаблоны проектирования сайтов API документации**](Publishing-doc/Design-patterns.md)
-    - [**Инструменты Docs-as-code**](Publishing-doc/Docs-as-code-tools.md)
+    - [**Инструменты Docs-as-code**](Publishing-doc/Doc-as-code-tools.md)
     - [**Подробнее о Markdown**](Publishing-doc/More-about-Markdown.md)
     - [**Система контроля версий (пример Git)**](Publishing-doc/Version-control-system.md)
     - [**Практическое занятие: Управляем контентом в Wiki Github**](Publishing-doc/Manage-wiki-content.md)
