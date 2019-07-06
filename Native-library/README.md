@@ -24,4 +24,4 @@ API нативных библиотек относятся к Java, C ++ или 
 
 [**Doxygen, генератор документации для С++**](Doxygen.md)
 
-[**Создание не справочной документации при помощи исходных библиотек API**](Create-non-refsdocs-with-native-library-APIs.md)
+[**Создание концептуальной документации при помощи исходных библиотек API**](Create-non-refsdocs-with-native-library-APIs.md)

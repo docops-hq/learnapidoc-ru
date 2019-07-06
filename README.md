@@ -144,7 +144,7 @@
     - [**Изучение вывода Javadoc**](Native-library/Explore-Javadoc-output.md)
     - [**Редактирование тегов Javadoc**](Native-library/Make-edits-Javadocs-tags.md)
     - [**Doxygen, генератор документации для С++**](Native-library/Doxygen.md)
-    - [**Создание бессылочной документации при помощи исходных библиотек API**](Native-library/Create-non-refsdocs-with-native-library-APIs.md)
+    - [**Создание концептуальной документации при помощи исходных библиотек API**](Native-library/Create-non-refsdocs-with-native-library-APIs.md)
 
 10. [**Глоссарий API и источники**](glossary-and-resourses/README.md)
 
