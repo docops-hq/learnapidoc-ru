@@ -573,7 +573,7 @@ Stoplight имеет веб-версию и приложение для деск
 
 Для работы с OpenAPI в Stoplight:
 
-1. В настоящее время Stoplight поддерживает только версию OpenAPI 2.0. Можно сконвертировать спецификацию версии 3.0 в 2.0, используя [APIMATIC Transformer](https://www.apimatic.io/transformer). Для ускорения проще скачать уже готовый файл [2.0 OpenAPI JSON file already converted](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openweathermap_swagger20.json)  
+1. В настоящее время Stoplight поддерживает только версию OpenAPI 2.0. Можно сконвертировать спецификацию версии 3.0 в 2.0, используя [APIMATIC Transformer](https://www.apimatic.io/transformer). Для ускорения проще скачать уже готовый файл [2.0 OpenAPI JSON file](https://idratherbewriting.com/learnapidoc/docs/rest_api_specifications/openweathermap_swagger20.json)  
 
 2. Переходим к [https://next.stoplight.io/](https://next.stoplight.io/)
 
