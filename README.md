@@ -119,7 +119,7 @@
     - [**Подробнее о Markdown**](Publishing-doc/More-about-Markdown.md)
     - [**Система контроля версий (пример Git)**](Publishing-doc/Version-control-system.md)
     - [**Практическое занятие: Управляем контентом в Wiki Github**](Publishing-doc/Manage-wiki-content.md)
-    - [**Практическое занятие: Используем клиент GitHub для десктопа**](Publishing-doc/Use-GitHub-Desctop.md)
+    - [**Практическое занятие: Используем клиент GitHub для десктопа**](Publishing-doc/Use-GitHub-Desktop.md)
     - [**Практическое занятие: процесс Pull request на GitHub**](Publishing-doc/Pull-request-workflows.md)
     - [**Генераторы статичных сайтов**](Publishing-doc/Static-site-generators.md)
     - [**Варианты хостинга и развертывания**](Publishing-doc/Hosting-and-deployment-options.md)
