@@ -444,7 +444,7 @@ curl -X POST "https://petstore.swagger.io/v2/pet" -H "accept: application/xml" -
 
 6. "Petstore" - является действующим API, питомец фактически создан. Для забавы развернем конечную точку GET / pet / {petId}, нажимаем `Try it out`, вводим идентификатор питомца, который использовали в предыдущей операции, а затем выполняем запрос. В ответе видим имя питомца, которое совпадает с тем, что ввели в предыдущем примере.
 
-Подробная информация для этого практического занятия находится по ссылке [4.2. Introduction to the OpenAPI spec and Swagger](https://github.com/Starkovden/Documenting_APIs/blob/master/4.%20OpenAPI%20specification%20and%20Swagger/4.2.%20Introduction%20to%20the%20OpenAPI%20spec%20and%20Swagger.md)
+Подробная информация для этого практического занятия находится по ссылке [Знакомство со спецификациями OpenAPI и Swagger](../openAPI-specification/introduction-openapi-and-swagger.md)
 
 ### Практическое занятие "Редакция существующей спецификации API"
 
