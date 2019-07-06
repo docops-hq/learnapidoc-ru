@@ -28,7 +28,7 @@
 
 [**Шаг 8: Объект `externalDocs`**](step8-externalDocs-object.md)
 
-[**Практическое занятие: Создание спецификации OpenAPI**](сreate-openapi-specification.md)
+[**Практическое занятие: Создание спецификации OpenAPI**](create-openapi-specification.md)
 
 [**Руководство Swagger UI**](swagger-ui-tutorial.md)
 
