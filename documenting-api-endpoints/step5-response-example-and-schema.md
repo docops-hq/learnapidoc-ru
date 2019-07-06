@@ -1,4 +1,4 @@
-# Пример и схема ответа
+# Шаг 5: Пример и схема ответа
 
 | [*Шаг 1. Описание ресурса*](step1-resourse-description.md) |-->| [*Шаг 2. Конечные точки и методы*](step2-endpoints-and-methods.md) |-->| [*Шаг 3. Параметры*](step3-parameters.md) |-->| [*Шаг 4. Пример запроса*](step4-request-example.md)|-->| [**Шаг 5. Пример и схема ответа**](step5-response-example-and-schema.md) |
 
