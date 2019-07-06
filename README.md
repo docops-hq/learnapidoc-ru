@@ -80,7 +80,7 @@
     - [**Шаг 6: Объект `security`**](openAPI-specification/step6-security-object.md)
     - [**Шаг 7: Объект `tags`**](openAPI-specification/step7-tags-object.md)
     - [**Шаг 8: Объект `externalDocs`**](openAPI-specification/step8-externalDocs-object.md)
-    - [**Практическое занятие: Создание спецификации OpenAPI**](openAPI-specification/сreate-openapi-specification.md)
+    - [**Практическое занятие: Создание спецификации OpenAPI**](openAPI-specification/create-openapi-specification.md)
     - [**Руководство Swagger UI**](openAPI-specification/swagger-ui-tutorial.md)
     - [**Демо Swagger UI**](openAPI-specification/swagger-ui-demo.md)
     - [**Введение и руководство SwaggerHub**](openAPI-specification/swaggerhub-introduction-and-tutorial.md)
