@@ -373,7 +373,7 @@ $.ajax(settings).done(function (response) {
     - представлены ли ответ и схема ответа? актуально ли описание каждого элемента?
 - как сайт документации обрабатывает вложенные иерархии в определениях ответов 		
 
-Подробная информация для этого практического занятия находится по ссылке [Activity Evaluate API reference docs for core elements](../documenting-api-endpoints/evaluate-api-referense-docs.md)			
+Подробная информация для этого практического занятия находится по ссылке [Оценка ключевых элементов API документации](../documenting-api-endpoints/evaluate-api-referense-docs.md)			
 
 ## Часть 4 OpenAPI и Swagger
 
