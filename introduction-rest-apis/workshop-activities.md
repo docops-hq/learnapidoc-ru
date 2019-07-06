@@ -351,8 +351,8 @@ $.ajax(settings).done(function (response) {
  - [описание ресурса](../documenting-api-endpoints/step1-resourse-description.md);
  - [конечные точки и методы](../documenting-api-endpoints/step2-endpoints-and-methods.md);
  - [параметры](../documenting-api-endpoints/step3-parameters.md);
- - [примеры запроса](../documenting-api-endpoints/step4-request-example.md)
- - [примеры ответа и схемы](../documenting-api-endpoints/step5-response-example-and-schema.md)
+ - [примеры запроса](../documenting-api-endpoints/step4-request-example.md);
+ - [примеры ответа и схемы](../documenting-api-endpoints/step5-response-example-and-schema.md).
 
 > Названия разделов могут отличаться на разных сайтах API-документации, но обычно они легко узнаваемы.
 
