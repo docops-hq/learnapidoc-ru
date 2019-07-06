@@ -16,7 +16,7 @@
 
 [**Практическое занятие: Извлечь галерею, используя API сервиса Flickr**](Retrieve-gallery-using-Flickr-API.md)
 
-[**Получить скорость ветра, используя API сервиса Aeris Weather**](Get-wind-speed-using-Aeris-API.md)
+[**Практическое занятие: Получить скорость ветра, используя API сервиса Aeris Weather**](Get-wind-speed-using-Aeris-API.md)
 
 [**Справочник RAML**](RAML-tutorial.md)
 

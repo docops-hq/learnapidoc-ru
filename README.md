@@ -152,7 +152,7 @@
     - [**Практические занятия REST API**](glossary-and-resourses/RESTAPI-activities.md)
     - [**Практическое занятие: Получить информацию о событии, используя API сервиса Eventbrite**](glossary-and-resourses/Get-event-information-using-Eventbrite-API.md)
     - [**Практическое занятие: Извлечь галерею, используя API сервиса Flikr**](glossary-and-resourses/Retrieve-gallery-using-Flickr-API.md)
-    - [**Получить скорость ветра, используя API сервиса Aeris Weather**](glossary-and-resourses/Get-wind-speed-using-Aeris-API.md)
+    - [**Практическое занятие: Получить скорость ветра, используя API сервиса Aeris Weather**](glossary-and-resourses/Get-wind-speed-using-Aeris-API.md)
     - [**Справочник RAML**](glossary-and-resourses/RAML-tutorial.md)
     - [**Справочник API Blueprint**](glossary-and-resourses/API-Blueprint-tutorial.md)
     - [**Описание ошибок**](glossary-and-resourses/answeres-whats-wrong.md)
