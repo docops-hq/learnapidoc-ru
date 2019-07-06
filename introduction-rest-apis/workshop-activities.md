@@ -461,7 +461,7 @@ curl -X POST "https://petstore.swagger.io/v2/pet" -H "accept: application/xml" -
 3. Определяем каждый из объектов корневого уровня спецификации API:
 
  - [Шаг 1: Объект openapi](../openAPI-specification/step1-openapi-object.md)
- - [Шаг 2" Объект info](../openAPI-specification/step2-info-object.md)
+ - [Шаг 2: Объект info](../openAPI-specification/step2-info-object.md)
  - [Шаг 3: Объект servers](../openAPI-specification/step3-servers-object.md)
  - [Шаг 4: Объект paths](../openAPI-specification/step4-paths-object.md)
  - [Шаг 5: Объект components](../openAPI-specification/step5-components-object.md)
