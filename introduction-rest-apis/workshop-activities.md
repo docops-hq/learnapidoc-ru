@@ -681,9 +681,9 @@ Stoplight автоматически генерирует схему JSON, со�
 | [Обзор API](../conceptual-topics/API-overview.md) ||||
 | [Начало работы](../conceptual-topics/getting-started.md) ||||
 | [Аутентификация и авторизация](../conceptual-topics/authentication-and-authorization.md) ||||
-| [Статус и коды ошибок](../conceptual-topics/status-error-codes.md) ||||
-| [Пределы и ограничения скорости](../conceptual-topics/rate-limiting.md)||||
-| [Примеры кода и руководства](../conceptual-topics/code-samples.md) ||||
+| [Коды статусов и ошибок](../conceptual-topics/status-error-codes.md) ||||
+| [Ограничения скорости](../conceptual-topics/rate-limiting.md)||||
+| [Описание и образцы кода](../conceptual-topics/code-samples.md) ||||
 | [SDK и примеры приложений](../conceptual-topics/sdks-sample-apps.md)||||
 | [Краткое справочное руководство](../conceptual-topics/quick-reference-guide.md) ||||
 |[API глоссарий](../conceptual-topics/api-glossary.md) ||||
