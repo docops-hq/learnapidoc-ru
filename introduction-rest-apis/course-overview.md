@@ -60,7 +60,7 @@
 4. [Пример запроса](../documenting-api-endpoints/step4-request-example.md)
 5. [Пример ответа](../documenting-api-endpoints/step5-response-example-and-schema.md)
 
-Изучение этих разделов даст четкое представление о том, как документировать REST API. Также узнаем, как документировать [концептуальные разделы API](../conceptual-topics/README.md), такие как [руководство по началу работы](../conceptual-topics/getting-started.md), [статус и коды ошибок](../conceptual-topics/status-error-codes.md), [авторизация запроса](../conceptual-topics/authentication-and-authorization.md) и т.д.
+Изучение этих разделов даст четкое представление о том, как документировать REST API. Также узнаем, как документировать [концептуальные разделы API](../conceptual-topics/README.md), такие как [руководство по началу работы](../conceptual-topics/getting-started.md), [коды статусов и ошибок](../conceptual-topics/status-error-codes.md), [авторизация запроса](../conceptual-topics/authentication-and-authorization.md) и т.д.
 
 Наконец, изучим разные способы [публикации API документации](../Publishing-doc/README.md), изучим инструменты и спецификации, такие как [GitHub](../Publishing-doc/Manage-wiki-content.md), [Jekyll](../Publishing-doc/Jekyll-and-сloudCannon.md) и подходы [Docs-as-code](../Publishing-doc/Doc-as-code-tools.md). Узнаем, как использовать шаблоны, создавать интерактивные консоли API, чтобы пользователи могли опробовать запросы и посмотреть ответы, а также узнаем, как управлять своим контентом с помощью [контроля версий](../Publishing-doc/Version-control-system.md).
 
