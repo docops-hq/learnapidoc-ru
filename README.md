@@ -89,11 +89,11 @@
 
 5. [**Тестирование документации**](testing-api-doc/README.md)
 
-    - [**Обзор тестирования документации**](overview-testing.md)
-    - [**Настройка тестовой среды окружения**](set-up-test-environment.md)
-    - [**Самостоятельное тестирование всех инструкций**](test-instructions-yourself.md)
-    - [**Тестирование предположений**](test-assumptions.md)
-    - [**Практическое занятие: Тестирование документации проекта**](test-documentation.md)
+    - [**Обзор тестирования документации**](testing-api-doc/overview-testing.md)
+    - [**Настройка тестовой среды окружения**](testing-api-doc/set-up-test-environment.md)
+    - [**Самостоятельное тестирование всех инструкций**](testing-api-doc/test-instructions-yourself.md)
+    - [**Тестирование предположений**](testing-api-doc/test-assumptions.md)
+    - [**Практическое занятие: Тестирование документации проекта**](testing-api-doc/test-documentation.md)
 
 6. [**Концептуальные разделы**](conceptual-topics/README.md)
 
