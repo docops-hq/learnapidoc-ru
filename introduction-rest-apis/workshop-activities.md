@@ -440,7 +440,7 @@ curl -X POST "https://petstore.swagger.io/v2/pet" -H "accept: application/xml" -
 
 Если выбрать в выпадающем списке "Response content type" JSON, то в ответе вернется JSON вместо XML.
 
-![JSON](https://github.com/Starkovden/Documenting_APIs/blob/master/1.%20Introduction%20to%20REST%20APIs/pics/13.png?raw=true)
+![JSON](pics/13.png)
 
 6. "Petstore" - является действующим API, питомец фактически создан. Для забавы развернем конечную точку GET / pet / {petId}, нажимаем `Try it out`, вводим идентификатор питомца, который использовали в предыдущей операции, а затем выполняем запрос. В ответе видим имя питомца, которое совпадает с тем, что ввели в предыдущем примере.
 
