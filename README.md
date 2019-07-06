@@ -134,7 +134,7 @@
     - [**Необходимое количество кода, которое нужно знать**](Getting-job/how-much-code-to-know.md)
     - [**Лучшие локации для работы**](Getting-job/best-locations.md)
 
-9. [**Исходные библиотеки API**](Native-library/README.md)
+9. [**Нативные библиотеки API**](Native-library/README.md)
 
     - [**Обзор нативных библиотек API**](Native-library/Overview-of-library.md)
     - [**Получаем пример Java проекта**](Native-library/Get-the-sample-Java-project.md)
