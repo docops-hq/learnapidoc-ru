@@ -349,7 +349,7 @@ $.ajax(settings).done(function (response) {
 2. На каждом сайте ищем секцию документации API ссылок (список конечных точек)
 3. В документации по каждой ссылке находим информацию:
  - [описание ресурса](../documenting-api-endpoints/step1-resourse-description.md);
- - [конечные точки и методы](../documenting-api-endpoints/step2-endpoints-and-methods.md)
+ - [конечные точки и методы](../documenting-api-endpoints/step2-endpoints-and-methods.md);
  - [параметры](../documenting-api-endpoints/step3-parameters.md);
  - [примеры запроса](../documenting-api-endpoints/step4-request-example.md)
  - [примеры ответа и схемы](../documenting-api-endpoints/step5-response-example-and-schema.md)
