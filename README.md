@@ -102,7 +102,7 @@
     - [**Руководство по началу работы**](conceptual-topics/getting-started.md)
     - [**Требования аутентификации и авторизации**](conceptual-topics/authentication-and-authorization.md)
     - [**Коды статусов и ошибок**](conceptual-topics/status-error-codes.md)
-    - [**Ограничения скорости и пределы**](conceptual-topics/rate-limiting.md)
+    - [**Ограничения скорости**](conceptual-topics/rate-limiting.md)
     - [**Описание и образцы кода**](conceptual-topics/code-samples.md)
     - [**SDK и пример приложений**](conceptual-topics/sdks-sample-apps.md)
     - [**Краткое справочное руководство**](conceptual-topics/quick-reference-guide.md)
