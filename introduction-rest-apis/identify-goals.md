@@ -18,4 +18,4 @@
 
 [🔙](what-is-rest-api.md)
 
-[Go next ➡](../like/developer/README.md)
+[Go next ➡](../like-developer/README.md)
