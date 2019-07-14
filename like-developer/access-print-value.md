@@ -169,7 +169,6 @@ $("#windSpeed").append(content);
       "icon": "02d"
     }
   ]
-]
 }
 ```
 
