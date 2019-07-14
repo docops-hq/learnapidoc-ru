@@ -46,7 +46,7 @@ wind speed: 13.87
 
 Допустим, нам надо вывести часть JSON (данные о скорости ветра) на страницу, а не только в консоли. (Под словом "вывести"  подразумевается отображение значения странице, а не отправка на принтер.) Для вывода значения требуется немного JavaScript (или jQuery для упрощения).
 
-Работать будем с [тем же кодом](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html) из [предыдущего раздела](inspect-json.md)а. Этот код выглядит так:
+Работать будем с [тем же кодом](https://idratherbewriting.com/learnapidoc/assets/files/weather-plain.html) из [предыдущего раздела](inspect-json.md). Этот код выглядит так:
 
 ```html
 <!DOCTYPE html>
@@ -146,7 +146,7 @@ var content = response.wind.speed;
 <div id="windSpeed">Wind speed: </div>
 ```
 
-Мы использовали [метод `append` jQuery](Мы использовали метод append jQuery для добавления переменной содержимого к элементу с идентификатором windSpeed ​​на странице:) для добавления переменной `content` к элементу с ID `windSpeed` ​​на странице:
+Мы использовали [метод `append` jQuery](https://api.jquery.com/append/) для добавления переменной `content` к элементу с ID `windSpeed` ​​на странице:
 
 ```javascript
 $("#windSpeed").append(content);
