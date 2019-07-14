@@ -159,7 +159,7 @@ $("#windSpeed").append(content);
 
 В предыдущей части мы получили значение из объекта JSON. Теперь получим значение из массива. Давайте получим свойство `main` из массива `weather` в ответе. Вот как выглядит массив JSON:
 
-```yaml
+```json
 {
   "weather": [
     {
@@ -226,9 +226,9 @@ $.ajax(settings).done(function (response) {
 
 При желании можно выполнить еще несколько упражнений, которые включают вызовы API REST, доступ к определенным значениям и вывод значений на странице, см. Следующие разделы в модуле «Глоссарий и ресурсы»:
 
-- [Получаем информацию о событии при использовании API Eventbrite](https://idratherbewriting.com/learnapidoc/docapis_eventbrite_example.html)
-- [Пример Flickr: извлекаем галерею Flickr](https://idratherbewriting.com/learnapidoc/docapis_flickr_example.html)
-- [Получаем скорость ветра при использовании сервиса API Aeris Weather](https://idratherbewriting.com/learnapidoc/docapis_aerisweather_example.html)
+- [Получаем информацию о событии при использовании API Eventbrite](../glossary-and-resourses/Get-event-information-using-Eventbrite-API.md)
+- [Пример Flickr: извлекаем галерею Flickr](../glossary-and-resourses/Retrieve-gallery-using-Flickr-API.md)
+- [Получаем скорость ветра при использовании сервиса API Aeris Weather](../glossary-and-resourses/Get-wind-speed-using-Aeris-API.md)
 
 
 [🔙](inspect-json.md)
