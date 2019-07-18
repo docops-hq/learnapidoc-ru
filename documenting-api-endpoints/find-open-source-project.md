@@ -103,7 +103,7 @@
 > Неполная или устаревшая документация является распространенной проблемой, наблюдаемой 93 процентами респондентов, однако 60 процентов участников говорят, что они редко или никогда не вносят свой вклад в документацию.
 
 
-Также проверьте [Open source documentation is bad, but proprietary software is worse](https://www.techrepublic.com/article/open-source-documentation-is-bad-but-proprietary-software-is-worse/) Мэтта Асаи. Asay выделяет результаты документации того же опроса GitHub:
+Также посмотрим [Open source documentation is bad, but proprietary software is worse](https://www.techrepublic.com/article/open-source-documentation-is-bad-but-proprietary-software-is-worse/) Мэтта Асаи. Мэтт выделяет результаты документации того же опроса GitHub:
 
 > 93% респондентов скрежетали зубами по некачественной документации, но также признались, что практически ничего не сделали для улучшения ситуации. … Если вы считаете, что эта глубокая потребность в документации побудит большее количество разработчиков внести свою лепту и помочь, вы ошибаетесь: 60% разработчиков не могут потрудиться представить документацию.
 
