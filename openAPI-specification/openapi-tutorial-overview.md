@@ -45,7 +45,7 @@
 - [Smartbear](https://smartbear.com/) - это компания, которая поддерживает и разрабатывает инструменты Swagger с открытым исходным кодом (Swagger Editor, Swagger UI, Swagger Codegen и другие). Они не владеют [спецификацией OpenAPI](https://github.com/OAI/OpenAPI-Specification/), так как Linux Foundation поддерживает эту [инициативу](https://www.openapis.org/). Разработка спецификации OpenAPI ведется [многими компаниями и организациями](https://www.openapis.org/membership/members).
 - «Документ спецификации OpenAPI» или «документ OpenAPI» - это Swagger-файл в формате YAML, который создается для описания API.
 
-Другие определения находятся в [Глоссарии API](../glossary-and-resourses/glossary-for-api-documentation.md)
+Другие определения находятся в [Глоссарии API](../glossary-and-resourses/Glossary-for-API-documentation.md)
 
 Разберемся с некоторыми дополнительными дескрипторами JSON и YAML. Документ спецификации в моем руководстве по OpenAPI использует YAML (который вкратце представлен [здесь](working-in-YAML.md)), но он также может быть создан и в JSON. JSON - это подмножество YAML, поэтому эти два формата являются практически взаимозаменяемыми (для структур данных, которые мы используем). В конечном счете, однако, спецификация OpenAPI является объектом JSON. Примечания к спецификации:
 
