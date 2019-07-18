@@ -17,10 +17,10 @@
 2. На каждом сайте ищем раздел документации API со списком конечных точек
 3. В документации по каждой ссылке находим информацию:
     - [описание ресурса](step1-resourse-description.md);
-    - [конечные точки и методы](step2-endpoints-and-methods.md)
+    - [конечные точки и методы](step2-endpoints-and-methods.md):
     - [параметры](step3-parameters.md);
-    - [примеры запроса](step4-request-example.md)
-    - [примеры ответа и схемы](step5-response-example-and-schema.md)
+    - [примеры запроса](step4-request-example.md);
+    - [примеры ответа и схемы](step5-response-example-and-schema.md);
 
 > Названия разделов могут отличаться на разных сайтах API-документации, но обычно они легко узнаваемы.
 
