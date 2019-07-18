@@ -141,7 +141,7 @@ demographics:
 Позже, когда мы узнаем больше о публикации документации, будет пояснение, как сконфигурировать интерфейс Swagger с нашим документом спецификации в качестве отдельного продукта. Для нашего примера API OpenWeatherMap вы можете увидеть спецификацию OpenAPI, отображаемую интерфейсом Swagger, по следующим ссылкам:
 
 - [Standalone Swagger UI with OpenWeatherMap API](https://idratherbewriting.com/learnapidoc/assets/files/swagger/)
-- [Embedded Swagger with OpenWeatherMap API](swagger-ui-demo.md)
+- [Встроенный Swagger с OpenWeatherMap API](swagger-ui-demo.md)
 
 <a name="migration"></a>
 ## Миграция от OpenAPI 2.0 к 3.0
