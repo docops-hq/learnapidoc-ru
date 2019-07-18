@@ -188,31 +188,34 @@ Swagger предлагает множество библиотек, которы
 Swagger UI отправляет запрос и показывает отправленный curl.
 В примере был отправлен curl:
 
-	curl -X POST "https://petstore.swagger.io/v2/pet" -H "accept: application/xml" -H "Content-Type: application/json" -d "{ \"id\": 1000, \"category\": { \"id\": 0, \"name\": \"string\" }, \"name\": \"Bentley\", \"photoUrls\": [ \"string\" ], \"tags\": [ { \"id\": 0, \"name\": \"string\" } ], \"status\": \"available\"}"
-
-Обратите внимание, что с параметром -d (data) параметр тела запроса экранируется и добавляется непосредственно в команду curl, а не загружается из файла (как описано в [Common curl commands related to REST]()).
+```js
+curl -X POST "https://petstore.swagger.io/v2/pet" -H "accept: application/xml" -H "Content-Type: application/json" -d "{ \"id\": 1000, \"category\": { \"id\": 0, \"name\": \"string\" }, \"name\": \"Bentley\", \"photoUrls\": [ \"string\" ], \"tags\": [ { \"id\": 0, \"name\": \"string\" } ], \"status\": \"available\"}"
+```
+Обратите внимание, что с параметром -d (data) параметр тела запроса экранируется и добавляется непосредственно в команду curl, а не загружается из файла (как описано в [Общих командах curl, связанныхе с REST](../like-developer/understand-curl.md#curlCommands)).
 
 В разделе "Ответы" Swagger UI выдает ответ сервера. По умолчанию ответ возвращает XML:
 
-	<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-		<Pet>
-			<category>
-				<id>0</id>
-				<name>string</name>
-			</category>
-			<id>1000</id>
-			<name>Bentley</name>
-			<photoUrls>
-				<photoUrl>string</photoUrl>
-			</photoUrls>
-			<status>available</status>
-			<tags>
-				<tag>
-					<id>0</id>
-					<name>string</name>
-				</tag>
-			</tags>
-		</Pet>
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+  <Pet>
+    <category>
+      <id>0</id>
+      <name>string</name>
+    </category>
+    <id>1000</id>
+    <name>Bentley</name>
+    <photoUrls>
+      <photoUrl>string</photoUrl>
+    </photoUrls>
+    <status>available</status>
+    <tags>
+      <tag>
+        <id>0</id>
+        <name>string</name>
+      </tag>
+    </tags>
+  </Pet>
+```
 
 Если выбрать в выпадающем списке "Response content type" JSON, то в ответе вернется JSON вместо XML.
 
