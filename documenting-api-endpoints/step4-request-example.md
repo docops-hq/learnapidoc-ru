@@ -188,7 +188,9 @@ API Explorer позволяет вставлять свои собственны
 
 ### Sample Request
 
-    curl -I -X GET "https://api.openweathermap.org/data/2.5/surfreport?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial&days=2"
+```js
+curl -I -X GET "https://api.openweathermap.org/data/2.5/surfreport?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial&days=2"
+```
 
 <a name="nextSteps"></a>
 ## Следующие шаги
