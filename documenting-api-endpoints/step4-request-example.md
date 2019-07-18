@@ -33,8 +33,9 @@
 
 Дизайн этого сайта API задуман таким образом, что  примеры запросов и ответов размещаются в правом столбце страницы. Запрос отформатирован в curl, который мы рассмотрели ранее в разделе [Создание curl запроса](../like-developer/make-curl-call.md).
 
-    curl -u "username:password" -H "Content-Type:application/json" -X GET "https://api.callfire.com/v2/texts?limit=50&offset=200"
-
+```js
+curl -u "username:password" -H "Content-Type:application/json" -X GET "https://api.callfire.com/v2/texts?limit=50&offset=200"
+```
 
 curl - это обычный формат для отображения запросов по нескольким причинам:
 
@@ -61,8 +62,9 @@ URL ресурса включает в себя как базовый путь, 
 
 Если имеется много параметров, можно попробовать включить несколько примеров запросов. В API CityGrid Places конечная точка `where` выглядит следующим образом:
 
-    https://api.citygridmedia.com/content/places/v2/search/where
-
+```
+https://api.citygridmedia.com/content/places/v2/search/where
+```
 
 Однако есть буквально [17 возможных параметров строки запроса](https://docs.citygridmedia.com/display/citygridv2/Places+API#PlacesAPI-WhereSearchRequest), которые можно использовать с этой конечной точкой. В результате документация включает несколько примеров запросов, которые показывают различные комбинации параметров:
 
@@ -72,10 +74,11 @@ URL ресурса включает в себя как базовый путь, 
 
 В этом примере показано, как «Найти отели в Бостоне, просматривая результаты с 1 по 5 страницы в алфавитном порядке»:
 
-    https://api.citygridmedia.com/content/places/v2/search/where?what=hotels&where=boston,ma&page=1&rpp=5&sort=alpha&publisher=test&format=json
+```
+https://api.citygridmedia.com/content/places/v2/search/where?what=hotels&where=boston,ma&page=1&rpp=5&sort=alpha&publisher=test&format=json
+```
 
-
-Если [кликнуть по ссылке](https://api.citygridmedia.com/content/places/v2/search/where?what=hotels&where=boston,ma&page=1&rpp=5&sort=alpha&publisher=test&format=json), вы можете увидеть ответ непосредственно. В следующем разделе есть описание [динамического отображении ответа](step5-response-example-and-schema.md#embedding), когда пользователь нажимает на запрос.
+Если [кликнуть по ссылке](https://api.citygridmedia.com/content/places/v2/search/where?what=hotels&where=boston,ma&page=1&rpp=5&sort=alpha&publisher=test&format=json), то увидим ответ. В следующем разделе есть описание [динамического отображении ответа](step5-response-example-and-schema.md#embedding), когда пользователь нажимает на запрос.
 
 Сколько разных запросов и ответов нужно показать? Вероятно, это не простой ответ, но, не более, чем несколько. Нам решать, что нужно для нашего API. Пользователи обычно вникнут в шаблон после нескольких примеров.
 
