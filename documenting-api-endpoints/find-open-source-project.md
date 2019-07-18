@@ -123,7 +123,7 @@
 - [How to choose (and contribute to) your first open source project](https://github.com/collections/choosing-projects);
 - [Contribute to open-source projects through documentation](https://mapzen.com/blog/open-source-docs/)
 
-Справочник по [ GitHub Pull Request доступен в разделе](https://idratherbewriting.com/learnapidoc/pubapis_github_pull_requests.html)
+Справочник по GitHub Pull Request доступен в разделе [Процесс Pull request на GitHub](../Publishing-doc/Pull-request-workflows.md)
 
 <a name="nextSteps"></a>
 ## Следующие шаги
