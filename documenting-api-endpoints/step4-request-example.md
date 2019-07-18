@@ -179,7 +179,7 @@ API Explorer позволяет вставлять свои собственны
 
 Не обязательно создавать свои собственные инструменты. Существующие инструменты, такие как [Swagger UI](https://swagger.io/tools/swagger-ui/) (который анализирует [спецификацию OpenAPI](../openAPI-specification/openapi-tutorial-overview.md)) и [Readme.io](http://readme.io/) (который позволяет вводить детали вручную или из спецификации OpenAPI), могут интегрировать функционал API Explorer непосредственно в документацию.
 
-> Пособие по созданию собственного API Explorer см. В [Руководство Swagger UI](./openAPI-specification/swagger-ui-tutorial.md).
+> Пособие по созданию собственного API Explorer см. В [Руководство Swagger UI](../openAPI-specification/swagger-ui-tutorial.md).
 
 <a name="surfReportRequest"></a>
 ## Пример запроса для SurfReport
