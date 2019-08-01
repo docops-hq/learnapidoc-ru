@@ -27,4 +27,4 @@
 
 [🔙](best-practices.md)
 
-[Go next ➡](../publishing-doc/README.md)
+[Go next ➡](../Publishing-doc/README.md)
