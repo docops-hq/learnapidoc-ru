@@ -46,4 +46,4 @@
 
 [🔙](step7-tags-object.md)
 
-[Go next ➡](сreate-openapi-specification.md)
+[Go next ➡](create-openapi-specification.md)
