@@ -272,4 +272,4 @@ API Explorer, как правило, лучше работают с более �
 
 [🔙](API-doc-sites-list.md)
 
-[Go next ➡](Docs-as-code-tools.md)
+[Go next ➡](Doc-as-code-tools.md)
