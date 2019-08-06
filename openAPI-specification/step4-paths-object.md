@@ -8,7 +8,7 @@
 
 [Объекты `paths`](#paths)
 
-- [Объекты операций](#operations)
+- [Объекты `operations`](#operations)
 
  - [Объект `parameters`](#parameters)
 
