@@ -10,7 +10,7 @@
 
 [Переиспользование параметров в нескольких путях](#reuseParams)
 
-[Переиспользование объектов `response`](#reuseObjects)
+[Переиспользование объектов `responses`](#reuseObjects)
 
 [Описание схемы](#schema)
 
@@ -166,9 +166,9 @@ components:
 Заменим существующий объект `paths` в редакторе Swagger приведенным выше примером кода, включив новый объект `components` и обратим внимание, что отображаемое изображение по-прежнему выглядит так же.              
 
 <a name="reuseObjects"></a>
-## Переиспользование объектов `response`
+## Переиспользование объектов `responses`
 
-В [шаге 4: объект `paths`](step4-paths-object.md), когда мы описывали [объект `response`](step4-paths-object.md#responses) в объекте `paths`, даже с помощью простого заполнителя, мы использовали [объект `schema`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#schemaObject) для описания модели запроса или ответа. `schema` относится к структуре данных (поля, значения и иерархия различных объектов и свойств объекта JSON или YAML - см. [Что такое схема?](https://json-schema.org/understanding-json-schema/about.html)).
+В [шаге 4: объект `paths`](step4-paths-object.md), когда мы описывали [объект `responses`](step4-paths-object.md#responses) в объекте `paths`, даже с помощью простого заполнителя, мы использовали [объект `schema`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#schemaObject) для описания модели запроса или ответа. `schema` относится к структуре данных (поля, значения и иерархия различных объектов и свойств объекта JSON или YAML - см. [Что такое схема?](https://json-schema.org/understanding-json-schema/about.html)).
 
 Давайте поглубже изучим то, как использовать свойства схемы для документирования объекта `response`. Мы также будем хранить  содержимое схемы в `components`, чтобы его можно было повторно использовать в других частях документа спецификации. Если вспомнить [предыдущий шаг](step4-paths-object.md), объект ответов для конечной точки погоды выглядел так:
 
