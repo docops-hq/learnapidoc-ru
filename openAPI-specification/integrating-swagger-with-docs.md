@@ -241,4 +241,4 @@ layout: null
 
 [🔙](stoplight.md)
 
-[Go next ➡](../testing-api-docs/README.md)
+[Go next ➡](../testing-api-doc/README.md)
