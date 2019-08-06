@@ -10,16 +10,16 @@
 
 | Безадресные разделы | Сайт 1 | Сайт 2 | Сайт 3 |
 |:--|:--|:--|:--|
-| [Обзор API](../conceptual-topics/API-overview.md) ||||
+| [Обзор API](API-overview.md) ||||
 | [Начало работы](getting-started.md) ||||
-| [Аутентификация и авторизация](../conceptual-topics/authentication-and-authorization.md) ||||
-| [Коды сатусов и ошибок](../conceptual-topics/status-error-codes.md) ||||
-| [Ограничения скорости](../conceptual-topics/rate-limiting.md)||||
-| [Примеры кода и руководства](../conceptual-topics/code-samples.md) ||||
-| [SDK и примеры приложений](../conceptual-topics/sdks-sample-apps.md)||||
-| [Краткое справочное руководство](../conceptual-topics/quick-reference-guide.md) ||||
-|[API глоссарий](../conceptual-topics/api-glossary.md) ||||
-| [Лучшие практики](../conceptual-topics/best-practices.md) ||||
+| [Аутентификация и авторизация](authentication-and-authorization.md) ||||
+| [Коды сатусов и ошибок](status-error-codes.md) ||||
+| [Ограничения скорости](rate-limiting.md)||||
+| [Примеры кода и руководства](code-samples.md) ||||
+| [SDK и примеры приложений](sdks-sample-apps.md)||||
+| [Краткое справочное руководство](quick-reference-guide.md) ||||
+|[API глоссарий](api-glossary.md) ||||
+| [Лучшие практики](best-practices.md) ||||
 
 Создаем такую таблицу в своем любимом текстовом редакторе и заполняем по возможности все столбцы.
 
