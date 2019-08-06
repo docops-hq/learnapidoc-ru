@@ -15,7 +15,7 @@
 - [Начало работы](getting-started.md)
 - [Требования аутентификации и авторизации](authentication-and-authorization.md)
 - [Коды статусов и ошибок](status-error-codes.md)
-- [Пределы и ограничения скорости](rate-limiting.md)
+- [Ограничения скорости](rate-limiting.md)
 - [Примеры кода и руководства](code-samples.md)
 - [SDK и пример приложений](sdks-sample-apps.md)
 - [Краткое справочное руководство](quick-reference-guide.md)
