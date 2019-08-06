@@ -104,7 +104,7 @@ $.post("http://api.myapp.com/books/", {
 {: title="jQuery" }
 ```
 
-(`~~~` - это альтернативная разметка для обратного апострофа. Обозначение `{: .success}` - это синтаксис [kramdown](https://kramdown.gettalong.org/) для пользовательских классов.) Автор темы создал макет, который просматривает эти значения и помещает содержимое в формат HTML. Если вы посмотрите [файл index.html в Aviator](), вы увидите следующий код:
+(`~~~` - это альтернативная разметка для обратного апострофа. Обозначение `{: .success}` - это синтаксис [kramdown](https://kramdown.gettalong.org/) для пользовательских классов.) Автор темы создал макет, который просматривает эти значения и помещает содержимое в формат HTML. Если вы посмотрите [файл index.html в Aviator](https://github.com/CloudCannon/aviator-jekyll-template/blob/master/index.html), вы увидите следующий код:
 
 ```html
 {% assign sorted_collections = site.collections | sort: "position" %}
