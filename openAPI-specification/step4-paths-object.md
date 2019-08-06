@@ -2,7 +2,7 @@
 
 | [*Шаг 1: объект* `openapi`](step1-openapi-object.md) | --> | [*Шаг 2: объект* `info`](step2-info-object.md) | --> | [*Шаг 3: объект* `servers`](step3-servers-object.md) | --> | [**Шаг 4: объект** `paths`](step4-paths-object.md) | --> | [*Шаг 5: объект* `components`](step5-components-object.md) | --> | [*Шаг 6: объект* `security`](step6-security-object.md) | --> | [*Шаг 7: объект* `tags`](step7-tags-object.md) | --> | [*Шаг 8: объект* `externalDocs`](step8-externalDocs-object.md) |
 
-Объект `paths` содержит соль информации нашей API. Объект `paths` имеет несколько подобъектов: [объект элементов пути](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#pathItemObject), [объект операций](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#operationObject) и многое другое.
+Объект `paths` содержит соль информации нашей API. Объект `paths` имеет несколько подобъектов: [объект `Элемент пути`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#pathItemObject), [объект `Operation`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#operationObject) и многое другое.
 
 > Мы двигались со скоростью около 5 км/ч на предыдущих этапах, но здесь мы собираемся разогнаться до 100 км/ч. Ничего страшного, если нет полного понимания следующего контента. Можно вставить пример кода, из этого раздела в Swagger UI, и позже вернуться, чтобы изучить его более подробно.
 
