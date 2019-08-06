@@ -12,7 +12,7 @@
 - [Объект `parameters`](#parameters)
 - [Объект `responses`](#responses)
 
-[Код объекта `paths`](#paths)
+[Код объекта `paths`](#pathsCode)
 
 [Отображение в Swagger UI](#appearance)
 
