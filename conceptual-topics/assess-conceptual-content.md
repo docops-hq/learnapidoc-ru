@@ -11,7 +11,7 @@
 | Безадресные разделы | Сайт 1 | Сайт 2 | Сайт 3 |
 |:--|:--|:--|:--|
 | [Обзор API](../conceptual-topics/API-overview.md) ||||
-| [Начало работы](../conceptual-topics/getting-started.md) ||||
+| [Начало работы](getting-started.md) ||||
 | [Аутентификация и авторизация](../conceptual-topics/authentication-and-authorization.md) ||||
 | [Коды сатусов и ошибок](../conceptual-topics/status-error-codes.md) ||||
 | [Ограничения скорости](../conceptual-topics/rate-limiting.md)||||
