@@ -144,16 +144,20 @@ Git можно настроить так, чтобы не приходилось
 
 5. Введите `git clone`? затем вызываем правой кнопкой мыши контекстное меню и нажимаем `paste`. Сохраненный в буфере URL нашей wiki добавится в строку команды (можно и вручную ввести url wiki):
 
-		git clone https://github.com/tomjoht/weatherapi.wiki.git
+```
+git clone https://github.com/tomjoht/weatherapi.wiki.git
+```
 
 Нажимаем `Enter` и ждем пока система клонирует wiki. В это время видим на экране исполнение команды:
 
-		Cloning into 'weatherapi.wiki'...
-		remote: Enumerating objects: 3, done.
-		remote: Counting objects: 100% (3/3), done.
-		remote: Compressing objects: 100% (2/2), done.
-		remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 6
-		Unpacking objects: 100% (9/9), done.
+```
+Cloning into 'weatherapi.wiki'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 6
+Unpacking objects: 100% (9/9), done.
+```
 
 В примере Git создал папку `weatherapi.wiki` 	
 
