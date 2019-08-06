@@ -32,7 +32,7 @@
 - [Начало работы](../conceptual-topics/getting-started.md)
 - [Требования к аутентификации и авторизации](../conceptual-topics/authentication-and-authorization.md)
 - [Коды статусов и ошибок](../conceptual-topics/status-error-codes.md)
-- [Ограничения и пороги](../conceptual-topics/rate-limiting.md)
+- [Ограничения скорости](../conceptual-topics/rate-limiting.md)
 - [Примеры кода](../conceptual-topics/code-samples.md)
 - [SDK и примеры приложений](../conceptual-topics/sdks-sample-apps.md)
 - [Глоссарий](../conceptual-topics/api-glossary.md)
