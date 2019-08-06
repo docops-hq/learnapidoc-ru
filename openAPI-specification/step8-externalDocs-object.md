@@ -15,11 +15,13 @@
 
 Вот пример объекта `externalDocs`:
 
-    externalDocs:
-      description: API Documentation
-      url: https://openweathermap.org/api
+```yaml
+externalDocs:
+  description: API Documentation
+  url: https://openweathermap.org/api
+```
 
-Обратите внимание, что эта документация должна относиться в целом к API. Чтобы связать определенный параметр с дополнительной документацией, можно добавить объект `externalDocs` к объекту операции, как отмечено в описании [Объектов операций](step4-paths-object.md#%operations) в Шаге 4: Объект `paths`.
+Обратите внимание, что эта документация должна относиться в целом к API. Чтобы связать определенный параметр с дополнительной документацией, можно добавить объект `externalDocs` к объекту операции, как отмечено в описании [Объекта `operations`](step4-paths-object.md#%operations) в Шаге 4: Объект `paths`.
 
 <a name="appearanse"></a>
 ## Отображение в Swagger UI
