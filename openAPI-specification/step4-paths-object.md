@@ -8,11 +8,9 @@
 
 [Объекты `paths`](#paths)
 
-- [Объекты `operations`](#operations)
-
- - [Объект `parameters`](#parameters)
-
- - [Объект `responses`](#responses)
+- [Объект `operations`](#operations)
+- [Объект `parameters`](#parameters)
+- [Объект `responses`](#responses)
 
 [Код объекта `paths`](#paths)
 
@@ -36,7 +34,7 @@ paths:
 ```
 
 <a name="operations"></a>
-### Объекты операций
+### Объект `operations`
 
 Объект операции ( `get` приведенный выше в коде) содержит различные свойства и объекты:
 
