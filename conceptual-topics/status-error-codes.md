@@ -33,7 +33,9 @@
 
 Помните, когда мы отправляли обратный вызов в разделе [Создание curl запроса](../like-developer/make-curl-call.md#curlRequest)? Чтобы получить заголовок ответа, добавляем --include или -i к запросу curl. Если нужно, чтобы в ответе возвращался только заголовок ответа (и ничего больше), используем заглавную букву -I, например:
 
-    curl -I -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
+```js
+curl -I -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
+```
 
 Заголовок ответа выглядит следующим образом:
 
