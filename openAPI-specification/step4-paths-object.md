@@ -23,7 +23,7 @@
 
 > Объект `paths` - это та же «конечная точка» в соответствии с терминологии спецификации OpenAPI.
 
-Каждый элемент в объекте `path` содержит [объект операции](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#operation-object). (Операции - это методы GET, POST, PUT и DELETE, которые мы исследовали в разделе [Конечные точки](../documenting-api-endpoints/step2-endpoints-and-methods.md) руководства по API.)
+Каждый элемент в объекте `path` содержит [объект `operations`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#operation-object). (`operations` - это методы GET, POST, PUT и DELETE, которые мы изучали в разделе [Конечные точки](../documenting-api-endpoints/step2-endpoints-and-methods.md) руководства по API.)
 
 Начинаем с перечисления путей (конечных точек) и их разрешенных операций (методов). Для конечной точки `weather` в API OpenWeatherMap есть только один путь (`/weather`) и одна операция (`get`) для этого пути:
 
