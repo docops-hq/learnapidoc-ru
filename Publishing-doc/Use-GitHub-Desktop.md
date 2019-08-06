@@ -150,31 +150,39 @@
 
 Когда нажимаем **Push origin** от клиента GitHub Desktop, увидим сообщение о том, что хранилище было обновлено с момента последнего извлечения:
 
-    “The repository has been updated since you last pulled. Try pulling before pushing.”
+```
+“The repository has been updated since you last pulled. Try pulling before pushing.”
+```
 
 Кнопка, которая раньше говорила «Push origin», теперь говорит «Pull origin». кликаем «Pull origin». Теперь получаем еще одно сообщение об ошибке, которое говорит:
 
-    “We found some conflicts while trying to merge. Please resolve the conflicts and commit the changes.”
-
+```
+“We found some conflicts while trying to merge. Please resolve the conflicts and commit the changes.”
+```
 
 Если решим зафиксировать свои изменения, то увидим сообщение, которое гласит:
 
-    “Please resolve all conflicted files, commit, and then try syncing again.”
+```
+“Please resolve all conflicted files, commit, and then try syncing again.”
+```
 
-GitHub Desktop отображает восклицательный знак рядом с файлами с конфликтами слияния. Откройте файл конфликта и найдите маркеры конфликта (`<<<<<<<` и `>>>>>>>`). Например, можно увидеть это:
+GitHub Desktop отображает восклицательный знак рядом с файлами с конфликтами слияния. Откройте файл конфликта и найдите маркеры конфликта (`<<<<<<<` и `>>>>>>>`). Например, такие:
 
-    <<<<<<< HEAD
-    This is an edit I made locally.
-    =======
-    This is an edit I made from the browser.
-    >>>>>>> c163ead57f6793678dd41b5efeef372d9bd81035
-
+```
+<<<<<<< HEAD
+This is an edit I made locally.
+=======
+This is an edit I made from the browser.
+>>>>>>> c163ead57f6793678dd41b5efeef372d9bd81035
+```
 
 В командной строке можно запустить `git status`, чтобы увидеть, какие файлы имеют конфликты.) Содержимое в `HEAD` показывает локальные изменения. Содержание ниже `=======` показывает изменения, внесенные в другом месте.
 
 Устраняем все конфликты, изменив содержимое маркеров, а затем удалив маркеры. Например, обновите содержимое до этого:
 
-    This is an edit I made locally.
+```
+This is an edit I made locally.
+```
 
 Теперь нужно снова добавить файл в Git. В GitHub Desktop внесем изменения в обновленные файлы. Кликаем **Push origin**. Обновления на локальном компьютере отправляются на удаленный компьютер без каких-либо конфликтов.
 
