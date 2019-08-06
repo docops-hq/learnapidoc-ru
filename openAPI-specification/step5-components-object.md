@@ -604,7 +604,7 @@ components:
 
 Описание ответа JSON бывает сложным и запутанным. К счастью, есть несколько простой обходной путь. Можно загрузить [Stoplight](https://next.stoplight.io/) и использовать функцию **Generate JSON**, чтобы Stoplight автоматически создавал описание схемы OpenAPI. Вот ссылка на короткое видео, показывающее, как это сделать:
 
-[Generate JSON with Stoplight](https://youtu.be/0IOWY0Hj3Xc)
+[![Generate JSON with Stoplight](img/youtube.jpg)](https://youtu.be/0IOWY0Hj3Xc)
 
 По сути, в редактор Stoplight копируется JSON-ответ, который нужно задокументировать. Затем надо нажать `Generate JSON`. Перейти в представление кода и скопировать JSON. Затем сконвертировать JSON в YAML с помощью онлайн-конвертера. Для получения дополнительной информации см. [Stoplight - инструменты визуального моделирования для создания спецификации OpenAPI.](stoplight.md)
 
