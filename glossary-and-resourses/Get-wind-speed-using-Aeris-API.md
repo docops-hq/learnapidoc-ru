@@ -6,7 +6,7 @@
 
 [1. Получаем API ключ](#getKey)
 
-[2.Создаем запрос](#request)
+[2. Создаем запрос](#request)
 
 [3. Анализируем ответ](#response)
 
@@ -23,7 +23,7 @@
 Открываем страницу [Getting Started](https://www.aerisweather.com/support/docs/api/getting-started/), изучаем информацию как зарегистрироваться и получить API ключ (получаем бесплатную версию ключей, доступных для проектов разработки). Для вызовов API на понадобятся и идентификатор и секретный код. Детали получения секретного кода и идентификатора API сервиса прогноза погоды Aeris можно изучить [по ссылке](../like-developer/get-authorization-keys.md#idAeris). (Или можно воспользоваться [ключами Автора курса](https://idratherbewriting.com/learnapidoc/assets/files/apikeys.txt) )
 
 <a name="request"></a>
-## 2.Создаем запрос
+## 2. Создаем запрос
 
 Переходим на страницу [конечных точек](https://www.aerisweather.com/support/docs/api/reference/endpoints/#all:all) API сервиса, и ищем ту, которая позволит получить скорость ветра. Конечная точка [`oservations`](https://www.aerisweather.com/support/docs/api/reference/endpoints/observations/), как и [`forecasts`](https://www.aerisweather.com/support/docs/api/reference/endpoints/forecasts/) предоставляет информацию о скорости ветра. Ответ от `oservations` выглядит проще, поэтому будем использовать ее.
 
