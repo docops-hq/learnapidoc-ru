@@ -475,4 +475,4 @@ API Console можно встраивать в качестве [элемент�
 
 [🔙](Get-wind-speed-using-Aeris-API.md)
 
-[Go next ➡](API-blueprint-tutorial.md)
+[Go next ➡](API-Blueprint-tutorial.md)
