@@ -5,7 +5,7 @@
 
 # Курс по документированию REST API
 
-Это вольный перевод курса [**Documenting APIs: A guide for technical writers**](https://idratherbewriting.com/learnapidoc/), составленного Томом Джонсоном, техническим писателем Amazon.
+Вольный перевод курса [**Documenting APIs: A guide for technical writers**](https://idratherbewriting.com/learnapidoc/), составленного Томом Джонсоном, техническим писателем Amazon.
 
 Цель перевода курса:
 
