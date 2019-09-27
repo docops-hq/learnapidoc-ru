@@ -157,6 +157,10 @@
     - [**Справочник API Blueprint**](glossary-and-resourses/API-Blueprint-tutorial.md)
     - [**Описание ошибок**](glossary-and-resourses/answeres-whats-wrong.md)
 
-11. [**Документирование кода**](doc-code/doc-code.md)
+11. [**Документирование кода**](doc-code/README.md)
+
+    - [**Почему документирование кода так сложно?**](doc-code/doc-code.md)
+    - [**Исследования о документировании кода**](doc-code/doc-research.md)
+    - [**Пять стратегий документирования кода**](doc-code/doc-strategy.md)
 
 # [Go next ➡](introduction-rest-apis/README.md)
