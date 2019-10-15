@@ -14,7 +14,7 @@
 
 Данный репозиторий используется для хранения исходников перевода. 
 
-Сайт курса: [Starkovden.github.io](https://Starkovden.github.io)
+Сайт рускоязычной версии курса: [Starkovden.github.io](https://Starkovden.github.io)
 
 ## Коротко о курсе
 
