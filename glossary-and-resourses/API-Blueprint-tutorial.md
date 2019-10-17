@@ -209,7 +209,7 @@ form of choices.
             }
 ```
 
-Справочники по синтакису API Blueprint можно посмотреть на ресурсах:
+Справочники по синтаксису API Blueprint можно посмотреть на ресурсах:
 
 - [API Blueprint tutorial](https://apiblueprint.org/documentation/tutorial.html)
 - [Apiary tutorial](https://help.apiary.io/api_101/api_blueprint_tutorial/)
@@ -462,7 +462,7 @@ Access current weather data for any location on Earth including over 200,000 cit
 + `sunrise`: `1435610796` (number, optional) - Sunrise time, unix, UTC
 + `sunset`: `1435650870` (number, optional) - Sunset time, unix, UTC
 ```
-> Если сложно копипасить код, файл с кодом можно загрузить из [источника](https://idratherbewriting.com/learnapidoc/assets/files/apiblueprintweatherdata.md).
+> Если сложно копипастить код, файл с кодом можно загрузить из [источника](https://idratherbewriting.com/learnapidoc/assets/files/apiblueprintweatherdata.md).
 
 5. Нажимаем `Save`
 
