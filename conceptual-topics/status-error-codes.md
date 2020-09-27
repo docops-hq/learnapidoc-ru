@@ -33,20 +33,24 @@
 
 Помните, когда мы отправляли обратный вызов в разделе [Создание curl запроса](../like-developer/make-curl-call.md#curlRequest)? Чтобы получить заголовок ответа, добавляем --include или -i к запросу curl. Если нужно, чтобы в ответе возвращался только заголовок ответа (и ничего больше), используем заглавную букву -I, например:
 
-    curl -I -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
+```js
+curl -I -X GET "https://api.openweathermap.org/data/2.5/weather?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial"
+```
 
 Заголовок ответа выглядит следующим образом:
 
-    HTTP/1.1 200 OK
-    Server: openresty
-    Date: Thu, 06 Dec 2018 22:58:41 GMT
-    Content-Type: application/json; charset=utf-8
-    Content-Length: 446
-    Connection: keep-alive
-    X-Cache-Key: /data/2.5/weather?units=imperial&zip=95050
-    Access-Control-Allow-Origin: *
-    Access-Control-Allow-Credentials: true
-    Access-Control-Allow-Methods: GET, POST
+```yaml
+HTTP/1.1 200 OK    
+Server: openresty
+Date: Thu, 06 Dec 2018 22:58:41 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 446
+Connection: keep-alive
+X-Cache-Key: /data/2.5/weather?units=imperial&zip=95050
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, POST
+```
 
 Первая строка, `HTTP / 1.1 200 OK`, сообщает нам статус запроса (`200`). Большинство API REST следуют стандартному протоколу для заголовков ответов. Например, `200` - это не просто произвольный код, выбранный разработчиками OpenWeatherMap API. `200` - это общепринятый код для успешного HTTP-запроса. (Если изменить метод, то получим другой код состояния.)
 

@@ -83,7 +83,7 @@ Read the Docs предоставляет как бесплатную верси�
 
 Read the Docs представляет темы, характерные для веб-сайтов с документацией. Позволяет использовать reStructuredText (или Markdown, в зависимости от предпочтений). reStructuredText предоставляет больше специфических для документации функций и семантики - см. раздел [Как насчет reStructuredText и Asciidoc?](More-about-Markdown.md#RST) для получения более подробной информации. Можно еще посмотреть статью [Why You Shouldn’t Use “Markdown” for Documentation](http://www.ericholscher.com/blog/2016/mar/15/dont-use-markdown-for-technical-docs/) где призывают отказаться от Markdown в пользу reStructuredText.
 
-[Документация Read the Docs](https://docs.readthedocs.io/en/latest/intro/getting-started-with-sphinx.html) есть пример вывода.
+[В документации Read the Docs](https://docs.readthedocs.io/en/latest/intro/getting-started-with-sphinx.html) есть пример вывода.
 
 ![Read the Docs](pics/50.png)
 

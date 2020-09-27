@@ -29,7 +29,9 @@ GET surfreport/{beachId}
 
 ### Пример запроса
 
-    curl -I -X GET "https://api.openweathermap.org/data/2.5/surfreport?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial&days=2"
+```js
+curl -I -X GET "https://api.openweathermap.org/data/2.5/surfreport?zip=95050&appid=fd4698c940c6d1da602a70ac34f0b147&units=imperial&days=2"
+```
 
 ### Пример ответа
 
@@ -89,7 +91,9 @@ GET surfreport/{beachId}
 Мы закончили [ Обзор пошагового описания API](api-reference-tutorial-overview.md) и теперь готовы к практике:
 
 - [Поиск open-source проекта](find-open-source-project.md)
-- [Оценка ключевых элементов API документации](evaluateapi-referense-docs.md)
+- [Оценка ключевых элементов API документации](evaluate-api-referense-docs.md)
+
+но сначала попробуем поискать [ошибки в документации](whats-wrong.md) 
 
 [🔙](step5-response-example-and-schema.md)
 

@@ -103,9 +103,9 @@
 > Неполная или устаревшая документация является распространенной проблемой, наблюдаемой 93 процентами респондентов, однако 60 процентов участников говорят, что они редко или никогда не вносят свой вклад в документацию.
 
 
-Также проверьте [Open source documentation is bad, but proprietary software is worse](https://www.techrepublic.com/article/open-source-documentation-is-bad-but-proprietary-software-is-worse/) Мэтта Асаи. Asay выделяет результаты документации того же опроса GitHub:
+Также посмотрим [Open source documentation is bad, but proprietary software is worse](https://www.techrepublic.com/article/open-source-documentation-is-bad-but-proprietary-software-is-worse/) Мэтта Асаи. Мэтт выделяет результаты документации того же опроса GitHub:
 
-> 93% респондентов скрежетали зубами по некачественной документации, но также признались, что практически ничего не сделали для улучшения ситуации. … Если вы считаете, что эта глубокая потребность в документации побудит большее количество разработчиков внести свою лепту и помочь, вы ошибаетесь: 60% разработчиков не могут потрудиться представить документацию.
+> 93% респондентов скрежетали зубами от некачественной документации, но также признались, что практически ничего не сделали для улучшения ситуации. … Если вы считаете, что глубокая потребность в документации побудит большее количество разработчиков внести свою лепту и помочь, вы ошибаетесь: 60% разработчиков не могут потрудиться представить документацию.
 
 Так что, да, как технические писатели, мы не исправляем ошибки в коде и не разрабатываем новые функции, но наша роль разработчика документации все еще крайне необходима и ценится. Мы - редкие птицы в лесу разработки.
 
@@ -123,7 +123,7 @@
 - [How to choose (and contribute to) your first open source project](https://github.com/collections/choosing-projects);
 - [Contribute to open-source projects through documentation](https://mapzen.com/blog/open-source-docs/)
 
-Справочник по [ GitHub Pull Request доступен в разделе](https://idratherbewriting.com/learnapidoc/pubapis_github_pull_requests.html)
+Справочник по GitHub Pull Request доступен в разделе [Процесс Pull request на GitHub](../Publishing-doc/Pull-request-workflows.md)
 
 <a name="nextSteps"></a>
 ## Следующие шаги

@@ -53,7 +53,7 @@
 
 [`Run in Postman`](https://www.getpostman.com/api-network/) это кнопка, которая при нажатии импортирует информацию об API в Postman, чтобы пользователи могли выполнять вызовы с помощью клиента Postman. Таким образом, кнопка `Run in Postman` позволяет импортировать интерактивный пробный интерфейс API для конечных точек на веб-страницу.
 
-Чтобы попробовать кнопку `Run in Postman`, можно [импортировать спецификацию OpenAPI в Postman](https://learning.getpostman.com/docs/postman/collections/data_formats/#importing-postman-data) или ввести информацию об API вручную. Затем посмотрите раздел Postman/docs, [как создать кнопку `Run in Postman`](https://learning.getpostman.com/docs/postman_for_publishers/run_button/creating_run_button/).
+Чтобы добавить кнопку `Run in Postman`, можно [импортировать спецификацию OpenAPI в Postman](https://learning.getpostman.com/docs/postman/collections/data_formats/#importing-postman-data) или ввести информацию об API вручную. Стоит изучить раздел Postman/docs, [как создать кнопку `Run in Postman`](https://learning.getpostman.com/docs/postman_for_publishers/run_button/creating_run_button/).
 
 Множество демонстраций Run in Postman можно посмотреть [здесь](https://www.getpostman.com/api-network/). Многие из этих демонстраций перечислены в [сети API Postman](https://www.getpostman.com/api-network/).
 

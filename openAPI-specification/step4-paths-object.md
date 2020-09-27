@@ -2,19 +2,17 @@
 
 | [*Шаг 1: объект* `openapi`](step1-openapi-object.md) | --> | [*Шаг 2: объект* `info`](step2-info-object.md) | --> | [*Шаг 3: объект* `servers`](step3-servers-object.md) | --> | [**Шаг 4: объект** `paths`](step4-paths-object.md) | --> | [*Шаг 5: объект* `components`](step5-components-object.md) | --> | [*Шаг 6: объект* `security`](step6-security-object.md) | --> | [*Шаг 7: объект* `tags`](step7-tags-object.md) | --> | [*Шаг 8: объект* `externalDocs`](step8-externalDocs-object.md) |
 
-Объект `paths` содержит соль информации нашей API. Объект `paths` имеет несколько подобъектов: [объект элементов пути](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#pathItemObject), [объект операций](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#operationObject) и многое другое.
+Объект `paths` содержит соль информации нашей API. Объект `paths` имеет несколько подобъектов: [объект `Элемент пути`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#pathItemObject), [объект `Operation`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#operationObject) и многое другое.
 
 > Мы двигались со скоростью около 5 км/ч на предыдущих этапах, но здесь мы собираемся разогнаться до 100 км/ч. Ничего страшного, если нет полного понимания следующего контента. Можно вставить пример кода, из этого раздела в Swagger UI, и позже вернуться, чтобы изучить его более подробно.
 
 [Объекты `paths`](#paths)
 
-- [Объекты операций](#operations)
+- [Объект `operations`](#operations)
+- [Объект `parameters`](#parameters)
+- [Объект `responses`](#responses)
 
- - [Объект `parameters`](#parameters)
-
- - [Объект `responses`](#responses)
-
-[Код объекта `paths`](#paths)
+[Код объекта `paths`](#pathsCode)
 
 [Отображение в Swagger UI](#appearance)
 
@@ -25,7 +23,7 @@
 
 > Объект `paths` - это та же «конечная точка» в соответствии с терминологии спецификации OpenAPI.
 
-Каждый элемент в объекте `path` содержит [объект операции](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#operation-object). (Операции - это методы GET, POST, PUT и DELETE, которые мы исследовали в разделе [Конечные точки](../documenting-api-endpoints/step2-endpoints-and-methods.md) руководства по API.)
+Каждый элемент в объекте `path` содержит [объект `operations`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#operation-object). (`operations` - это методы GET, POST, PUT и DELETE, которые мы изучали в разделе [Конечные точки](../documenting-api-endpoints/step2-endpoints-and-methods.md) руководства по API.)
 
 Начинаем с перечисления путей (конечных точек) и их разрешенных операций (методов). Для конечной точки `weather` в API OpenWeatherMap есть только один путь (`/weather`) и одна операция (`get`) для этого пути:
 
@@ -36,7 +34,7 @@ paths:
 ```
 
 <a name="operations"></a>
-### Объекты операций
+### Объект `operations`
 
 Объект операции ( `get` приведенный выше в коде) содержит различные свойства и объекты:
 
@@ -57,7 +55,7 @@ paths:
 
 > Несомненно, нужно обращаться к [спецификации OpenAPI](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md), чтобы узнать, какие детали требуются для каждого из значений и объектов. На курсе нет возможности воспроизвести все нужные детали. Здесь просто поверхностное знакомство со свойствами OpenAPI.
 
-Давайте добавим скелет объекта операций к нашему коду:
+Давайте добавим скелет объекта `operations` к нашему коду:
 
 ```yaml
 paths:
@@ -81,7 +79,7 @@ paths:
 
 - Нет необходимости включать [объект `requestBody`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#requestBodyObject) потому что ни один путь API OpenWeatherMap не содержит параметров тела запроса.
 - Нет необходимости включать [объект `servers`](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#serverObject) потому что используется тот же URL глобальных `servers`, который мы определили [глобально на корневом уровне](step3-servers-object.md)
-- Нет необходимости включать [security](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#securityRequirementObject) потому что используется один и тот же объект `security`, который мы определим глобально на корневом уровне позже (см. [Шаг 6: объект security](step6-security-object.md) ).
+- Нет необходимости включать [security](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#securityRequirementObject) потому что используется один и тот же объект `security`, который мы определим глобально на корневом уровне позже (см. [Шаг 6: объект `security`](step6-security-object.md) ).
 - Нет необходимости включать `deprecated` потому что ни один из путей не устарел.
 - Нет необходимости включать `callbacks` потому что ни один из путей не использует колбэки.
 
@@ -190,7 +188,7 @@ paths:
 <a name="responses"></a>
 #### Объект `responses`
 
-Другое существенное свойство в объекте операций - это объект `responses`. Для свойства `responses` обычно ссылаются на полное определение в объекте `components`, поэтому рассказ об объекте `responses` в следующем разделе - [Шаг 5. Объект компонентов](step5-components-object.md). (На этом шаге уже слишком много информации.)
+Другое существенное свойство в объекте операций - это объект `responses`. Для свойства `responses` обычно ссылаются на полное определение в объекте `components`, поэтому рассказ об объекте `responses` в следующем разделе - [Шаг 5. Объект `components`](step5-components-object.md). (На этом шаге уже слишком много информации.)
 
 На данный момент, чтобы редактор Swagger проверил и показал наш путь, давайте просто добавим некоторый контент-заполнитель для `responses`:
 

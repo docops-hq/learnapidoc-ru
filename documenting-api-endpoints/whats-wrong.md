@@ -60,7 +60,7 @@ https://api.openweathermap.org/data/2.5/surfreport/12345?zip=95050&appid=fd4698c
                     "wind": 15,
                     "watertemp": 80,
                     "surf_height": 5,
-	          "riptide":  "moderate",
+	          "riptide": "moderate",
                     "recommendation": "Carve it up, brah! The waves are crankin' wild out there."
                 },
                 "2pm": {
@@ -68,7 +68,7 @@ https://api.openweathermap.org/data/2.5/surfreport/12345?zip=95050&appid=fd4698c
                     "wind": 1,
                     "watertemp": 50,
                     "surf_height": 3,
-	         "riptide": extreme
+	          "riptide": "extreme",
                     "recommendation": "Waves are foam and frothy but rideable in places. Gravitate to the impact zone, due, and hang loose."
                 },
                 "3pm": {

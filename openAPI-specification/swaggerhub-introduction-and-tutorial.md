@@ -49,7 +49,7 @@
 
 [Smartbear](https://smartbear.com/) - это компания, которая поддерживает и разрабатывает инструменты Swagger с открытым исходным кодом ([Swagger Editor](https://swagger.io/tools/swagger-editor/), [Swagger UI](https://swagger.io/tools/swagger-ui/), [Swagger Codegen](https://swagger.io/tools/swagger-codegen/) и др.). Они также сформировали [инициативу OpenAPI](https://www.openapis.org/), которая ведет эволюцию [спецификации Swagger (OpenAPI)](https://github.com/OAI/OpenAPI-Specification/).
 
-Smartbear разработал SwaggerHub как способ помочь командам совместно работать над спецификацией OpenAPI. Многие из клиентских и серверных SDK могут быть автоматически сгенерированы из SwaggerHub, и существует множество дополнительных функций, которые можyj использовать при разработке, тестировании и публикации своего API.
+Smartbear разработал SwaggerHub как способ помочь командам совместно работать над спецификацией OpenAPI. Многие из клиентских и серверных SDK могут быть автоматически сгенерированы из SwaggerHub, и существует множество дополнительных функций, которые могут использовать при разработке, тестировании и публикации своего API.
 
 Для начала работы в SwaggerHub, надо перейти на сайт [swaggerhub.com](https://swagger.io/tools/swaggerhub/), а затем создать учетную запись или войдите в систему, используя свои учетные данные GitHub. После входа вы увидите панель инструментов (Дэшборд) SwaggerHub.
 

@@ -192,7 +192,7 @@ reStructuredText расширяется, соответствует станда
 <a name="objections"></a>
 ## Возражения против markdown
 
-Некоторые люди возражают против markdown из-за несоответствия между его вариациями. Учитывая, что существует множество разновидностей Markdown ([CommonMark](https://commonmark.org/), [kramdown](https://kramdown.gettalong.org/), [оригинальный Markdown от Gruber](https://daringfireball.net/projects/markdown/syntax), [markdown для Gitub](https://github.github.com/gfm/), [Multimarkdown](https://fletcherpenney.net/multimarkdown/) и т. Д.), трудно создать единый инструмент для последовательной обработки Markdown.
+Некоторые люди возражают против markdown из-за несоответствия между его вариациями. Учитывая, что существует множество разновидностей Markdown ([CommonMark](https://commonmark.org/), [kramdown](https://kramdown.gettalong.org/), [оригинальный Markdown Грубера](https://daringfireball.net/projects/markdown/syntax), [markdown для Gitub](https://github.github.com/gfm/), [Multimarkdown](https://fletcherpenney.net/multimarkdown/) и т. Д.), трудно создать единый инструмент для последовательной обработки Markdown.
 
 Эрик Холшер, соучредитель [Write the Docs](http://www.writethedocs.org/) и платформы [Read the Docs](https://readthedocs.org/), утверждает, что Markdown создает блокировку для конкретного инструмента. Он говорит, что многие авторы считают Markdown хорошим выбором, потому что многие инструменты поддерживают его, и они думают, что всегда смогут перенести свой контент Markdown на другой инструмент. Но. разновидности Markdown делают такую миграцию проблематичной. Эрик пишет:
 

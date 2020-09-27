@@ -8,7 +8,7 @@ RAML расшифровывается как REST API Modeling Language и ан�
 
 [Автогенерация кода клиентского SDK](#autogenerate)
 
-[Пример спецификации для OpenWeatherMap API](@sample)
+[Пример спецификации для OpenWeatherMap API](#sample)
 
 [Выводы](#outputs)
 
@@ -475,4 +475,4 @@ API Console можно встраивать в качестве [элемент�
 
 [🔙](Get-wind-speed-using-Aeris-API.md)
 
-[Go next ➡](API-blueprint-tutorial.md)
+[Go next ➡](API-Blueprint-tutorial.md)

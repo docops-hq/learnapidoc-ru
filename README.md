@@ -5,12 +5,16 @@
 
 # Курс по документированию REST API
 
-Это вольный перевод курса [**Documenting APIs: A guide for technical writers**](https://idratherbewriting.com/learnapidoc/), составленного Томом Джонсоном, техническим писателем Amazon.
+Вольный перевод курса [**Documenting APIs: A guide for technical writers**](https://idratherbewriting.com/learnapidoc/), составленного Томом Джонсоном, техническим писателем Amazon.
 
 Цель перевода курса:
 
 - пройти курс, научиться документировать API, повысить свои soft skills техписателя;
 - освежить знания английского языка;
+
+Данный репозиторий используется для хранения исходников перевода. 
+
+Сайт русскоязычной версии курса: [Starkovden.github.io](https://Starkovden.github.io)
 
 ## Коротко о курсе
 
@@ -22,7 +26,7 @@
 
 Во время прохождения курса мы изучим стандарты, инструменты и спецификации REST API. Узнаем о необходимых разделах в документации API, проанализируем примеры документации REST API различных компаний, узнаем, как присоединиться к проекту c открытым исходным кодом, чтобы получить опыт, и многое другое.
 
-# [Начать обучение 👨‍💻](introduction-rest-apis/README.md)
+# [Начать обучение 👨‍💻](https://Starkovden.github.io)
 
 ## Модули курса
 
@@ -80,7 +84,7 @@
     - [**Шаг 6: Объект `security`**](openAPI-specification/step6-security-object.md)
     - [**Шаг 7: Объект `tags`**](openAPI-specification/step7-tags-object.md)
     - [**Шаг 8: Объект `externalDocs`**](openAPI-specification/step8-externalDocs-object.md)
-    - [**Практическое занятие: Создание спецификации OpenAPI**](openAPI-specification/сreate-openapi-specification.md)
+    - [**Практическое занятие: Создание спецификации OpenAPI**](openAPI-specification/create-openapi-specification.md)
     - [**Руководство Swagger UI**](openAPI-specification/swagger-ui-tutorial.md)
     - [**Демо Swagger UI**](openAPI-specification/swagger-ui-demo.md)
     - [**Введение и руководство SwaggerHub**](openAPI-specification/swaggerhub-introduction-and-tutorial.md)
@@ -89,11 +93,11 @@
 
 5. [**Тестирование документации**](testing-api-doc/README.md)
 
-    - [**Обзор тестирования документации**](overview-testing.md)
-    - [**Настройка тестовой среды окружения**](set-up-test-environment.md)
-    - [**Самостоятельное тестирование всех инструкций**](test-instructions-yourself.md)
-    - [**Тестирование предположений**](test-assumptions.md)
-    - [**Практическое занятие: Тестирование документации проекта**](test-documentation.md)
+    - [**Обзор тестирования документации**](testing-api-doc/overview-testing.md)
+    - [**Настройка тестовой среды окружения**](testing-api-doc/set-up-test-environment.md)
+    - [**Самостоятельное тестирование всех инструкций**](testing-api-doc/test-instructions-yourself.md)
+    - [**Тестирование предположений**](testing-api-doc/test-assumptions.md)
+    - [**Практическое занятие: Тестирование документации проекта**](testing-api-doc/test-documentation.md)
 
 6. [**Концептуальные разделы**](conceptual-topics/README.md)
 
@@ -102,7 +106,7 @@
     - [**Руководство по началу работы**](conceptual-topics/getting-started.md)
     - [**Требования аутентификации и авторизации**](conceptual-topics/authentication-and-authorization.md)
     - [**Коды статусов и ошибок**](conceptual-topics/status-error-codes.md)
-    - [**Ограничения скорости и пределы**](conceptual-topics/rate-limiting.md)
+    - [**Ограничения скорости**](conceptual-topics/rate-limiting.md)
     - [**Описание и образцы кода**](conceptual-topics/code-samples.md)
     - [**SDK и пример приложений**](conceptual-topics/sdks-sample-apps.md)
     - [**Краткое справочное руководство**](conceptual-topics/quick-reference-guide.md)
@@ -115,11 +119,11 @@
     - [**Обзор вариантов публикации документации**](Publishing-doc/Overview-for-publishing.md)
     - [**Список из 100 сайтов с API документацией**](Publishing-doc/API-doc-sites-list.md)
     - [**Шаблоны проектирования сайтов API документации**](Publishing-doc/Design-patterns.md)
-    - [**Инструменты Docs-as-code**](Publishing-doc/Docs-as-code-tools.md)
+    - [**Инструменты Docs-as-code**](Publishing-doc/Doc-as-code-tools.md)
     - [**Подробнее о Markdown**](Publishing-doc/More-about-Markdown.md)
     - [**Система контроля версий (пример Git)**](Publishing-doc/Version-control-system.md)
     - [**Практическое занятие: Управляем контентом в Wiki Github**](Publishing-doc/Manage-wiki-content.md)
-    - [**Практическое занятие: Используем клиент GitHub для десктопа**](Publishing-doc/Use-GitHub-Desctop.md)
+    - [**Практическое занятие: Используем клиент GitHub для десктопа**](Publishing-doc/Use-GitHub-Desktop.md)
     - [**Практическое занятие: процесс Pull request на GitHub**](Publishing-doc/Pull-request-workflows.md)
     - [**Генераторы статичных сайтов**](Publishing-doc/Static-site-generators.md)
     - [**Варианты хостинга и развертывания**](Publishing-doc/Hosting-and-deployment-options.md)
@@ -134,7 +138,7 @@
     - [**Необходимое количество кода, которое нужно знать**](Getting-job/how-much-code-to-know.md)
     - [**Лучшие локации для работы**](Getting-job/best-locations.md)
 
-9. [**Исходные библиотеки API**](Native-library/README.md)
+9. [**Нативные библиотеки API**](Native-library/README.md)
 
     - [**Обзор нативных библиотек API**](Native-library/Overview-of-library.md)
     - [**Получаем пример Java проекта**](Native-library/Get-the-sample-Java-project.md)
@@ -144,7 +148,7 @@
     - [**Изучение вывода Javadoc**](Native-library/Explore-Javadoc-output.md)
     - [**Редактирование тегов Javadoc**](Native-library/Make-edits-Javadocs-tags.md)
     - [**Doxygen, генератор документации для С++**](Native-library/Doxygen.md)
-    - [**Создание бессылочной документации при помощи исходных библиотек API**](Native-library/Create-non-refsdocs-with-native-library-APIs.md)
+    - [**Создание концептуальной документации при помощи исходных библиотек API**](Native-library/Create-non-refsdocs-with-native-library-APIs.md)
 
 10. [**Глоссарий API и источники**](glossary-and-resourses/README.md)
 
@@ -152,11 +156,15 @@
     - [**Практические занятия REST API**](glossary-and-resourses/RESTAPI-activities.md)
     - [**Практическое занятие: Получить информацию о событии, используя API сервиса Eventbrite**](glossary-and-resourses/Get-event-information-using-Eventbrite-API.md)
     - [**Практическое занятие: Извлечь галерею, используя API сервиса Flikr**](glossary-and-resourses/Retrieve-gallery-using-Flickr-API.md)
-    - [**Получить скорость ветра, используя API сервиса Aeris Weather**](glossary-and-resourses/Get-wind-speed-using-Aeris-API.md)
+    - [**Практическое занятие: Получить скорость ветра, используя API сервиса Aeris Weather**](glossary-and-resourses/Get-wind-speed-using-Aeris-API.md)
     - [**Справочник RAML**](glossary-and-resourses/RAML-tutorial.md)
     - [**Справочник API Blueprint**](glossary-and-resourses/API-Blueprint-tutorial.md)
     - [**Описание ошибок**](glossary-and-resourses/answeres-whats-wrong.md)
 
-11. [**Документирование кода**](doc-code/doc-code.md)
+11. [**Документирование кода**](doc-code/README.md)
+
+    - [**Почему документирование кода так сложно?**](doc-code/doc-code.md)
+    - [**Исследования о документировании кода**](doc-code/doc-research.md)
+    - [**Пять стратегий документирования кода**](doc-code/doc-strategy.md)
 
 # [Go next ➡](introduction-rest-apis/README.md)
