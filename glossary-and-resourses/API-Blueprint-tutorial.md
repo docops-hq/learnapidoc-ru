@@ -209,7 +209,7 @@ form of choices.
             }
 ```
 
-Справочники по синтакису API Blueprint можно посмотреть на ресурсах:
+Справочники по синтаксису API Blueprint можно посмотреть на ресурсах:
 
 - [API Blueprint tutorial](https://apiblueprint.org/documentation/tutorial.html)
 - [Apiary tutorial](https://help.apiary.io/api_101/api_blueprint_tutorial/)
